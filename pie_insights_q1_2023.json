@@ -1,0 +1,6259 @@
+{
+  "pie_assistant_context": {
+    "name": "Pie",
+    "company": "PivotPie",
+    "data_period": "Q1 2023 (January - March 2023)",
+    "scope": "Dubai Grease Trap Collection Analysis",
+    "reference_date": "2023-04-10",
+    "total_records": 29945,
+    "date_range": {
+      "start": "2023-01-01",
+      "end": "2023-03-31",
+      "analysis_date": "2023-04-10"
+    }
+  },
+  "overall_analysis": {
+    "executive_summary": {
+      "total_records": 29945,
+      "total_gallons": 1671702,
+      "average_gallons_per_collection": 55.8,
+      "unique_entities": 3314,
+      "unique_service_providers": 66,
+      "unique_vehicles": 167,
+      "unique_areas": 23,
+      "unique_zones": 7,
+      "unique_categories": 11,
+      "completion_rate": 100.0
+    },
+    "key_performance_indicators": {
+      "daily_average_collections": 332.7,
+      "peak_collection_month": "2023-01",
+      "most_active_area": "Al Quoz",
+      "dominant_category": "Restaurant",
+      "top_provider": "Service Provider 4",
+      "average_turnaround_days": 45.1
+    },
+    "quarterly_trends": {
+      "january_collections": 10252,
+      "february_collections": 9704,
+      "march_collections": 9989,
+      "growth_trend": "Analyzing Q1 2023 progression patterns"
+    }
+  },
+  "geographical_analysis": {
+    "top_areas": {
+      "Al Quoz": {
+        "Collections": 7952,
+        "Total_Gallons": 553948,
+        "Avg_Gallons": 69.7,
+        "Unique_Entities": 905,
+        "Service_Providers": 61,
+        "Vehicles": 139,
+        "Percentage": 26.56
+      },
+      "Al Brsh": {
+        "Collections": 7566,
+        "Total_Gallons": 332571,
+        "Avg_Gallons": 44.0,
+        "Unique_Entities": 717,
+        "Service_Providers": 58,
+        "Vehicles": 135,
+        "Percentage": 25.27
+      },
+      "Al Krm": {
+        "Collections": 3934,
+        "Total_Gallons": 182459,
+        "Avg_Gallons": 46.4,
+        "Unique_Entities": 516,
+        "Service_Providers": 55,
+        "Vehicles": 123,
+        "Percentage": 13.14
+      },
+      "Al Grhoud": {
+        "Collections": 1824,
+        "Total_Gallons": 159076,
+        "Avg_Gallons": 87.2,
+        "Unique_Entities": 147,
+        "Service_Providers": 32,
+        "Vehicles": 74,
+        "Percentage": 6.09
+      },
+      "Al Nhd": {
+        "Collections": 1585,
+        "Total_Gallons": 72330,
+        "Avg_Gallons": 45.6,
+        "Unique_Entities": 200,
+        "Service_Providers": 48,
+        "Vehicles": 100,
+        "Percentage": 5.29
+      },
+      "Al Khwneej": {
+        "Collections": 1473,
+        "Total_Gallons": 70240,
+        "Avg_Gallons": 47.7,
+        "Unique_Entities": 161,
+        "Service_Providers": 42,
+        "Vehicles": 95,
+        "Percentage": 4.92
+      },
+      "Al jddf": {
+        "Collections": 823,
+        "Total_Gallons": 42590,
+        "Avg_Gallons": 51.7,
+        "Unique_Entities": 97,
+        "Service_Providers": 32,
+        "Vehicles": 68,
+        "Percentage": 2.75
+      },
+      "Al Bd": {
+        "Collections": 582,
+        "Total_Gallons": 24040,
+        "Avg_Gallons": 41.3,
+        "Unique_Entities": 83,
+        "Service_Providers": 32,
+        "Vehicles": 61,
+        "Percentage": 1.94
+      },
+      "Al Mn": {
+        "Collections": 563,
+        "Total_Gallons": 25095,
+        "Avg_Gallons": 44.6,
+        "Unique_Entities": 46,
+        "Service_Providers": 25,
+        "Vehicles": 55,
+        "Percentage": 1.88
+      },
+      "Al Qudr": {
+        "Collections": 550,
+        "Total_Gallons": 26495,
+        "Avg_Gallons": 48.2,
+        "Unique_Entities": 44,
+        "Service_Providers": 20,
+        "Vehicles": 38,
+        "Percentage": 1.84
+      },
+      "Al Awr": {
+        "Collections": 436,
+        "Total_Gallons": 48595,
+        "Avg_Gallons": 111.5,
+        "Unique_Entities": 51,
+        "Service_Providers": 22,
+        "Vehicles": 46,
+        "Percentage": 1.46
+      },
+      "Al Mzhr": {
+        "Collections": 385,
+        "Total_Gallons": 16870,
+        "Avg_Gallons": 43.8,
+        "Unique_Entities": 54,
+        "Service_Providers": 17,
+        "Vehicles": 35,
+        "Percentage": 1.29
+      },
+      "Abu Hl": {
+        "Collections": 380,
+        "Total_Gallons": 19465,
+        "Avg_Gallons": 51.2,
+        "Unique_Entities": 66,
+        "Service_Providers": 23,
+        "Vehicles": 44,
+        "Percentage": 1.27
+      },
+      "Al Mmzr": {
+        "Collections": 264,
+        "Total_Gallons": 10180,
+        "Avg_Gallons": 38.6,
+        "Unique_Entities": 42,
+        "Service_Providers": 20,
+        "Vehicles": 36,
+        "Percentage": 0.88
+      },
+      "Al Brh": {
+        "Collections": 251,
+        "Total_Gallons": 15285,
+        "Avg_Gallons": 60.9,
+        "Unique_Entities": 46,
+        "Service_Providers": 21,
+        "Vehicles": 36,
+        "Percentage": 0.84
+      },
+      "Acdemc Cty": {
+        "Collections": 244,
+        "Total_Gallons": 13635,
+        "Avg_Gallons": 55.9,
+        "Unique_Entities": 35,
+        "Service_Providers": 21,
+        "Vehicles": 40,
+        "Percentage": 0.81
+      },
+      "Al Furjn": {
+        "Collections": 227,
+        "Total_Gallons": 6851,
+        "Avg_Gallons": 30.2,
+        "Unique_Entities": 28,
+        "Service_Providers": 11,
+        "Vehicles": 28,
+        "Percentage": 0.76
+      },
+      "Al Lsl": {
+        "Collections": 220,
+        "Total_Gallons": 12650,
+        "Avg_Gallons": 57.5,
+        "Unique_Entities": 40,
+        "Service_Providers": 15,
+        "Vehicles": 27,
+        "Percentage": 0.73
+      },
+      "Al Jfly": {
+        "Collections": 205,
+        "Total_Gallons": 11571,
+        "Avg_Gallons": 56.4,
+        "Unique_Entities": 33,
+        "Service_Providers": 19,
+        "Vehicles": 42,
+        "Percentage": 0.68
+      },
+      "Al Khbs": {
+        "Collections": 175,
+        "Total_Gallons": 10275,
+        "Avg_Gallons": 58.7,
+        "Unique_Entities": 30,
+        "Service_Providers": 18,
+        "Vehicles": 33,
+        "Percentage": 0.58
+      },
+      "Al Brr": {
+        "Collections": 160,
+        "Total_Gallons": 8726,
+        "Avg_Gallons": 54.5,
+        "Unique_Entities": 14,
+        "Service_Providers": 10,
+        "Vehicles": 20,
+        "Percentage": 0.53
+      },
+      "Al Mnr": {
+        "Collections": 144,
+        "Total_Gallons": 8555,
+        "Avg_Gallons": 59.4,
+        "Unique_Entities": 17,
+        "Service_Providers": 12,
+        "Vehicles": 21,
+        "Percentage": 0.48
+      },
+      "Al Mrmoom": {
+        "Collections": 2,
+        "Total_Gallons": 200,
+        "Avg_Gallons": 100.0,
+        "Unique_Entities": 1,
+        "Service_Providers": 1,
+        "Vehicles": 2,
+        "Percentage": 0.01
+      }
+    },
+    "zone_distribution": {
+      "Al Quoz": {
+        "Collections": 15518,
+        "Total_Gallons": 886519,
+        "Avg_Gallons": 57.1,
+        "Unique_Entities": 1617,
+        "Areas": 2,
+        "Percentage": 51.82
+      },
+      "Bur Dub": {
+        "Collections": 6107,
+        "Total_Gallons": 285755,
+        "Avg_Gallons": 46.8,
+        "Unique_Entities": 774,
+        "Areas": 5,
+        "Percentage": 20.39
+      },
+      "Der": {
+        "Collections": 2894,
+        "Total_Gallons": 214281,
+        "Avg_Gallons": 74.0,
+        "Unique_Entities": 331,
+        "Areas": 5,
+        "Percentage": 9.66
+      },
+      "Rs Al Khor": {
+        "Collections": 2533,
+        "Total_Gallons": 153846,
+        "Avg_Gallons": 60.7,
+        "Unique_Entities": 299,
+        "Areas": 5,
+        "Percentage": 8.46
+      },
+      "Al Quss": {
+        "Collections": 1970,
+        "Total_Gallons": 89200,
+        "Avg_Gallons": 45.3,
+        "Unique_Entities": 254,
+        "Areas": 2,
+        "Percentage": 6.58
+      },
+      "Jebel Al": {
+        "Collections": 779,
+        "Total_Gallons": 33546,
+        "Avg_Gallons": 43.1,
+        "Unique_Entities": 73,
+        "Areas": 3,
+        "Percentage": 2.6
+      },
+      "Jumerh": {
+        "Collections": 144,
+        "Total_Gallons": 8555,
+        "Avg_Gallons": 59.4,
+        "Unique_Entities": 17,
+        "Areas": 1,
+        "Percentage": 0.48
+      }
+    },
+    "detailed_area_analysis": {
+      "Al Quoz": {
+        "summary": {
+          "Collections": 7952.0,
+          "Total_Gallons": 553948.0,
+          "Avg_Gallons": 69.7,
+          "Unique_Entities": 905.0,
+          "Service_Providers": 61.0,
+          "Vehicles": 139.0,
+          "Percentage": 26.56
+        },
+        "top_entities_count": {
+          "E-7298": 13000,
+          "E-9165": 10410,
+          "E-4332": 9600,
+          "E-5122": 5400,
+          "E-8730": 4980,
+          "E-5168": 4660,
+          "E-2051": 4400,
+          "E-9280": 4080,
+          "E-10573": 4050,
+          "E-10531": 3915
+        },
+        "category_breakdown": {
+          "Accommodation": 3136,
+          "Restaurant": 1827,
+          "Catering": 1470,
+          "Bakery /confectionery": 528,
+          "Cafeteria": 481,
+          "Supermarket": 284,
+          "Coffee Shop": 168,
+          "Mall": 46,
+          "Hotel": 12
+        },
+        "provider_distribution": {
+          "Service Provider 4": 1010,
+          "Service Provider 8": 765,
+          "Service Provider 10": 618,
+          "Service Provider 16": 438,
+          "Service Provider 9": 408
+        },
+        "monthly_trends": {
+          "2023-01": 190176,
+          "2023-02": 179626,
+          "2023-03": 184146
+        }
+      },
+      "Al Brsh": {
+        "summary": {
+          "Collections": 7566.0,
+          "Total_Gallons": 332571.0,
+          "Avg_Gallons": 44.0,
+          "Unique_Entities": 717.0,
+          "Service_Providers": 58.0,
+          "Vehicles": 135.0,
+          "Percentage": 25.27
+        },
+        "top_entities_count": {
+          "E-639": 41295,
+          "E-1511": 8442,
+          "E-64": 6300,
+          "E-3121": 4095,
+          "E-1780": 3765,
+          "E-2516": 3240,
+          "E-5738": 3120,
+          "E-12108": 2862,
+          "E-2444": 2700,
+          "E-2682": 2400
+        },
+        "category_breakdown": {
+          "Restaurant": 4790,
+          "Supermarket": 651,
+          "Hotel": 585,
+          "Cafeteria": 529,
+          "Coffee Shop": 402,
+          "Bakery /confectionery": 202,
+          "Mall": 174,
+          "Catering": 121,
+          "Accommodation": 77,
+          "School": 24,
+          "Hospital": 11
+        },
+        "provider_distribution": {
+          "Service Provider 30": 1124,
+          "Service Provider 4": 890,
+          "Service Provider 25": 507,
+          "Service Provider 16": 375,
+          "Service Provider 10": 334
+        },
+        "monthly_trends": {
+          "2023-01": 110816,
+          "2023-02": 109096,
+          "2023-03": 112659
+        }
+      },
+      "Al Krm": {
+        "summary": {
+          "Collections": 3934.0,
+          "Total_Gallons": 182459.0,
+          "Avg_Gallons": 46.4,
+          "Unique_Entities": 516.0,
+          "Service_Providers": 55.0,
+          "Vehicles": 123.0,
+          "Percentage": 13.14
+        },
+        "top_entities_count": {
+          "E-261": 3240,
+          "E-1589": 1800,
+          "E-4190": 1800,
+          "E-2944": 1260,
+          "E-2851": 1215,
+          "E-3248": 1200,
+          "E-9812": 1200,
+          "E-3245": 1100,
+          "E-7288": 1080,
+          "E-7138": 1050
+        },
+        "category_breakdown": {
+          "Restaurant": 2657,
+          "Cafeteria": 695,
+          "Bakery /confectionery": 218,
+          "Supermarket": 173,
+          "Coffee Shop": 92,
+          "Hotel": 70,
+          "Accommodation": 18,
+          "Catering": 11
+        },
+        "provider_distribution": {
+          "Service Provider 16": 364,
+          "Service Provider 28": 299,
+          "Service Provider 32": 237,
+          "Service Provider 35": 226,
+          "Service Provider 23": 208
+        },
+        "monthly_trends": {
+          "2023-01": 63012,
+          "2023-02": 59621,
+          "2023-03": 59826
+        }
+      },
+      "Al Grhoud": {
+        "summary": {
+          "Collections": 1824.0,
+          "Total_Gallons": 159076.0,
+          "Avg_Gallons": 87.2,
+          "Unique_Entities": 147.0,
+          "Service_Providers": 32.0,
+          "Vehicles": 74.0,
+          "Percentage": 6.09
+        },
+        "top_entities_count": {
+          "E-1083": 77756,
+          "E-2112": 5710,
+          "E-405": 5340,
+          "E-1242": 5010,
+          "E-274": 4800,
+          "E-4286": 4540,
+          "E-110": 2852,
+          "E-7414": 2795,
+          "E-1091": 2100,
+          "E-1096": 1755
+        },
+        "category_breakdown": {
+          "Restaurant": 969,
+          "Coffee Shop": 255,
+          "Hotel": 207,
+          "Catering": 145,
+          "Cafeteria": 93,
+          "Mall": 48,
+          "Bakery /confectionery": 47,
+          "Hospital": 44,
+          "Supermarket": 13,
+          "Accommodation": 3
+        },
+        "provider_distribution": {
+          "Service Provider 30": 541,
+          "Service Provider 9": 251,
+          "Service Provider 5": 194,
+          "Service Provider 4": 172,
+          "Service Provider 50": 115
+        },
+        "monthly_trends": {
+          "2023-01": 53604,
+          "2023-02": 51362,
+          "2023-03": 54110
+        }
+      },
+      "Al Nhd": {
+        "summary": {
+          "Collections": 1585.0,
+          "Total_Gallons": 72330.0,
+          "Avg_Gallons": 45.6,
+          "Unique_Entities": 200.0,
+          "Service_Providers": 48.0,
+          "Vehicles": 100.0,
+          "Percentage": 5.29
+        },
+        "top_entities_count": {
+          "E-303": 3420,
+          "E-4949": 1300,
+          "E-3308": 1200,
+          "E-2365": 1050,
+          "E-1012": 945,
+          "E-3395": 900,
+          "E-2454": 900,
+          "E-1589": 810,
+          "E-7168": 810,
+          "E-6941": 810
+        },
+        "category_breakdown": {
+          "Restaurant": 1008,
+          "Supermarket": 251,
+          "Cafeteria": 121,
+          "Coffee Shop": 73,
+          "Bakery /confectionery": 71,
+          "Hotel": 39,
+          "Accommodation": 19,
+          "Hospital": 3
+        },
+        "provider_distribution": {
+          "Service Provider 23": 141,
+          "Service Provider 4": 132,
+          "Service Provider 51": 127,
+          "Service Provider 12": 103,
+          "Service Provider 6": 101
+        },
+        "monthly_trends": {
+          "2023-01": 25260,
+          "2023-02": 23095,
+          "2023-03": 23975
+        }
+      },
+      "Al Khwneej": {
+        "summary": {
+          "Collections": 1473.0,
+          "Total_Gallons": 70240.0,
+          "Avg_Gallons": 47.7,
+          "Unique_Entities": 161.0,
+          "Service_Providers": 42.0,
+          "Vehicles": 95.0,
+          "Percentage": 4.92
+        },
+        "top_entities_count": {
+          "E-4335": 6210,
+          "E-2445": 5850,
+          "E-642": 4860,
+          "E-356": 4500,
+          "E-974": 1755,
+          "E-9912": 1620,
+          "E-2348": 1605,
+          "E-951": 1275,
+          "E-6101": 1265,
+          "E-3649": 1250
+        },
+        "category_breakdown": {
+          "Restaurant": 665,
+          "Cafeteria": 223,
+          "Mall": 144,
+          "Accommodation": 134,
+          "Coffee Shop": 111,
+          "Catering": 79,
+          "Bakery /confectionery": 64,
+          "Supermarket": 50,
+          "Hospital": 3
+        },
+        "provider_distribution": {
+          "Service Provider 4": 251,
+          "Service Provider 38": 132,
+          "Service Provider 5": 120,
+          "Service Provider 49": 114,
+          "Service Provider 11": 111
+        },
+        "monthly_trends": {
+          "2023-01": 24895,
+          "2023-02": 22565,
+          "2023-03": 22780
+        }
+      },
+      "Al jddf": {
+        "summary": {
+          "Collections": 823.0,
+          "Total_Gallons": 42590.0,
+          "Avg_Gallons": 51.7,
+          "Unique_Entities": 97.0,
+          "Service_Providers": 32.0,
+          "Vehicles": 68.0,
+          "Percentage": 2.75
+        },
+        "top_entities_count": {
+          "E-2770": 5220,
+          "E-2142": 1640,
+          "E-2103": 1620,
+          "E-406": 1620,
+          "E-5409": 1620,
+          "E-8341": 1500,
+          "E-8340": 1500,
+          "E-2382": 1200,
+          "E-4407": 935,
+          "E-5801": 810
+        },
+        "category_breakdown": {
+          "Restaurant": 391,
+          "Hotel": 164,
+          "Supermarket": 130,
+          "Cafeteria": 70,
+          "Coffee Shop": 28,
+          "Bakery /confectionery": 27,
+          "Accommodation": 7,
+          "Catering": 4,
+          "Hospital": 2
+        },
+        "provider_distribution": {
+          "Service Provider 20": 126,
+          "Service Provider 10": 83,
+          "Service Provider 4": 74,
+          "Service Provider 37": 74,
+          "Service Provider 11": 53
+        },
+        "monthly_trends": {
+          "2023-01": 14490,
+          "2023-02": 14465,
+          "2023-03": 13635
+        }
+      },
+      "Al Bd": {
+        "summary": {
+          "Collections": 582.0,
+          "Total_Gallons": 24040.0,
+          "Avg_Gallons": 41.3,
+          "Unique_Entities": 83.0,
+          "Service_Providers": 32.0,
+          "Vehicles": 61.0,
+          "Percentage": 1.94
+        },
+        "top_entities_count": {
+          "E-8802": 1620,
+          "E-37": 850,
+          "E-10008": 810,
+          "E-3210": 810,
+          "E-3130": 700,
+          "E-3939": 700,
+          "E-5249": 690,
+          "E-282": 600,
+          "E-302": 600,
+          "E-7370": 600
+        },
+        "category_breakdown": {
+          "Restaurant": 287,
+          "Cafeteria": 149,
+          "Supermarket": 108,
+          "Coffee Shop": 24,
+          "Bakery /confectionery": 8,
+          "Hotel": 6
+        },
+        "provider_distribution": {
+          "Service Provider 23": 67,
+          "Service Provider 4": 62,
+          "Service Provider 16": 56,
+          "Service Provider 14": 48,
+          "Service Provider 28": 33
+        },
+        "monthly_trends": {
+          "2023-01": 8025,
+          "2023-02": 7880,
+          "2023-03": 8135
+        }
+      }
+    },
+    "geographic_insights": {
+      "most_active_area": "Al Quoz",
+      "highest_volume_area": "Al Quoz",
+      "most_efficient_area": "Al Awr",
+      "geographic_concentration": "Top 3 areas handle 65.0% of collections"
+    }
+  },
+  "business_category_analysis": {
+    "category_breakdown": {
+      "Restaurant": {
+        "Collections": 14522,
+        "Total_Gallons": 640669,
+        "Avg_Gallons": 44.1,
+        "Std_Gallons": 38.9,
+        "Unique_Entities": 1648,
+        "Areas_Served": 23,
+        "Service_Providers": 60,
+        "Percentage": 48.5
+      },
+      "Accommodation": {
+        "Collections": 3841,
+        "Total_Gallons": 317920,
+        "Avg_Gallons": 82.8,
+        "Std_Gallons": 44.5,
+        "Unique_Entities": 350,
+        "Areas_Served": 18,
+        "Service_Providers": 42,
+        "Percentage": 12.83
+      },
+      "Cafeteria": {
+        "Collections": 2867,
+        "Total_Gallons": 93195,
+        "Avg_Gallons": 32.5,
+        "Std_Gallons": 26.3,
+        "Unique_Entities": 453,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 9.57
+      },
+      "Catering": {
+        "Collections": 1957,
+        "Total_Gallons": 227181,
+        "Avg_Gallons": 116.1,
+        "Std_Gallons": 231.7,
+        "Unique_Entities": 189,
+        "Areas_Served": 14,
+        "Service_Providers": 51,
+        "Percentage": 6.54
+      },
+      "Supermarket": {
+        "Collections": 1945,
+        "Total_Gallons": 74235,
+        "Avg_Gallons": 38.2,
+        "Std_Gallons": 42.3,
+        "Unique_Entities": 162,
+        "Areas_Served": 18,
+        "Service_Providers": 36,
+        "Percentage": 6.5
+      },
+      "Coffee Shop": {
+        "Collections": 1462,
+        "Total_Gallons": 30765,
+        "Avg_Gallons": 21.0,
+        "Std_Gallons": 21.9,
+        "Unique_Entities": 211,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 4.88
+      },
+      "Hotel": {
+        "Collections": 1364,
+        "Total_Gallons": 138197,
+        "Avg_Gallons": 101.3,
+        "Std_Gallons": 114.1,
+        "Unique_Entities": 114,
+        "Areas_Served": 14,
+        "Service_Providers": 30,
+        "Percentage": 4.56
+      },
+      "Bakery /confectionery": {
+        "Collections": 1330,
+        "Total_Gallons": 61190,
+        "Avg_Gallons": 46.0,
+        "Std_Gallons": 46.4,
+        "Unique_Entities": 153,
+        "Areas_Served": 19,
+        "Service_Providers": 45,
+        "Percentage": 4.44
+      },
+      "Mall": {
+        "Collections": 538,
+        "Total_Gallons": 79280,
+        "Avg_Gallons": 147.4,
+        "Std_Gallons": 148.8,
+        "Unique_Entities": 18,
+        "Areas_Served": 8,
+        "Service_Providers": 8,
+        "Percentage": 1.8
+      },
+      "Hospital": {
+        "Collections": 69,
+        "Total_Gallons": 6465,
+        "Avg_Gallons": 93.7,
+        "Std_Gallons": 135.7,
+        "Unique_Entities": 10,
+        "Areas_Served": 6,
+        "Service_Providers": 4,
+        "Percentage": 0.23
+      },
+      "School": {
+        "Collections": 50,
+        "Total_Gallons": 2605,
+        "Avg_Gallons": 52.1,
+        "Std_Gallons": 43.7,
+        "Unique_Entities": 7,
+        "Areas_Served": 4,
+        "Service_Providers": 5,
+        "Percentage": 0.17
+      }
+    },
+    "category_insights": {
+      "dominant_category": "Restaurant",
+      "highest_volume_category": "Mall",
+      "most_widespread": "Restaurant",
+      "category_concentration": "Top 3 categories represent 70.9% of business"
+    },
+    "volume_by_category": {
+      "Restaurant": {
+        "Avg_Gallons": 44.1,
+        "Std_Gallons": 38.9
+      },
+      "Accommodation": {
+        "Avg_Gallons": 82.8,
+        "Std_Gallons": 44.5
+      },
+      "Cafeteria": {
+        "Avg_Gallons": 32.5,
+        "Std_Gallons": 26.3
+      },
+      "Catering": {
+        "Avg_Gallons": 116.1,
+        "Std_Gallons": 231.7
+      },
+      "Supermarket": {
+        "Avg_Gallons": 38.2,
+        "Std_Gallons": 42.3
+      },
+      "Coffee Shop": {
+        "Avg_Gallons": 21.0,
+        "Std_Gallons": 21.9
+      },
+      "Hotel": {
+        "Avg_Gallons": 101.3,
+        "Std_Gallons": 114.1
+      },
+      "Bakery /confectionery": {
+        "Avg_Gallons": 46.0,
+        "Std_Gallons": 46.4
+      },
+      "Mall": {
+        "Avg_Gallons": 147.4,
+        "Std_Gallons": 148.8
+      },
+      "Hospital": {
+        "Avg_Gallons": 93.7,
+        "Std_Gallons": 135.7
+      },
+      "School": {
+        "Avg_Gallons": 52.1,
+        "Std_Gallons": 43.7
+      }
+    }
+  },
+  "volumetrical_analysis": {
+    "volume_distribution": {
+      "0-15": {
+        "count": 98,
+        "percentage": 0.33,
+        "total_gallons": 1072,
+        "avg_gallons": 10.9
+      },
+      "16-25": {
+        "count": 0,
+        "percentage": 0.0,
+        "total_gallons": 0,
+        "avg_gallons": 0
+      },
+      "26-50": {
+        "count": 4002,
+        "percentage": 13.36,
+        "total_gallons": 159040,
+        "avg_gallons": 39.7
+      },
+      "51-100": {
+        "count": 0,
+        "percentage": 0.0,
+        "total_gallons": 0,
+        "avg_gallons": 0
+      },
+      "101-200": {
+        "count": 3215,
+        "percentage": 10.74,
+        "total_gallons": 434025,
+        "avg_gallons": 135.0
+      },
+      "201-500": {
+        "count": 119,
+        "percentage": 0.4,
+        "total_gallons": 35446,
+        "avg_gallons": 297.9
+      },
+      "500+": {
+        "count": 137,
+        "percentage": 0.46,
+        "total_gallons": 128454,
+        "avg_gallons": 937.6
+      }
+    },
+    "common_volumes": {
+      "15": 9021,
+      "25": 7502,
+      "100": 5818,
+      "40": 3911,
+      "135": 3215,
+      "11": 97,
+      "28": 65,
+      "250": 45,
+      "600": 43,
+      "1578": 42
+    },
+    "volume_statistics": {
+      "min_gallons": 5,
+      "max_gallons": 1578,
+      "mean_gallons": 55.8,
+      "median_gallons": 25.0,
+      "std_gallons": 81.3,
+      "q25": 15.0,
+      "q75": 100.0
+    },
+    "volume_insights": {
+      "most_common_size": "15",
+      "high_volume_threshold": "Collections >100 gallons considered high-volume",
+      "standard_sizes": "15, 25, 40, 100 gallon containers most common"
+    }
+  },
+  "service_provider_analysis": {
+    "top_providers": {
+      "Service Provider 4": {
+        "Collections": 3501,
+        "Total_Gallons": 235897,
+        "Avg_Gallons": 67.4,
+        "Unique_Entities": 365,
+        "Areas_Served": 22,
+        "Zones_Served": 7,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 45.0,
+        "Market_Share": 11.69,
+        "Collections_Per_Vehicle": 389.0
+      },
+      "Service Provider 30": {
+        "Collections": 2640,
+        "Total_Gallons": 106505,
+        "Avg_Gallons": 40.3,
+        "Unique_Entities": 231,
+        "Areas_Served": 21,
+        "Zones_Served": 7,
+        "Vehicles_Used": 12,
+        "Avg_Turnaround_Days": 46.1,
+        "Market_Share": 8.82,
+        "Collections_Per_Vehicle": 220.0
+      },
+      "Service Provider 10": {
+        "Collections": 1690,
+        "Total_Gallons": 140225,
+        "Avg_Gallons": 83.0,
+        "Unique_Entities": 132,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 5.64,
+        "Collections_Per_Vehicle": 187.8
+      },
+      "Service Provider 16": {
+        "Collections": 1517,
+        "Total_Gallons": 82735,
+        "Avg_Gallons": 54.5,
+        "Unique_Entities": 229,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 8,
+        "Avg_Turnaround_Days": 44.9,
+        "Market_Share": 5.07,
+        "Collections_Per_Vehicle": 189.6
+      },
+      "Service Provider 8": {
+        "Collections": 1274,
+        "Total_Gallons": 69950,
+        "Avg_Gallons": 54.9,
+        "Unique_Entities": 148,
+        "Areas_Served": 16,
+        "Zones_Served": 7,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.3,
+        "Market_Share": 4.25,
+        "Collections_Per_Vehicle": 318.5
+      },
+      "Service Provider 25": {
+        "Collections": 1156,
+        "Total_Gallons": 55115,
+        "Avg_Gallons": 47.7,
+        "Unique_Entities": 105,
+        "Areas_Served": 18,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 46.8,
+        "Market_Share": 3.86,
+        "Collections_Per_Vehicle": 385.3
+      },
+      "Service Provider 51": {
+        "Collections": 1027,
+        "Total_Gallons": 61545,
+        "Avg_Gallons": 59.9,
+        "Unique_Entities": 127,
+        "Areas_Served": 16,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.8,
+        "Market_Share": 3.43,
+        "Collections_Per_Vehicle": 205.4
+      },
+      "Service Provider 9": {
+        "Collections": 998,
+        "Total_Gallons": 144141,
+        "Avg_Gallons": 144.4,
+        "Unique_Entities": 61,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.6,
+        "Market_Share": 3.33,
+        "Collections_Per_Vehicle": 249.5
+      },
+      "Service Provider 5": {
+        "Collections": 904,
+        "Total_Gallons": 30527,
+        "Avg_Gallons": 33.8,
+        "Unique_Entities": 67,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 45.1,
+        "Market_Share": 3.02,
+        "Collections_Per_Vehicle": 150.7
+      },
+      "Service Provider 11": {
+        "Collections": 884,
+        "Total_Gallons": 33040,
+        "Avg_Gallons": 37.4,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 42.2,
+        "Market_Share": 2.95,
+        "Collections_Per_Vehicle": 147.3
+      },
+      "Service Provider 6": {
+        "Collections": 744,
+        "Total_Gallons": 46175,
+        "Avg_Gallons": 62.1,
+        "Unique_Entities": 141,
+        "Areas_Served": 16,
+        "Zones_Served": 6,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 45.2,
+        "Market_Share": 2.48,
+        "Collections_Per_Vehicle": 148.8
+      },
+      "Service Provider 17": {
+        "Collections": 722,
+        "Total_Gallons": 41250,
+        "Avg_Gallons": 57.1,
+        "Unique_Entities": 64,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.6,
+        "Market_Share": 2.41,
+        "Collections_Per_Vehicle": 240.7
+      },
+      "Service Provider 28": {
+        "Collections": 708,
+        "Total_Gallons": 48115,
+        "Avg_Gallons": 68.0,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.3,
+        "Market_Share": 2.36,
+        "Collections_Per_Vehicle": 354.0
+      },
+      "Service Provider 20": {
+        "Collections": 703,
+        "Total_Gallons": 26150,
+        "Avg_Gallons": 37.2,
+        "Unique_Entities": 44,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 44.9,
+        "Market_Share": 2.35,
+        "Collections_Per_Vehicle": 234.3
+      },
+      "Service Provider 23": {
+        "Collections": 690,
+        "Total_Gallons": 36285,
+        "Avg_Gallons": 52.6,
+        "Unique_Entities": 105,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.8,
+        "Market_Share": 2.3,
+        "Collections_Per_Vehicle": 138.0
+      },
+      "Service Provider 35": {
+        "Collections": 595,
+        "Total_Gallons": 25970,
+        "Avg_Gallons": 43.6,
+        "Unique_Entities": 112,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 43.3,
+        "Market_Share": 1.99,
+        "Collections_Per_Vehicle": 148.8
+      },
+      "Service Provider 46": {
+        "Collections": 581,
+        "Total_Gallons": 20385,
+        "Avg_Gallons": 35.1,
+        "Unique_Entities": 98,
+        "Areas_Served": 14,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.1,
+        "Market_Share": 1.94,
+        "Collections_Per_Vehicle": 193.7
+      },
+      "Service Provider 12": {
+        "Collections": 512,
+        "Total_Gallons": 17830,
+        "Avg_Gallons": 34.8,
+        "Unique_Entities": 63,
+        "Areas_Served": 14,
+        "Zones_Served": 6,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 47.4,
+        "Market_Share": 1.71,
+        "Collections_Per_Vehicle": 170.7
+      },
+      "Service Provider 38": {
+        "Collections": 493,
+        "Total_Gallons": 11995,
+        "Avg_Gallons": 24.3,
+        "Unique_Entities": 41,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 46.0,
+        "Market_Share": 1.65,
+        "Collections_Per_Vehicle": 164.3
+      },
+      "Service Provider 14": {
+        "Collections": 455,
+        "Total_Gallons": 19145,
+        "Avg_Gallons": 42.1,
+        "Unique_Entities": 52,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 43.4,
+        "Market_Share": 1.52,
+        "Collections_Per_Vehicle": 227.5
+      },
+      "Service Provider 24": {
+        "Collections": 442,
+        "Total_Gallons": 16730,
+        "Avg_Gallons": 37.9,
+        "Unique_Entities": 40,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 43.1,
+        "Market_Share": 1.48,
+        "Collections_Per_Vehicle": 110.5
+      },
+      "Service Provider 61": {
+        "Collections": 428,
+        "Total_Gallons": 17115,
+        "Avg_Gallons": 40.0,
+        "Unique_Entities": 43,
+        "Areas_Served": 8,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.9,
+        "Market_Share": 1.43,
+        "Collections_Per_Vehicle": 428.0
+      },
+      "Service Provider 32": {
+        "Collections": 427,
+        "Total_Gallons": 19155,
+        "Avg_Gallons": 44.9,
+        "Unique_Entities": 52,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 1.43,
+        "Collections_Per_Vehicle": 213.5
+      },
+      "Service Provider 49": {
+        "Collections": 409,
+        "Total_Gallons": 30799,
+        "Avg_Gallons": 75.3,
+        "Unique_Entities": 17,
+        "Areas_Served": 6,
+        "Zones_Served": 4,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 46.6,
+        "Market_Share": 1.37,
+        "Collections_Per_Vehicle": 102.2
+      },
+      "Service Provider 50": {
+        "Collections": 379,
+        "Total_Gallons": 16991,
+        "Avg_Gallons": 44.8,
+        "Unique_Entities": 50,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 45.9,
+        "Market_Share": 1.27,
+        "Collections_Per_Vehicle": 126.3
+      },
+      "Service Provider 18": {
+        "Collections": 355,
+        "Total_Gallons": 22410,
+        "Avg_Gallons": 63.1,
+        "Unique_Entities": 33,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.9,
+        "Market_Share": 1.19,
+        "Collections_Per_Vehicle": 355.0
+      },
+      "Service Provider 2": {
+        "Collections": 351,
+        "Total_Gallons": 17170,
+        "Avg_Gallons": 48.9,
+        "Unique_Entities": 61,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 45.1,
+        "Market_Share": 1.17,
+        "Collections_Per_Vehicle": 117.0
+      },
+      "Service Provider 37": {
+        "Collections": 344,
+        "Total_Gallons": 11320,
+        "Avg_Gallons": 32.9,
+        "Unique_Entities": 37,
+        "Areas_Served": 13,
+        "Zones_Served": 6,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.2,
+        "Market_Share": 1.15,
+        "Collections_Per_Vehicle": 172.0
+      },
+      "Service Provider 15": {
+        "Collections": 336,
+        "Total_Gallons": 22365,
+        "Avg_Gallons": 66.6,
+        "Unique_Entities": 48,
+        "Areas_Served": 14,
+        "Zones_Served": 7,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 1.12,
+        "Collections_Per_Vehicle": 168.0
+      },
+      "Service Provider 36": {
+        "Collections": 326,
+        "Total_Gallons": 24065,
+        "Avg_Gallons": 73.8,
+        "Unique_Entities": 47,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.5,
+        "Market_Share": 1.09,
+        "Collections_Per_Vehicle": 326.0
+      },
+      "Service Provider 42": {
+        "Collections": 302,
+        "Total_Gallons": 13530,
+        "Avg_Gallons": 44.8,
+        "Unique_Entities": 35,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.7,
+        "Market_Share": 1.01,
+        "Collections_Per_Vehicle": 151.0
+      },
+      "Service Provider 48": {
+        "Collections": 286,
+        "Total_Gallons": 16295,
+        "Avg_Gallons": 57.0,
+        "Unique_Entities": 42,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.3,
+        "Market_Share": 0.96,
+        "Collections_Per_Vehicle": 143.0
+      },
+      "Service Provider 13": {
+        "Collections": 273,
+        "Total_Gallons": 10690,
+        "Avg_Gallons": 39.2,
+        "Unique_Entities": 34,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 46.7,
+        "Market_Share": 0.91,
+        "Collections_Per_Vehicle": 273.0
+      },
+      "Service Provider 34": {
+        "Collections": 265,
+        "Total_Gallons": 9990,
+        "Avg_Gallons": 37.7,
+        "Unique_Entities": 35,
+        "Areas_Served": 10,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.3,
+        "Market_Share": 0.88,
+        "Collections_Per_Vehicle": 265.0
+      },
+      "Service Provider 52": {
+        "Collections": 262,
+        "Total_Gallons": 11510,
+        "Avg_Gallons": 43.9,
+        "Unique_Entities": 39,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 43.8,
+        "Market_Share": 0.87,
+        "Collections_Per_Vehicle": 262.0
+      },
+      "Service Provider 27": {
+        "Collections": 258,
+        "Total_Gallons": 10795,
+        "Avg_Gallons": 41.8,
+        "Unique_Entities": 33,
+        "Areas_Served": 12,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 43.3,
+        "Market_Share": 0.86,
+        "Collections_Per_Vehicle": 129.0
+      },
+      "Service Provider 26": {
+        "Collections": 232,
+        "Total_Gallons": 14750,
+        "Avg_Gallons": 63.6,
+        "Unique_Entities": 48,
+        "Areas_Served": 8,
+        "Zones_Served": 3,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.1,
+        "Market_Share": 0.77,
+        "Collections_Per_Vehicle": 77.3
+      },
+      "Service Provider 44": {
+        "Collections": 208,
+        "Total_Gallons": 7230,
+        "Avg_Gallons": 34.8,
+        "Unique_Entities": 21,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 49.2,
+        "Market_Share": 0.69,
+        "Collections_Per_Vehicle": 104.0
+      },
+      "Service Provider 40": {
+        "Collections": 203,
+        "Total_Gallons": 18620,
+        "Avg_Gallons": 91.7,
+        "Unique_Entities": 9,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 46.3,
+        "Market_Share": 0.68,
+        "Collections_Per_Vehicle": 101.5
+      },
+      "Service Provider 41": {
+        "Collections": 197,
+        "Total_Gallons": 8355,
+        "Avg_Gallons": 42.4,
+        "Unique_Entities": 29,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 41.6,
+        "Market_Share": 0.66,
+        "Collections_Per_Vehicle": 197.0
+      },
+      "Service Provider 19": {
+        "Collections": 195,
+        "Total_Gallons": 5760,
+        "Avg_Gallons": 29.5,
+        "Unique_Entities": 11,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 47.8,
+        "Market_Share": 0.65,
+        "Collections_Per_Vehicle": 97.5
+      },
+      "Service Provider 7": {
+        "Collections": 144,
+        "Total_Gallons": 4245,
+        "Avg_Gallons": 29.5,
+        "Unique_Entities": 17,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.9,
+        "Market_Share": 0.48,
+        "Collections_Per_Vehicle": 144.0
+      },
+      "Service Provider 53": {
+        "Collections": 143,
+        "Total_Gallons": 6155,
+        "Avg_Gallons": 43.0,
+        "Unique_Entities": 11,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 0.48,
+        "Collections_Per_Vehicle": 71.5
+      },
+      "Service Provider 54": {
+        "Collections": 134,
+        "Total_Gallons": 6305,
+        "Avg_Gallons": 47.1,
+        "Unique_Entities": 19,
+        "Areas_Served": 6,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 47.1,
+        "Market_Share": 0.45,
+        "Collections_Per_Vehicle": 134.0
+      },
+      "Service Provider 62": {
+        "Collections": 127,
+        "Total_Gallons": 9600,
+        "Avg_Gallons": 75.6,
+        "Unique_Entities": 8,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 47.6,
+        "Market_Share": 0.42,
+        "Collections_Per_Vehicle": 127.0
+      },
+      "Service Provider 29": {
+        "Collections": 110,
+        "Total_Gallons": 6035,
+        "Avg_Gallons": 54.9,
+        "Unique_Entities": 19,
+        "Areas_Served": 10,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 43.7,
+        "Market_Share": 0.37,
+        "Collections_Per_Vehicle": 110.0
+      },
+      "Service Provider 31": {
+        "Collections": 110,
+        "Total_Gallons": 6263,
+        "Avg_Gallons": 56.9,
+        "Unique_Entities": 15,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 42.2,
+        "Market_Share": 0.37,
+        "Collections_Per_Vehicle": 110.0
+      },
+      "Service Provider 3": {
+        "Collections": 101,
+        "Total_Gallons": 7934,
+        "Avg_Gallons": 78.6,
+        "Unique_Entities": 14,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 50.0,
+        "Market_Share": 0.34,
+        "Collections_Per_Vehicle": 101.0
+      },
+      "Service Provider 60": {
+        "Collections": 96,
+        "Total_Gallons": 3470,
+        "Avg_Gallons": 36.1,
+        "Unique_Entities": 17,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.6,
+        "Market_Share": 0.32,
+        "Collections_Per_Vehicle": 96.0
+      },
+      "Service Provider 22": {
+        "Collections": 92,
+        "Total_Gallons": 6315,
+        "Avg_Gallons": 68.6,
+        "Unique_Entities": 16,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 49.9,
+        "Market_Share": 0.31,
+        "Collections_Per_Vehicle": 92.0
+      },
+      "Service Provider 58": {
+        "Collections": 85,
+        "Total_Gallons": 5185,
+        "Avg_Gallons": 61.0,
+        "Unique_Entities": 12,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 49.2,
+        "Market_Share": 0.28,
+        "Collections_Per_Vehicle": 85.0
+      },
+      "Service Provider 1": {
+        "Collections": 83,
+        "Total_Gallons": 7145,
+        "Avg_Gallons": 86.1,
+        "Unique_Entities": 7,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 44.2,
+        "Market_Share": 0.28,
+        "Collections_Per_Vehicle": 83.0
+      },
+      "Service Provider 43": {
+        "Collections": 75,
+        "Total_Gallons": 1930,
+        "Avg_Gallons": 25.7,
+        "Unique_Entities": 18,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 0.25,
+        "Collections_Per_Vehicle": 75.0
+      },
+      "Service Provider 33": {
+        "Collections": 65,
+        "Total_Gallons": 3545,
+        "Avg_Gallons": 54.5,
+        "Unique_Entities": 10,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 42.3,
+        "Market_Share": 0.22,
+        "Collections_Per_Vehicle": 65.0
+      },
+      "Service Provider 63": {
+        "Collections": 51,
+        "Total_Gallons": 3330,
+        "Avg_Gallons": 65.3,
+        "Unique_Entities": 16,
+        "Areas_Served": 4,
+        "Zones_Served": 4,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 49.9,
+        "Market_Share": 0.17,
+        "Collections_Per_Vehicle": 25.5
+      },
+      "Service Provider 45": {
+        "Collections": 37,
+        "Total_Gallons": 2925,
+        "Avg_Gallons": 79.1,
+        "Unique_Entities": 6,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 53.7,
+        "Market_Share": 0.12,
+        "Collections_Per_Vehicle": 37.0
+      },
+      "Service Provider 56": {
+        "Collections": 36,
+        "Total_Gallons": 2475,
+        "Avg_Gallons": 68.8,
+        "Unique_Entities": 6,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 41.1,
+        "Market_Share": 0.12,
+        "Collections_Per_Vehicle": 36.0
+      },
+      "Service Provider 21": {
+        "Collections": 29,
+        "Total_Gallons": 2195,
+        "Avg_Gallons": 75.7,
+        "Unique_Entities": 6,
+        "Areas_Served": 3,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.6,
+        "Market_Share": 0.1,
+        "Collections_Per_Vehicle": 29.0
+      },
+      "Service Provider 65": {
+        "Collections": 28,
+        "Total_Gallons": 1120,
+        "Avg_Gallons": 40.0,
+        "Unique_Entities": 1,
+        "Areas_Served": 1,
+        "Zones_Served": 1,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 65.2,
+        "Market_Share": 0.09,
+        "Collections_Per_Vehicle": 28.0
+      },
+      "Service Provider 55": {
+        "Collections": 25,
+        "Total_Gallons": 610,
+        "Avg_Gallons": 24.4,
+        "Unique_Entities": 3,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 52.9,
+        "Market_Share": 0.08,
+        "Collections_Per_Vehicle": 25.0
+      },
+      "Service Provider 57": {
+        "Collections": 24,
+        "Total_Gallons": 2820,
+        "Avg_Gallons": 117.5,
+        "Unique_Entities": 3,
+        "Areas_Served": 2,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 50.9,
+        "Market_Share": 0.08,
+        "Collections_Per_Vehicle": 24.0
+      },
+      "Service Provider 39": {
+        "Collections": 19,
+        "Total_Gallons": 530,
+        "Avg_Gallons": 27.9,
+        "Unique_Entities": 4,
+        "Areas_Served": 2,
+        "Zones_Served": 1,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 63.5,
+        "Market_Share": 0.06,
+        "Collections_Per_Vehicle": 19.0
+      },
+      "Service Provider 47": {
+        "Collections": 16,
+        "Total_Gallons": 535,
+        "Avg_Gallons": 33.4,
+        "Unique_Entities": 11,
+        "Areas_Served": 6,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 81.2,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 16.0
+      },
+      "Service Provider 66": {
+        "Collections": 16,
+        "Total_Gallons": 640,
+        "Avg_Gallons": 40.0,
+        "Unique_Entities": 2,
+        "Areas_Served": 2,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 21.1,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 16.0
+      },
+      "Service Provider 59": {
+        "Collections": 14,
+        "Total_Gallons": 1010,
+        "Avg_Gallons": 72.1,
+        "Unique_Entities": 6,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 51.9,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 14.0
+      },
+      "Service Provider 64": {
+        "Collections": 13,
+        "Total_Gallons": 760,
+        "Avg_Gallons": 58.5,
+        "Unique_Entities": 4,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 39.9,
+        "Market_Share": 0.04,
+        "Collections_Per_Vehicle": 13.0
+      }
+    },
+    "provider_detailed_analysis": {
+      "Service Provider 4": {
+        "performance_metrics": {
+          "Collections": 3501.0,
+          "Total_Gallons": 235897.0,
+          "Avg_Gallons": 67.4,
+          "Unique_Entities": 365.0,
+          "Areas_Served": 22.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 9.0,
+          "Avg_Turnaround_Days": 45.0,
+          "Market_Share": 11.69,
+          "Collections_Per_Vehicle": 389.0
+        },
+        "area_coverage": {
+          "Al Quoz": 1010,
+          "Al Brsh": 890,
+          "Al Khwneej": 251,
+          "Al Krm": 190,
+          "Al Grhoud": 172,
+          "Al Nhd": 132,
+          "Al Awr": 113,
+          "Al Qudr": 83
+        },
+        "category_specialization": {
+          "Restaurant": 1390,
+          "Accommodation": 788,
+          "Supermarket": 525,
+          "Hotel": 176,
+          "Catering": 154
+        },
+        "monthly_activity": {
+          "2023-01": 80448,
+          "2023-02": 74473,
+          "2023-03": 80976
+        },
+        "vehicle_fleet": 9
+      },
+      "Service Provider 30": {
+        "performance_metrics": {
+          "Collections": 2640.0,
+          "Total_Gallons": 106505.0,
+          "Avg_Gallons": 40.3,
+          "Unique_Entities": 231.0,
+          "Areas_Served": 21.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 12.0,
+          "Avg_Turnaround_Days": 46.1,
+          "Market_Share": 8.82,
+          "Collections_Per_Vehicle": 220.0
+        },
+        "area_coverage": {
+          "Al Brsh": 1124,
+          "Al Grhoud": 541,
+          "Al Quoz": 300,
+          "Al Mzhr": 118,
+          "Al Krm": 99,
+          "Al Qudr": 71,
+          "Al Nhd": 67,
+          "Al Mnr": 49
+        },
+        "category_specialization": {
+          "Restaurant": 1693,
+          "Coffee Shop": 342,
+          "Hotel": 135,
+          "Cafeteria": 114,
+          "Catering": 101
+        },
+        "monthly_activity": {
+          "2023-01": 37995,
+          "2023-02": 32980,
+          "2023-03": 35530
+        },
+        "vehicle_fleet": 12
+      },
+      "Service Provider 10": {
+        "performance_metrics": {
+          "Collections": 1690.0,
+          "Total_Gallons": 140225.0,
+          "Avg_Gallons": 83.0,
+          "Unique_Entities": 132.0,
+          "Areas_Served": 17.0,
+          "Zones_Served": 6.0,
+          "Vehicles_Used": 9.0,
+          "Avg_Turnaround_Days": 44.4,
+          "Market_Share": 5.64,
+          "Collections_Per_Vehicle": 187.8
+        },
+        "area_coverage": {
+          "Al Quoz": 618,
+          "Al Brsh": 334,
+          "Al Mn": 181,
+          "Al Krm": 165,
+          "Al jddf": 83,
+          "Al Awr": 65,
+          "Al Khwneej": 48,
+          "Acdemc Cty": 42
+        },
+        "category_specialization": {
+          "Accommodation": 456,
+          "Restaurant": 447,
+          "Hotel": 300,
+          "Mall": 181,
+          "Catering": 108
+        },
+        "monthly_activity": {
+          "2023-01": 47000,
+          "2023-02": 46550,
+          "2023-03": 46675
+        },
+        "vehicle_fleet": 9
+      },
+      "Service Provider 16": {
+        "performance_metrics": {
+          "Collections": 1517.0,
+          "Total_Gallons": 82735.0,
+          "Avg_Gallons": 54.5,
+          "Unique_Entities": 229.0,
+          "Areas_Served": 17.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 8.0,
+          "Avg_Turnaround_Days": 44.9,
+          "Market_Share": 5.07,
+          "Collections_Per_Vehicle": 189.6
+        },
+        "area_coverage": {
+          "Al Quoz": 438,
+          "Al Brsh": 375,
+          "Al Krm": 364,
+          "Al Nhd": 74,
+          "Al Bd": 56,
+          "Al Mn": 55,
+          "Al Grhoud": 29,
+          "Al Awr": 24
+        },
+        "category_specialization": {
+          "Restaurant": 994,
+          "Cafeteria": 287,
+          "Catering": 111,
+          "Accommodation": 50,
+          "Coffee Shop": 41
+        },
+        "monthly_activity": {
+          "2023-01": 27740,
+          "2023-02": 26650,
+          "2023-03": 28345
+        },
+        "vehicle_fleet": 8
+      },
+      "Service Provider 8": {
+        "performance_metrics": {
+          "Collections": 1274.0,
+          "Total_Gallons": 69950.0,
+          "Avg_Gallons": 54.9,
+          "Unique_Entities": 148.0,
+          "Areas_Served": 16.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 4.0,
+          "Avg_Turnaround_Days": 44.3,
+          "Market_Share": 4.25,
+          "Collections_Per_Vehicle": 318.5
+        },
+        "area_coverage": {
+          "Al Quoz": 765,
+          "Al Brsh": 156,
+          "Al Krm": 99,
+          "Al Khwneej": 68,
+          "Al Nhd": 65,
+          "Al Grhoud": 35,
+          "Al Lsl": 16,
+          "Al Mnr": 11
+        },
+        "category_specialization": {
+          "Accommodation": 488,
+          "Restaurant": 333,
+          "Catering": 213,
+          "Cafeteria": 110,
+          "Hotel": 51
+        },
+        "monthly_activity": {
+          "2023-01": 25095,
+          "2023-02": 22810,
+          "2023-03": 22045
+        },
+        "vehicle_fleet": 4
+      },
+      "Service Provider 25": {
+        "performance_metrics": {
+          "Collections": 1156.0,
+          "Total_Gallons": 55115.0,
+          "Avg_Gallons": 47.7,
+          "Unique_Entities": 105.0,
+          "Areas_Served": 18.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 3.0,
+          "Avg_Turnaround_Days": 46.8,
+          "Market_Share": 3.86,
+          "Collections_Per_Vehicle": 385.3
+        },
+        "area_coverage": {
+          "Al Brsh": 507,
+          "Al Quoz": 258,
+          "Al Krm": 74,
+          "Al Khwneej": 45,
+          "Al jddf": 43,
+          "Al Nhd": 41,
+          "Al Mzhr": 33,
+          "Al Grhoud": 28
+        },
+        "category_specialization": {
+          "Restaurant": 540,
+          "Supermarket": 111,
+          "Catering": 93,
+          "Coffee Shop": 90,
+          "Bakery /confectionery": 84
+        },
+        "monthly_activity": {
+          "2023-01": 17325,
+          "2023-02": 17460,
+          "2023-03": 20330
+        },
+        "vehicle_fleet": 3
+      },
+      "Service Provider 51": {
+        "performance_metrics": {
+          "Collections": 1027.0,
+          "Total_Gallons": 61545.0,
+          "Avg_Gallons": 59.9,
+          "Unique_Entities": 127.0,
+          "Areas_Served": 16.0,
+          "Zones_Served": 5.0,
+          "Vehicles_Used": 5.0,
+          "Avg_Turnaround_Days": 44.8,
+          "Market_Share": 3.43,
+          "Collections_Per_Vehicle": 205.4
+        },
+        "area_coverage": {
+          "Al Quoz": 319,
+          "Al Krm": 169,
+          "Al Nhd": 127,
+          "Al Brsh": 109,
+          "Al Khwneej": 64,
+          "Al Brh": 64,
+          "Al Awr": 56,
+          "Al Mzhr": 41
+        },
+        "category_specialization": {
+          "Restaurant": 454,
+          "Accommodation": 252,
+          "Cafeteria": 200,
+          "Catering": 63,
+          "Bakery /confectionery": 30
+        },
+        "monthly_activity": {
+          "2023-01": 21710,
+          "2023-02": 19805,
+          "2023-03": 20030
+        },
+        "vehicle_fleet": 5
+      },
+      "Service Provider 9": {
+        "performance_metrics": {
+          "Collections": 998.0,
+          "Total_Gallons": 144141.0,
+          "Avg_Gallons": 144.4,
+          "Unique_Entities": 61.0,
+          "Areas_Served": 11.0,
+          "Zones_Served": 6.0,
+          "Vehicles_Used": 4.0,
+          "Avg_Turnaround_Days": 44.6,
+          "Market_Share": 3.33,
+          "Collections_Per_Vehicle": 249.5
+        },
+        "area_coverage": {
+          "Al Quoz": 408,
+          "Al Grhoud": 251,
+          "Al Brsh": 145,
+          "Al Qudr": 117,
+          "Al Krm": 24,
+          "Al Khwneej": 15,
+          "Al Nhd": 12,
+          "Al Awr": 7
+        },
+        "category_specialization": {
+          "Accommodation": 347,
+          "Catering": 237,
+          "Restaurant": 200,
+          "Supermarket": 112,
+          "Bakery /confectionery": 78
+        },
+        "monthly_activity": {
+          "2023-01": 49655,
+          "2023-02": 47338,
+          "2023-03": 47148
+        },
+        "vehicle_fleet": 4
+      },
+      "Service Provider 5": {
+        "performance_metrics": {
+          "Collections": 904.0,
+          "Total_Gallons": 30527.0,
+          "Avg_Gallons": 33.8,
+          "Unique_Entities": 67.0,
+          "Areas_Served": 17.0,
+          "Zones_Served": 6.0,
+          "Vehicles_Used": 6.0,
+          "Avg_Turnaround_Days": 45.1,
+          "Market_Share": 3.02,
+          "Collections_Per_Vehicle": 150.7
+        },
+        "area_coverage": {
+          "Al Brsh": 203,
+          "Al Grhoud": 194,
+          "Al Quoz": 127,
+          "Al Khwneej": 120,
+          "Al Qudr": 50,
+          "Al jddf": 32,
+          "Al Lsl": 32,
+          "Al Mzhr": 29
+        },
+        "category_specialization": {
+          "Restaurant": 371,
+          "Coffee Shop": 269,
+          "Accommodation": 84,
+          "Supermarket": 84,
+          "Catering": 56
+        },
+        "monthly_activity": {
+          "2023-01": 10235,
+          "2023-02": 10041,
+          "2023-03": 10251
+        },
+        "vehicle_fleet": 6
+      },
+      "Service Provider 11": {
+        "performance_metrics": {
+          "Collections": 884.0,
+          "Total_Gallons": 33040.0,
+          "Avg_Gallons": 37.4,
+          "Unique_Entities": 106.0,
+          "Areas_Served": 15.0,
+          "Zones_Served": 6.0,
+          "Vehicles_Used": 6.0,
+          "Avg_Turnaround_Days": 42.2,
+          "Market_Share": 2.95,
+          "Collections_Per_Vehicle": 147.3
+        },
+        "area_coverage": {
+          "Al Brsh": 238,
+          "Al Quoz": 154,
+          "Al Khwneej": 111,
+          "Al Grhoud": 110,
+          "Al Krm": 64,
+          "Al jddf": 53,
+          "Al Nhd": 40,
+          "Acdemc Cty": 30
+        },
+        "category_specialization": {
+          "Restaurant": 538,
+          "Cafeteria": 161,
+          "Catering": 86,
+          "Coffee Shop": 44,
+          "Accommodation": 31
+        },
+        "monthly_activity": {
+          "2023-01": 12315,
+          "2023-02": 10540,
+          "2023-03": 10185
+        },
+        "vehicle_fleet": 6
+      },
+      "Service Provider 6": {
+        "performance_metrics": {
+          "Collections": 744.0,
+          "Total_Gallons": 46175.0,
+          "Avg_Gallons": 62.1,
+          "Unique_Entities": 141.0,
+          "Areas_Served": 16.0,
+          "Zones_Served": 6.0,
+          "Vehicles_Used": 5.0,
+          "Avg_Turnaround_Days": 45.2,
+          "Market_Share": 2.48,
+          "Collections_Per_Vehicle": 148.8
+        },
+        "area_coverage": {
+          "Al Quoz": 257,
+          "Al Brsh": 121,
+          "Al Nhd": 101,
+          "Al Krm": 84,
+          "Al Mmzr": 51,
+          "Al jddf": 28,
+          "Al Khwneej": 22,
+          "Abu Hl": 21
+        },
+        "category_specialization": {
+          "Restaurant": 392,
+          "Cafeteria": 183,
+          "Accommodation": 70,
+          "Catering": 51,
+          "Coffee Shop": 22
+        },
+        "monthly_activity": {
+          "2023-01": 15685,
+          "2023-02": 15045,
+          "2023-03": 15445
+        },
+        "vehicle_fleet": 5
+      },
+      "Service Provider 17": {
+        "performance_metrics": {
+          "Collections": 722.0,
+          "Total_Gallons": 41250.0,
+          "Avg_Gallons": 57.1,
+          "Unique_Entities": 64.0,
+          "Areas_Served": 14.0,
+          "Zones_Served": 5.0,
+          "Vehicles_Used": 3.0,
+          "Avg_Turnaround_Days": 43.6,
+          "Market_Share": 2.41,
+          "Collections_Per_Vehicle": 240.7
+        },
+        "area_coverage": {
+          "Al Quoz": 316,
+          "Al Brsh": 124,
+          "Al Krm": 106,
+          "Al Grhoud": 53,
+          "Al Nhd": 37,
+          "Al Khwneej": 20,
+          "Al Mzhr": 13,
+          "Al Bd": 13
+        },
+        "category_specialization": {
+          "Accommodation": 310,
+          "Restaurant": 304,
+          "Bakery /confectionery": 48,
+          "Cafeteria": 34,
+          "Catering": 18
+        },
+        "monthly_activity": {
+          "2023-01": 14145,
+          "2023-02": 13575,
+          "2023-03": 13530
+        },
+        "vehicle_fleet": 3
+      },
+      "Service Provider 28": {
+        "performance_metrics": {
+          "Collections": 708.0,
+          "Total_Gallons": 48115.0,
+          "Avg_Gallons": 68.0,
+          "Unique_Entities": 106.0,
+          "Areas_Served": 15.0,
+          "Zones_Served": 5.0,
+          "Vehicles_Used": 2.0,
+          "Avg_Turnaround_Days": 45.3,
+          "Market_Share": 2.36,
+          "Collections_Per_Vehicle": 354.0
+        },
+        "area_coverage": {
+          "Al Krm": 299,
+          "Al Quoz": 197,
+          "Al Nhd": 53,
+          "Al Brsh": 43,
+          "Al Bd": 33,
+          "Al Mzhr": 17,
+          "Al Khwneej": 11,
+          "Al Mmzr": 11
+        },
+        "category_specialization": {
+          "Restaurant": 467,
+          "Cafeteria": 112,
+          "Catering": 42,
+          "Accommodation": 28,
+          "Supermarket": 22
+        },
+        "monthly_activity": {
+          "2023-01": 16125,
+          "2023-02": 16080,
+          "2023-03": 15910
+        },
+        "vehicle_fleet": 2
+      },
+      "Service Provider 20": {
+        "performance_metrics": {
+          "Collections": 703.0,
+          "Total_Gallons": 26150.0,
+          "Avg_Gallons": 37.2,
+          "Unique_Entities": 44.0,
+          "Areas_Served": 17.0,
+          "Zones_Served": 7.0,
+          "Vehicles_Used": 3.0,
+          "Avg_Turnaround_Days": 44.9,
+          "Market_Share": 2.35,
+          "Collections_Per_Vehicle": 234.3
+        },
+        "area_coverage": {
+          "Al Brsh": 149,
+          "Al jddf": 126,
+          "Al Krm": 93,
+          "Al Quoz": 87,
+          "Al Mn": 49,
+          "Al Khwneej": 45,
+          "Al Nhd": 30,
+          "Al Awr": 19
+        },
+        "category_specialization": {
+          "Supermarket": 293,
+          "Restaurant": 251,
+          "Cafeteria": 45,
+          "Hotel": 30,
+          "Bakery /confectionery": 30
+        },
+        "monthly_activity": {
+          "2023-01": 8770,
+          "2023-02": 8670,
+          "2023-03": 8710
+        },
+        "vehicle_fleet": 3
+      },
+      "Service Provider 23": {
+        "performance_metrics": {
+          "Collections": 690.0,
+          "Total_Gallons": 36285.0,
+          "Avg_Gallons": 52.6,
+          "Unique_Entities": 105.0,
+          "Areas_Served": 14.0,
+          "Zones_Served": 5.0,
+          "Vehicles_Used": 5.0,
+          "Avg_Turnaround_Days": 44.8,
+          "Market_Share": 2.3,
+          "Collections_Per_Vehicle": 138.0
+        },
+        "area_coverage": {
+          "Al Krm": 208,
+          "Al Nhd": 141,
+          "Al Brsh": 78,
+          "Al Quoz": 78,
+          "Al Bd": 67,
+          "Abu Hl": 39,
+          "Al Grhoud": 38,
+          "Al Brh": 11
+        },
+        "category_specialization": {
+          "Restaurant": 456,
+          "Cafeteria": 109,
+          "Hotel": 43,
+          "Bakery /confectionery": 38,
+          "Coffee Shop": 18
+        },
+        "monthly_activity": {
+          "2023-01": 12370,
+          "2023-02": 12155,
+          "2023-03": 11760
+        },
+        "vehicle_fleet": 5
+      }
+    },
+    "provider_performance": {
+      "market_leader": "Service Provider 4",
+      "most_efficient": "Service Provider 61",
+      "fastest_service": "Service Provider 66",
+      "widest_coverage": "Service Provider 4"
+    },
+    "market_concentration": {
+      "top_5_share": "35.5%",
+      "total_providers": 66,
+      "avg_market_share": "1.52%"
+    }
+  },
+  "operational_analysis": {
+    "fleet_performance": {
+      "top_vehicles": {
+        "O 96259": {
+          "Collections": 795,
+          "Total_Gallons": 28060,
+          "Avg_Gallons": 35.3,
+          "Areas_Served": 4,
+          "Entities_Served": 71
+        },
+        "S 36847": {
+          "Collections": 672,
+          "Total_Gallons": 49295,
+          "Avg_Gallons": 73.4,
+          "Areas_Served": 11,
+          "Entities_Served": 60
+        },
+        "M 45819": {
+          "Collections": 598,
+          "Total_Gallons": 39535,
+          "Avg_Gallons": 66.1,
+          "Areas_Served": 12,
+          "Entities_Served": 109
+        },
+        "L 98369": {
+          "Collections": 579,
+          "Total_Gallons": 22220,
+          "Avg_Gallons": 38.4,
+          "Areas_Served": 17,
+          "Entities_Served": 65
+        },
+        "H 95380": {
+          "Collections": 577,
+          "Total_Gallons": 30815,
+          "Avg_Gallons": 53.4,
+          "Areas_Served": 6,
+          "Entities_Served": 102
+        },
+        "C 29843": {
+          "Collections": 568,
+          "Total_Gallons": 32360,
+          "Avg_Gallons": 57.0,
+          "Areas_Served": 11,
+          "Entities_Served": 54
+        },
+        "Q 51720": {
+          "Collections": 510,
+          "Total_Gallons": 32265,
+          "Avg_Gallons": 63.3,
+          "Areas_Served": 13,
+          "Entities_Served": 88
+        },
+        "I 85178": {
+          "Collections": 487,
+          "Total_Gallons": 8985,
+          "Avg_Gallons": 18.4,
+          "Areas_Served": 3,
+          "Entities_Served": 46
+        },
+        "H 68505": {
+          "Collections": 468,
+          "Total_Gallons": 9700,
+          "Avg_Gallons": 20.7,
+          "Areas_Served": 17,
+          "Entities_Served": 33
+        },
+        "R 64612": {
+          "Collections": 428,
+          "Total_Gallons": 17115,
+          "Avg_Gallons": 40.0,
+          "Areas_Served": 8,
+          "Entities_Served": 43
+        }
+      },
+      "total_vehicles": 167,
+      "avg_collections_per_vehicle": 179.3,
+      "most_productive_vehicle": "O 96259"
+    },
+    "temporal_patterns": {
+      "daily_distribution": {
+        "Tuesday": 4912,
+        "Monday": 4789,
+        "Sunday": 4695,
+        "Saturday": 4588,
+        "Wednesday": 4356,
+        "Friday": 3630,
+        "Thursday": 2975
+      },
+      "monthly_progression": {
+        "2023-01": 10252,
+        "2023-02": 9704,
+        "2023-03": 9989
+      },
+      "peak_day": "Tuesday",
+      "peak_month": "2023-03"
+    },
+    "efficiency_metrics": {
+      "avg_turnaround_days": 45.1,
+      "median_turnaround": 45.0,
+      "fastest_turnaround": 1,
+      "completion_rate": "100.00%"
+    }
+  },
+  "delays_alerts_analysis": {
+    "risk_summary": {
+      "critical": 476,
+      "warning": 883,
+      "upcoming": 858,
+      "normal": 893
+    },
+    "critical_alerts": [
+      {
+        "entity_id": "E-6942",
+        "outlet_name": "Facility 6942",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 12,
+        "last_collection": "2023-03-11",
+        "expected_interval": 18.0
+      },
+      {
+        "entity_id": "E-9231",
+        "outlet_name": "Facility 9231",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "days_overdue": 17,
+        "last_collection": "2023-03-07",
+        "expected_interval": 16.2
+      },
+      {
+        "entity_id": "E-10452",
+        "outlet_name": "Facility 10452",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 15,
+        "last_collection": "2023-03-09",
+        "expected_interval": 16.5
+      },
+      {
+        "entity_id": "E-10594",
+        "outlet_name": "Facility 10594",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 11,
+        "last_collection": "2023-03-15",
+        "expected_interval": 14.2
+      },
+      {
+        "entity_id": "E-10403",
+        "outlet_name": "Facility 10403",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "days_overdue": 34,
+        "last_collection": "2023-02-14",
+        "expected_interval": 21.0
+      },
+      {
+        "entity_id": "E-2607",
+        "outlet_name": "Facility 2607",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 17,
+        "last_collection": "2023-03-04",
+        "expected_interval": 19.3
+      },
+      {
+        "entity_id": "E-6261",
+        "outlet_name": "Facility 6261",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 12,
+        "last_collection": "2023-03-12",
+        "expected_interval": 16.8
+      },
+      {
+        "entity_id": "E-6780",
+        "outlet_name": "Facility 6780",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 33,
+        "last_collection": "2023-02-21",
+        "expected_interval": 14.7
+      },
+      {
+        "entity_id": "E-4482",
+        "outlet_name": "Facility 4482",
+        "category": "Hotel",
+        "area": "Abu Hl",
+        "days_overdue": 27,
+        "last_collection": "2023-02-25",
+        "expected_interval": 16.7
+      },
+      {
+        "entity_id": "E-12407",
+        "outlet_name": "Facility 12407",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "days_overdue": 15,
+        "last_collection": "2023-03-01",
+        "expected_interval": 25.0
+      },
+      {
+        "entity_id": "E-849",
+        "outlet_name": "Facility 849",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "days_overdue": 15,
+        "last_collection": "2023-02-28",
+        "expected_interval": 25.5
+      },
+      {
+        "entity_id": "E-12264",
+        "outlet_name": "Facility 12264",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "days_overdue": 14,
+        "last_collection": "2023-03-16",
+        "expected_interval": 11.0
+      },
+      {
+        "entity_id": "E-3471",
+        "outlet_name": "Facility 3471",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "days_overdue": 12,
+        "last_collection": "2023-03-20",
+        "expected_interval": 8.6
+      },
+      {
+        "entity_id": "E-1262",
+        "outlet_name": "Facility 1262",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "days_overdue": 25,
+        "last_collection": "2023-02-27",
+        "expected_interval": 16.3
+      },
+      {
+        "entity_id": "E-1891",
+        "outlet_name": "Facility 1891",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "days_overdue": 13,
+        "last_collection": "2023-03-21",
+        "expected_interval": 6.2
+      },
+      {
+        "entity_id": "E-12196",
+        "outlet_name": "Facility 12196",
+        "category": "Bakery /confectionery",
+        "area": "Acdemc Cty",
+        "days_overdue": 47,
+        "last_collection": "2023-02-05",
+        "expected_interval": 16.5
+      },
+      {
+        "entity_id": "E-11773",
+        "outlet_name": "Facility 11773",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "days_overdue": 11,
+        "last_collection": "2023-03-14",
+        "expected_interval": 16.0
+      },
+      {
+        "entity_id": "E-12436",
+        "outlet_name": "Facility 12436",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "days_overdue": 13,
+        "last_collection": "2023-03-02",
+        "expected_interval": 25.5
+      },
+      {
+        "entity_id": "E-11263",
+        "outlet_name": "Facility 11263",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "days_overdue": 20,
+        "last_collection": "2023-03-15",
+        "expected_interval": 5.2
+      },
+      {
+        "entity_id": "E-9123",
+        "outlet_name": "Facility 9123",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "days_overdue": 13,
+        "last_collection": "2023-03-19",
+        "expected_interval": 8.2
+      }
+    ],
+    "delay_patterns": {
+      "by_area": {
+        "Abu Hl": {
+          "critical": 11,
+          "warning": 18,
+          "total": 59
+        },
+        "Al Quoz": {
+          "critical": 131,
+          "warning": 196,
+          "total": 781
+        },
+        "Acdemc Cty": {
+          "critical": 8,
+          "warning": 4,
+          "total": 26
+        },
+        "Al Brh": {
+          "critical": 5,
+          "warning": 9,
+          "total": 42
+        },
+        "Al Awr": {
+          "critical": 6,
+          "warning": 12,
+          "total": 43
+        },
+        "Al Bd": {
+          "critical": 4,
+          "warning": 30,
+          "total": 80
+        },
+        "Al Brr": {
+          "critical": 4,
+          "warning": 4,
+          "total": 12
+        },
+        "Al Brsh": {
+          "critical": 105,
+          "warning": 208,
+          "total": 693
+        },
+        "Al Qudr": {
+          "critical": 5,
+          "warning": 11,
+          "total": 37
+        },
+        "Al Jfly": {
+          "critical": 6,
+          "warning": 9,
+          "total": 32
+        },
+        "Al Khwneej": {
+          "critical": 30,
+          "warning": 36,
+          "total": 147
+        },
+        "Al Furjn": {
+          "critical": 2,
+          "warning": 2,
+          "total": 22
+        },
+        "Al Grhoud": {
+          "critical": 21,
+          "warning": 40,
+          "total": 136
+        },
+        "Al Khbs": {
+          "critical": 7,
+          "warning": 9,
+          "total": 29
+        },
+        "Al jddf": {
+          "critical": 10,
+          "warning": 30,
+          "total": 86
+        },
+        "Al Krm": {
+          "critical": 66,
+          "warning": 159,
+          "total": 502
+        },
+        "Al Lsl": {
+          "critical": 12,
+          "warning": 2,
+          "total": 37
+        },
+        "Al Mmzr": {
+          "critical": 4,
+          "warning": 15,
+          "total": 39
+        },
+        "Al Mn": {
+          "critical": 7,
+          "warning": 19,
+          "total": 44
+        },
+        "Al Mnr": {
+          "critical": 3,
+          "warning": 2,
+          "total": 16
+        },
+        "Al Mrmoom": {
+          "critical": 1,
+          "warning": 0,
+          "total": 1
+        },
+        "Al Mzhr": {
+          "critical": 7,
+          "warning": 10,
+          "total": 52
+        },
+        "Al Nhd": {
+          "critical": 21,
+          "warning": 58,
+          "total": 194
+        }
+      },
+      "by_category": {
+        "Restaurant": {
+          "critical": 232,
+          "warning": 487,
+          "total": 1642
+        },
+        "Coffee Shop": {
+          "critical": 34,
+          "warning": 46,
+          "total": 198
+        },
+        "Bakery /confectionery": {
+          "critical": 29,
+          "warning": 41,
+          "total": 152
+        },
+        "Accommodation": {
+          "critical": 23,
+          "warning": 61,
+          "total": 208
+        },
+        "Cafeteria": {
+          "critical": 90,
+          "warning": 114,
+          "total": 435
+        },
+        "Catering": {
+          "critical": 27,
+          "warning": 50,
+          "total": 173
+        },
+        "Supermarket": {
+          "critical": 22,
+          "warning": 50,
+          "total": 164
+        },
+        "Hotel": {
+          "critical": 14,
+          "warning": 32,
+          "total": 111
+        },
+        "School": {
+          "critical": 1,
+          "warning": 0,
+          "total": 5
+        },
+        "Mall": {
+          "critical": 3,
+          "warning": 2,
+          "total": 17
+        },
+        "Hospital": {
+          "critical": 1,
+          "warning": 0,
+          "total": 5
+        }
+      },
+      "high_risk_areas": [
+        "Al Quoz",
+        "Al Brsh",
+        "Al Krm",
+        "Al Khwneej",
+        "Al Grhoud",
+        "Al Nhd",
+        "Al Lsl",
+        "Abu Hl",
+        "Al jddf",
+        "Acdemc Cty"
+      ],
+      "high_risk_categories": [
+        "Restaurant",
+        "Cafeteria",
+        "Coffee Shop",
+        "Bakery /confectionery",
+        "Catering"
+      ]
+    },
+    "intelligence_insights": {
+      "total_entities_analyzed": 3110,
+      "entities_with_delays": 1359,
+      "delay_rate": "43.7%",
+      "avg_overdue_days": 8.8
+    }
+  },
+  "entity_intelligence": {
+    "high_value_entities": {
+      "E-1083": {
+        "Total_Gallons": 77756,
+        "Avg_Gallons": 854.5,
+        "Collections": 91,
+        "Outlet": "Facility 1083",
+        "Category": "Catering",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 9"
+      },
+      "E-639": {
+        "Total_Gallons": 41295,
+        "Avg_Gallons": 305.9,
+        "Collections": 135,
+        "Outlet": "Facility 639",
+        "Category": "Mall",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 10"
+      },
+      "E-4316": {
+        "Total_Gallons": 14100,
+        "Avg_Gallons": 167.9,
+        "Collections": 84,
+        "Outlet": "Facility 4316",
+        "Category": "Accommodation",
+        "Area": "Al Awr",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-7298": {
+        "Total_Gallons": 13000,
+        "Avg_Gallons": 100.0,
+        "Collections": 130,
+        "Outlet": "Facility 7298",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 18"
+      },
+      "E-1197": {
+        "Total_Gallons": 11700,
+        "Avg_Gallons": 100.0,
+        "Collections": 117,
+        "Outlet": "Facility 1197",
+        "Category": "Accommodation",
+        "Area": "Al Qudr",
+        "Zone": "Jebel Al",
+        "Provider": "Service Provider 9"
+      },
+      "E-9165": {
+        "Total_Gallons": 10410,
+        "Avg_Gallons": 102.1,
+        "Collections": 102,
+        "Outlet": "Facility 9165",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 10"
+      },
+      "E-4332": {
+        "Total_Gallons": 9600,
+        "Avg_Gallons": 100.0,
+        "Collections": 96,
+        "Outlet": "Facility 4332",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 40"
+      },
+      "E-1511": {
+        "Total_Gallons": 8442,
+        "Avg_Gallons": 703.5,
+        "Collections": 12,
+        "Outlet": "Facility 1511",
+        "Category": "Hotel",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 49"
+      },
+      "E-4169": {
+        "Total_Gallons": 8400,
+        "Avg_Gallons": 700.0,
+        "Collections": 12,
+        "Outlet": "Facility 4169",
+        "Category": "Catering",
+        "Area": "Al Awr",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-5143": {
+        "Total_Gallons": 6345,
+        "Avg_Gallons": 135.0,
+        "Collections": 47,
+        "Outlet": "Facility 5143",
+        "Category": "Accommodation",
+        "Area": "Al Awr",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 10"
+      },
+      "E-64": {
+        "Total_Gallons": 6300,
+        "Avg_Gallons": 165.8,
+        "Collections": 38,
+        "Outlet": "Facility 64",
+        "Category": "Accommodation",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 25"
+      },
+      "E-4335": {
+        "Total_Gallons": 6210,
+        "Avg_Gallons": 135.0,
+        "Collections": 46,
+        "Outlet": "Facility 4335",
+        "Category": "Accommodation",
+        "Area": "Al Khwneej",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-2445": {
+        "Total_Gallons": 5850,
+        "Avg_Gallons": 51.3,
+        "Collections": 114,
+        "Outlet": "Facility 2445",
+        "Category": "Mall",
+        "Area": "Al Khwneej",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 49"
+      },
+      "E-2112": {
+        "Total_Gallons": 5710,
+        "Avg_Gallons": 103.8,
+        "Collections": 55,
+        "Outlet": "Facility 2112",
+        "Category": "Hotel",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 30"
+      },
+      "E-5122": {
+        "Total_Gallons": 5400,
+        "Avg_Gallons": 100.0,
+        "Collections": 54,
+        "Outlet": "Facility 5122",
+        "Category": "Bakery /confectionery",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 1"
+      },
+      "E-405": {
+        "Total_Gallons": 5340,
+        "Avg_Gallons": 890.0,
+        "Collections": 6,
+        "Outlet": "Facility 405",
+        "Category": "Hotel",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 4"
+      },
+      "E-2770": {
+        "Total_Gallons": 5220,
+        "Avg_Gallons": 108.8,
+        "Collections": 48,
+        "Outlet": "Facility 2770",
+        "Category": "Hotel",
+        "Area": "Al jddf",
+        "Zone": "Bur Dub",
+        "Provider": "Service Provider 10"
+      },
+      "E-1242": {
+        "Total_Gallons": 5010,
+        "Avg_Gallons": 104.4,
+        "Collections": 48,
+        "Outlet": "Facility 1242",
+        "Category": "Mall",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 4"
+      },
+      "E-8730": {
+        "Total_Gallons": 4980,
+        "Avg_Gallons": 51.9,
+        "Collections": 96,
+        "Outlet": "Facility 8730",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 17"
+      },
+      "E-642": {
+        "Total_Gallons": 4860,
+        "Avg_Gallons": 135.0,
+        "Collections": 36,
+        "Outlet": "Facility 642",
+        "Category": "Accommodation",
+        "Area": "Al Khwneej",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-274": {
+        "Total_Gallons": 4800,
+        "Avg_Gallons": 145.5,
+        "Collections": 33,
+        "Outlet": "Facility 274",
+        "Category": "Hotel",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 4"
+      },
+      "E-5168": {
+        "Total_Gallons": 4660,
+        "Avg_Gallons": 95.1,
+        "Collections": 49,
+        "Outlet": "Facility 5168",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 8"
+      },
+      "E-4286": {
+        "Total_Gallons": 4540,
+        "Avg_Gallons": 92.7,
+        "Collections": 49,
+        "Outlet": "Facility 4286",
+        "Category": "Hotel",
+        "Area": "Al Grhoud",
+        "Zone": "Der",
+        "Provider": "Service Provider 40"
+      },
+      "E-356": {
+        "Total_Gallons": 4500,
+        "Avg_Gallons": 375.0,
+        "Collections": 12,
+        "Outlet": "Facility 356",
+        "Category": "Mall",
+        "Area": "Al Khwneej",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-2051": {
+        "Total_Gallons": 4400,
+        "Avg_Gallons": 169.2,
+        "Collections": 26,
+        "Outlet": "Facility 2051",
+        "Category": "Bakery /confectionery",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 9"
+      },
+      "E-2182": {
+        "Total_Gallons": 4390,
+        "Avg_Gallons": 93.4,
+        "Collections": 47,
+        "Outlet": "Facility 2182",
+        "Category": "Mall",
+        "Area": "Al Brr",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 4"
+      },
+      "E-685": {
+        "Total_Gallons": 4155,
+        "Avg_Gallons": 38.8,
+        "Collections": 107,
+        "Outlet": "Facility 685",
+        "Category": "Restaurant",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 30"
+      },
+      "E-3121": {
+        "Total_Gallons": 4095,
+        "Avg_Gallons": 99.9,
+        "Collections": 41,
+        "Outlet": "Facility 3121",
+        "Category": "Supermarket",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 4"
+      },
+      "E-9280": {
+        "Total_Gallons": 4080,
+        "Avg_Gallons": 85.0,
+        "Collections": 48,
+        "Outlet": "Facility 9280",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 17"
+      },
+      "E-3141": {
+        "Total_Gallons": 4050,
+        "Avg_Gallons": 135.0,
+        "Collections": 30,
+        "Outlet": "Facility 3141",
+        "Category": "Accommodation",
+        "Area": "Al Awr",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 51"
+      },
+      "E-10573": {
+        "Total_Gallons": 4050,
+        "Avg_Gallons": 135.0,
+        "Collections": 30,
+        "Outlet": "Facility 10573",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 51"
+      },
+      "E-10531": {
+        "Total_Gallons": 3915,
+        "Avg_Gallons": 135.0,
+        "Collections": 29,
+        "Outlet": "Facility 10531",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 50"
+      },
+      "E-7276": {
+        "Total_Gallons": 3815,
+        "Avg_Gallons": 119.2,
+        "Collections": 32,
+        "Outlet": "Facility 7276",
+        "Category": "Accommodation",
+        "Area": "Al Lsl",
+        "Zone": "Rs Al Khor",
+        "Provider": "Service Provider 5"
+      },
+      "E-8606": {
+        "Total_Gallons": 3800,
+        "Avg_Gallons": 40.0,
+        "Collections": 95,
+        "Outlet": "Facility 8606",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 10"
+      },
+      "E-4295": {
+        "Total_Gallons": 3780,
+        "Avg_Gallons": 135.0,
+        "Collections": 28,
+        "Outlet": "Facility 4295",
+        "Category": "Accommodation",
+        "Area": "Al Mn",
+        "Zone": "Bur Dub",
+        "Provider": "Service Provider 62"
+      },
+      "E-1780": {
+        "Total_Gallons": 3765,
+        "Avg_Gallons": 101.8,
+        "Collections": 37,
+        "Outlet": "Facility 1780",
+        "Category": "Supermarket",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 9"
+      },
+      "E-9952": {
+        "Total_Gallons": 3600,
+        "Avg_Gallons": 600.0,
+        "Collections": 6,
+        "Outlet": "Facility 9952",
+        "Category": "Hotel",
+        "Area": "Al Jfly",
+        "Zone": "Bur Dub",
+        "Provider": "Service Provider 10"
+      },
+      "E-1174": {
+        "Total_Gallons": 3600,
+        "Avg_Gallons": 37.5,
+        "Collections": 96,
+        "Outlet": "Facility 1174",
+        "Category": "Catering",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 8"
+      },
+      "E-4195": {
+        "Total_Gallons": 3500,
+        "Avg_Gallons": 100.0,
+        "Collections": 35,
+        "Outlet": "Facility 4195",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 49"
+      },
+      "E-303": {
+        "Total_Gallons": 3420,
+        "Avg_Gallons": 114.0,
+        "Collections": 30,
+        "Outlet": "Facility 303",
+        "Category": "Supermarket",
+        "Area": "Al Nhd",
+        "Zone": "Al Quss",
+        "Provider": "Service Provider 4"
+      },
+      "E-1673": {
+        "Total_Gallons": 3390,
+        "Avg_Gallons": 20.9,
+        "Collections": 162,
+        "Outlet": "Facility 1673",
+        "Category": "Hotel",
+        "Area": "Al Mn",
+        "Zone": "Bur Dub",
+        "Provider": "Service Provider 10"
+      },
+      "E-4192": {
+        "Total_Gallons": 3240,
+        "Avg_Gallons": 135.0,
+        "Collections": 24,
+        "Outlet": "Facility 4192",
+        "Category": "Restaurant",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 11"
+      },
+      "E-2516": {
+        "Total_Gallons": 3240,
+        "Avg_Gallons": 135.0,
+        "Collections": 24,
+        "Outlet": "Facility 2516",
+        "Category": "Mall",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 30"
+      },
+      "E-5111": {
+        "Total_Gallons": 3240,
+        "Avg_Gallons": 135.0,
+        "Collections": 24,
+        "Outlet": "Facility 5111",
+        "Category": "Accommodation",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 17"
+      },
+      "E-10763": {
+        "Total_Gallons": 3240,
+        "Avg_Gallons": 135.0,
+        "Collections": 24,
+        "Outlet": "Facility 10763",
+        "Category": "Mall",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 10"
+      },
+      "E-261": {
+        "Total_Gallons": 3240,
+        "Avg_Gallons": 135.0,
+        "Collections": 24,
+        "Outlet": "Facility 261",
+        "Category": "Hotel",
+        "Area": "Al Krm",
+        "Zone": "Bur Dub",
+        "Provider": "Service Provider 8"
+      },
+      "E-3414": {
+        "Total_Gallons": 3190,
+        "Avg_Gallons": 17.3,
+        "Collections": 184,
+        "Outlet": "Facility 3414",
+        "Category": "Supermarket",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 20"
+      },
+      "E-437": {
+        "Total_Gallons": 3150,
+        "Avg_Gallons": 78.8,
+        "Collections": 40,
+        "Outlet": "Facility 437",
+        "Category": "Supermarket",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 4"
+      },
+      "E-5738": {
+        "Total_Gallons": 3120,
+        "Avg_Gallons": 86.7,
+        "Collections": 36,
+        "Outlet": "Facility 5738",
+        "Category": "Restaurant",
+        "Area": "Al Brsh",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 30"
+      },
+      "E-2281": {
+        "Total_Gallons": 2970,
+        "Avg_Gallons": 135.0,
+        "Collections": 22,
+        "Outlet": "Facility 2281",
+        "Category": "Bakery /confectionery",
+        "Area": "Al Quoz",
+        "Zone": "Al Quoz",
+        "Provider": "Service Provider 9"
+      }
+    },
+    "detailed_outlet_analysis": {
+      "E-1083": {
+        "outlet_name": "Facility 1083",
+        "category": "Catering",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 9",
+        "total_gallons": 77756,
+        "avg_gallons": 854.5,
+        "collections": 91,
+        "monthly_breakdown": {
+          "2023-01": 26360,
+          "2023-02": 25698,
+          "2023-03": 25698
+        },
+        "primary_vehicle": "D 42491"
+      },
+      "E-639": {
+        "outlet_name": "Facility 639",
+        "category": "Mall",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 10",
+        "total_gallons": 41295,
+        "avg_gallons": 305.9,
+        "collections": 135,
+        "monthly_breakdown": {
+          "2023-01": 13765,
+          "2023-02": 13765,
+          "2023-03": 13765
+        },
+        "primary_vehicle": "E 11409"
+      },
+      "E-4316": {
+        "outlet_name": "Facility 4316",
+        "category": "Accommodation",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 14100,
+        "avg_gallons": 167.9,
+        "collections": 84,
+        "monthly_breakdown": {
+          "2023-01": 4700,
+          "2023-02": 4700,
+          "2023-03": 4700
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-7298": {
+        "outlet_name": "Facility 7298",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 18",
+        "total_gallons": 13000,
+        "avg_gallons": 100.0,
+        "collections": 130,
+        "monthly_breakdown": {
+          "2023-01": 4400,
+          "2023-02": 2200,
+          "2023-03": 6400
+        },
+        "primary_vehicle": "B 38979"
+      },
+      "E-1197": {
+        "outlet_name": "Facility 1197",
+        "category": "Accommodation",
+        "area": "Al Qudr",
+        "zone": "Jebel Al",
+        "provider": "Service Provider 9",
+        "total_gallons": 11700,
+        "avg_gallons": 100.0,
+        "collections": 117,
+        "monthly_breakdown": {
+          "2023-01": 4200,
+          "2023-02": 3600,
+          "2023-03": 3900
+        },
+        "primary_vehicle": "S 36847"
+      },
+      "E-9165": {
+        "outlet_name": "Facility 9165",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 10",
+        "total_gallons": 10410,
+        "avg_gallons": 102.1,
+        "collections": 102,
+        "monthly_breakdown": {
+          "2023-01": 3470,
+          "2023-02": 3470,
+          "2023-03": 3470
+        },
+        "primary_vehicle": "B 64674"
+      },
+      "E-4332": {
+        "outlet_name": "Facility 4332",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 40",
+        "total_gallons": 9600,
+        "avg_gallons": 100.0,
+        "collections": 96,
+        "monthly_breakdown": {
+          "2023-01": 3200,
+          "2023-02": 3200,
+          "2023-03": 3200
+        },
+        "primary_vehicle": "G 49124"
+      },
+      "E-1511": {
+        "outlet_name": "Facility 1511",
+        "category": "Hotel",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 49",
+        "total_gallons": 8442,
+        "avg_gallons": 703.5,
+        "collections": 12,
+        "monthly_breakdown": {
+          "2023-01": 2814,
+          "2023-02": 2814,
+          "2023-03": 2814
+        },
+        "primary_vehicle": "S 65379"
+      },
+      "E-4169": {
+        "outlet_name": "Facility 4169",
+        "category": "Catering",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 8400,
+        "avg_gallons": 700.0,
+        "collections": 12,
+        "monthly_breakdown": {
+          "2023-01": 2800,
+          "2023-02": 2800,
+          "2023-03": 2800
+        },
+        "primary_vehicle": "B 37216"
+      },
+      "E-5143": {
+        "outlet_name": "Facility 5143",
+        "category": "Accommodation",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 10",
+        "total_gallons": 6345,
+        "avg_gallons": 135.0,
+        "collections": 47,
+        "monthly_breakdown": {
+          "2023-01": 2160,
+          "2023-02": 2160,
+          "2023-03": 2025
+        },
+        "primary_vehicle": "AA / 37183"
+      },
+      "E-64": {
+        "outlet_name": "Facility 64",
+        "category": "Accommodation",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 25",
+        "total_gallons": 6300,
+        "avg_gallons": 165.8,
+        "collections": 38,
+        "monthly_breakdown": {
+          "2023-01": 1620,
+          "2023-02": 1620,
+          "2023-03": 3060
+        },
+        "primary_vehicle": "C 29843"
+      },
+      "E-4335": {
+        "outlet_name": "Facility 4335",
+        "category": "Accommodation",
+        "area": "Al Khwneej",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 6210,
+        "avg_gallons": 135.0,
+        "collections": 46,
+        "monthly_breakdown": {
+          "2023-01": 2160,
+          "2023-02": 2160,
+          "2023-03": 1890
+        },
+        "primary_vehicle": "J 81876"
+      },
+      "E-2445": {
+        "outlet_name": "Facility 2445",
+        "category": "Mall",
+        "area": "Al Khwneej",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 49",
+        "total_gallons": 5850,
+        "avg_gallons": 51.3,
+        "collections": 114,
+        "monthly_breakdown": {
+          "2023-01": 1950,
+          "2023-02": 1950,
+          "2023-03": 1950
+        },
+        "primary_vehicle": "I 90123"
+      },
+      "E-2112": {
+        "outlet_name": "Facility 2112",
+        "category": "Hotel",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 30",
+        "total_gallons": 5710,
+        "avg_gallons": 103.8,
+        "collections": 55,
+        "monthly_breakdown": {
+          "2023-01": 2190,
+          "2023-02": 1760,
+          "2023-03": 1760
+        },
+        "primary_vehicle": "P 64054"
+      },
+      "E-5122": {
+        "outlet_name": "Facility 5122",
+        "category": "Bakery /confectionery",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 1",
+        "total_gallons": 5400,
+        "avg_gallons": 100.0,
+        "collections": 54,
+        "monthly_breakdown": {
+          "2023-01": 1800,
+          "2023-02": 1800,
+          "2023-03": 1800
+        },
+        "primary_vehicle": "I 72838"
+      },
+      "E-405": {
+        "outlet_name": "Facility 405",
+        "category": "Hotel",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 4",
+        "total_gallons": 5340,
+        "avg_gallons": 890.0,
+        "collections": 6,
+        "monthly_breakdown": {
+          "2023-01": 1780,
+          "2023-02": 1780,
+          "2023-03": 1780
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-2770": {
+        "outlet_name": "Facility 2770",
+        "category": "Hotel",
+        "area": "Al jddf",
+        "zone": "Bur Dub",
+        "provider": "Service Provider 10",
+        "total_gallons": 5220,
+        "avg_gallons": 108.8,
+        "collections": 48,
+        "monthly_breakdown": {
+          "2023-01": 1740,
+          "2023-02": 1740,
+          "2023-03": 1740
+        },
+        "primary_vehicle": "B 64674"
+      },
+      "E-1242": {
+        "outlet_name": "Facility 1242",
+        "category": "Mall",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 4",
+        "total_gallons": 5010,
+        "avg_gallons": 104.4,
+        "collections": 48,
+        "monthly_breakdown": {
+          "2023-01": 1670,
+          "2023-02": 1435,
+          "2023-03": 1905
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-8730": {
+        "outlet_name": "Facility 8730",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 17",
+        "total_gallons": 4980,
+        "avg_gallons": 51.9,
+        "collections": 96,
+        "monthly_breakdown": {
+          "2023-01": 1660,
+          "2023-02": 1660,
+          "2023-03": 1660
+        },
+        "primary_vehicle": "K 83277"
+      },
+      "E-642": {
+        "outlet_name": "Facility 642",
+        "category": "Accommodation",
+        "area": "Al Khwneej",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 4860,
+        "avg_gallons": 135.0,
+        "collections": 36,
+        "monthly_breakdown": {
+          "2023-01": 1620,
+          "2023-02": 1620,
+          "2023-03": 1620
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-274": {
+        "outlet_name": "Facility 274",
+        "category": "Hotel",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 4",
+        "total_gallons": 4800,
+        "avg_gallons": 145.5,
+        "collections": 33,
+        "monthly_breakdown": {
+          "2023-01": 1600,
+          "2023-02": 925,
+          "2023-03": 2275
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-5168": {
+        "outlet_name": "Facility 5168",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 8",
+        "total_gallons": 4660,
+        "avg_gallons": 95.1,
+        "collections": 49,
+        "monthly_breakdown": {
+          "2023-01": 1880,
+          "2023-02": 1840,
+          "2023-03": 940
+        },
+        "primary_vehicle": "M 45819"
+      },
+      "E-4286": {
+        "outlet_name": "Facility 4286",
+        "category": "Hotel",
+        "area": "Al Grhoud",
+        "zone": "Der",
+        "provider": "Service Provider 40",
+        "total_gallons": 4540,
+        "avg_gallons": 92.7,
+        "collections": 49,
+        "monthly_breakdown": {
+          "2023-01": 1500,
+          "2023-02": 1500,
+          "2023-03": 1540
+        },
+        "primary_vehicle": "O 49769"
+      },
+      "E-356": {
+        "outlet_name": "Facility 356",
+        "category": "Mall",
+        "area": "Al Khwneej",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 4500,
+        "avg_gallons": 375.0,
+        "collections": 12,
+        "monthly_breakdown": {
+          "2023-01": 2250,
+          "2023-02": 750,
+          "2023-03": 1500
+        },
+        "primary_vehicle": "B 37216"
+      },
+      "E-2051": {
+        "outlet_name": "Facility 2051",
+        "category": "Bakery /confectionery",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 9",
+        "total_gallons": 4400,
+        "avg_gallons": 169.2,
+        "collections": 26,
+        "monthly_breakdown": {
+          "2023-01": 1300,
+          "2023-02": 1600,
+          "2023-03": 1500
+        },
+        "primary_vehicle": "G 53640"
+      },
+      "E-2182": {
+        "outlet_name": "Facility 2182",
+        "category": "Mall",
+        "area": "Al Brr",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 4",
+        "total_gallons": 4390,
+        "avg_gallons": 93.4,
+        "collections": 47,
+        "monthly_breakdown": {
+          "2023-01": 610,
+          "2023-02": 1890,
+          "2023-03": 1890
+        },
+        "primary_vehicle": "P 35782"
+      },
+      "E-685": {
+        "outlet_name": "Facility 685",
+        "category": "Restaurant",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 30",
+        "total_gallons": 4155,
+        "avg_gallons": 38.8,
+        "collections": 107,
+        "monthly_breakdown": {
+          "2023-01": 1405,
+          "2023-02": 1360,
+          "2023-03": 1390
+        },
+        "primary_vehicle": "O 96259"
+      },
+      "E-3121": {
+        "outlet_name": "Facility 3121",
+        "category": "Supermarket",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 4",
+        "total_gallons": 4095,
+        "avg_gallons": 99.9,
+        "collections": 41,
+        "monthly_breakdown": {
+          "2023-01": 1370,
+          "2023-02": 1370,
+          "2023-03": 1355
+        },
+        "primary_vehicle": "18181"
+      },
+      "E-9280": {
+        "outlet_name": "Facility 9280",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 17",
+        "total_gallons": 4080,
+        "avg_gallons": 85.0,
+        "collections": 48,
+        "monthly_breakdown": {
+          "2023-01": 1360,
+          "2023-02": 1360,
+          "2023-03": 1360
+        },
+        "primary_vehicle": "K 83277"
+      },
+      "E-3141": {
+        "outlet_name": "Facility 3141",
+        "category": "Accommodation",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 51",
+        "total_gallons": 4050,
+        "avg_gallons": 135.0,
+        "collections": 30,
+        "monthly_breakdown": {
+          "2023-01": 1350,
+          "2023-02": 1350,
+          "2023-03": 1350
+        },
+        "primary_vehicle": "K 42297"
+      },
+      "E-10573": {
+        "outlet_name": "Facility 10573",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 51",
+        "total_gallons": 4050,
+        "avg_gallons": 135.0,
+        "collections": 30,
+        "monthly_breakdown": {
+          "2023-01": 1350,
+          "2023-02": 1350,
+          "2023-03": 1350
+        },
+        "primary_vehicle": "K 42297"
+      },
+      "E-10531": {
+        "outlet_name": "Facility 10531",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 50",
+        "total_gallons": 3915,
+        "avg_gallons": 135.0,
+        "collections": 29,
+        "monthly_breakdown": {
+          "2023-01": 405,
+          "2023-02": 1350,
+          "2023-03": 2160
+        },
+        "primary_vehicle": "H 95380"
+      },
+      "E-7276": {
+        "outlet_name": "Facility 7276",
+        "category": "Accommodation",
+        "area": "Al Lsl",
+        "zone": "Rs Al Khor",
+        "provider": "Service Provider 5",
+        "total_gallons": 3815,
+        "avg_gallons": 119.2,
+        "collections": 32,
+        "monthly_breakdown": {
+          "2023-01": 735,
+          "2023-02": 1510,
+          "2023-03": 1570
+        },
+        "primary_vehicle": "I 50593"
+      },
+      "E-8606": {
+        "outlet_name": "Facility 8606",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 10",
+        "total_gallons": 3800,
+        "avg_gallons": 40.0,
+        "collections": 95,
+        "monthly_breakdown": {
+          "2023-01": 1280,
+          "2023-02": 1280,
+          "2023-03": 1240
+        },
+        "primary_vehicle": "C 79566"
+      },
+      "E-4295": {
+        "outlet_name": "Facility 4295",
+        "category": "Accommodation",
+        "area": "Al Mn",
+        "zone": "Bur Dub",
+        "provider": "Service Provider 62",
+        "total_gallons": 3780,
+        "avg_gallons": 135.0,
+        "collections": 28,
+        "monthly_breakdown": {
+          "2023-01": 1350,
+          "2023-02": 1080,
+          "2023-03": 1350
+        },
+        "primary_vehicle": "F 34654"
+      },
+      "E-1780": {
+        "outlet_name": "Facility 1780",
+        "category": "Supermarket",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 9",
+        "total_gallons": 3765,
+        "avg_gallons": 101.8,
+        "collections": 37,
+        "monthly_breakdown": {
+          "2023-01": 1345,
+          "2023-02": 1210,
+          "2023-03": 1210
+        },
+        "primary_vehicle": "S 36847"
+      },
+      "E-9952": {
+        "outlet_name": "Facility 9952",
+        "category": "Hotel",
+        "area": "Al Jfly",
+        "zone": "Bur Dub",
+        "provider": "Service Provider 10",
+        "total_gallons": 3600,
+        "avg_gallons": 600.0,
+        "collections": 6,
+        "monthly_breakdown": {
+          "2023-01": 1800,
+          "2023-02": 600,
+          "2023-03": 1200
+        },
+        "primary_vehicle": "AA / 37183"
+      },
+      "E-1174": {
+        "outlet_name": "Facility 1174",
+        "category": "Catering",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 8",
+        "total_gallons": 3600,
+        "avg_gallons": 37.5,
+        "collections": 96,
+        "monthly_breakdown": {
+          "2023-01": 1200,
+          "2023-02": 1200,
+          "2023-03": 1200
+        },
+        "primary_vehicle": "R 27841"
+      },
+      "E-4195": {
+        "outlet_name": "Facility 4195",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 49",
+        "total_gallons": 3500,
+        "avg_gallons": 100.0,
+        "collections": 35,
+        "monthly_breakdown": {
+          "2023-01": 1500,
+          "2023-02": 1000,
+          "2023-03": 1000
+        },
+        "primary_vehicle": "I 90123"
+      },
+      "E-303": {
+        "outlet_name": "Facility 303",
+        "category": "Supermarket",
+        "area": "Al Nhd",
+        "zone": "Al Quss",
+        "provider": "Service Provider 4",
+        "total_gallons": 3420,
+        "avg_gallons": 114.0,
+        "collections": 30,
+        "monthly_breakdown": {
+          "2023-01": 1140,
+          "2023-02": 1140,
+          "2023-03": 1140
+        },
+        "primary_vehicle": "B 37216"
+      },
+      "E-1673": {
+        "outlet_name": "Facility 1673",
+        "category": "Hotel",
+        "area": "Al Mn",
+        "zone": "Bur Dub",
+        "provider": "Service Provider 10",
+        "total_gallons": 3390,
+        "avg_gallons": 20.9,
+        "collections": 162,
+        "monthly_breakdown": {
+          "2023-01": 1130,
+          "2023-02": 1130,
+          "2023-03": 1130
+        },
+        "primary_vehicle": "W 96149"
+      },
+      "E-4192": {
+        "outlet_name": "Facility 4192",
+        "category": "Restaurant",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 11",
+        "total_gallons": 3240,
+        "avg_gallons": 135.0,
+        "collections": 24,
+        "monthly_breakdown": {
+          "2023-01": 1080,
+          "2023-02": 1080,
+          "2023-03": 1080
+        },
+        "primary_vehicle": "P 38516"
+      },
+      "E-2516": {
+        "outlet_name": "Facility 2516",
+        "category": "Mall",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 30",
+        "total_gallons": 3240,
+        "avg_gallons": 135.0,
+        "collections": 24,
+        "monthly_breakdown": {
+          "2023-01": 1080,
+          "2023-02": 1080,
+          "2023-03": 1080
+        },
+        "primary_vehicle": "I 12571"
+      },
+      "E-5111": {
+        "outlet_name": "Facility 5111",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 17",
+        "total_gallons": 3240,
+        "avg_gallons": 135.0,
+        "collections": 24,
+        "monthly_breakdown": {
+          "2023-01": 1080,
+          "2023-02": 1080,
+          "2023-03": 1080
+        },
+        "primary_vehicle": "K 83277"
+      },
+      "E-10763": {
+        "outlet_name": "Facility 10763",
+        "category": "Mall",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 10",
+        "total_gallons": 3240,
+        "avg_gallons": 135.0,
+        "collections": 24,
+        "monthly_breakdown": {
+          "2023-01": 1080,
+          "2023-02": 540,
+          "2023-03": 1620
+        },
+        "primary_vehicle": "AA / 37183"
+      },
+      "E-261": {
+        "outlet_name": "Facility 261",
+        "category": "Hotel",
+        "area": "Al Krm",
+        "zone": "Bur Dub",
+        "provider": "Service Provider 8",
+        "total_gallons": 3240,
+        "avg_gallons": 135.0,
+        "collections": 24,
+        "monthly_breakdown": {
+          "2023-01": 1080,
+          "2023-02": 810,
+          "2023-03": 1350
+        },
+        "primary_vehicle": "R 27841"
+      },
+      "E-3414": {
+        "outlet_name": "Facility 3414",
+        "category": "Supermarket",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 20",
+        "total_gallons": 3190,
+        "avg_gallons": 17.3,
+        "collections": 184,
+        "monthly_breakdown": {
+          "2023-01": 850,
+          "2023-02": 1090,
+          "2023-03": 1250
+        },
+        "primary_vehicle": "H 68505"
+      },
+      "E-437": {
+        "outlet_name": "Facility 437",
+        "category": "Supermarket",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 4",
+        "total_gallons": 3150,
+        "avg_gallons": 78.8,
+        "collections": 40,
+        "monthly_breakdown": {
+          "2023-01": 1060,
+          "2023-02": 1045,
+          "2023-03": 1045
+        },
+        "primary_vehicle": "18181"
+      },
+      "E-5738": {
+        "outlet_name": "Facility 5738",
+        "category": "Restaurant",
+        "area": "Al Brsh",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 30",
+        "total_gallons": 3120,
+        "avg_gallons": 86.7,
+        "collections": 36,
+        "monthly_breakdown": {
+          "2023-01": 1040,
+          "2023-02": 1040,
+          "2023-03": 1040
+        },
+        "primary_vehicle": "O 96259"
+      },
+      "E-2281": {
+        "outlet_name": "Facility 2281",
+        "category": "Bakery /confectionery",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "provider": "Service Provider 9",
+        "total_gallons": 2970,
+        "avg_gallons": 135.0,
+        "collections": 22,
+        "monthly_breakdown": {
+          "2023-01": 1350,
+          "2023-02": 1080,
+          "2023-03": 540
+        },
+        "primary_vehicle": "S 36847"
+      }
+    },
+    "frequent_collection_entities": {
+      "E-3414": 184,
+      "E-1673": 162,
+      "E-639": 135,
+      "E-7298": 130,
+      "E-1197": 117,
+      "E-1096": 115,
+      "E-2445": 114,
+      "E-2444": 108,
+      "E-685": 107,
+      "E-7414": 104,
+      "E-9165": 102,
+      "E-1174": 96,
+      "E-4332": 96,
+      "E-8730": 96,
+      "E-8606": 95,
+      "E-1083": 91,
+      "E-4316": 84,
+      "E-4190": 84,
+      "E-1485": 77,
+      "E-604": 64,
+      "E-2142": 62,
+      "E-3484": 60,
+      "E-1801": 60,
+      "E-7231": 60,
+      "E-2112": 55,
+      "E-6101": 55,
+      "E-477": 54,
+      "E-5122": 54,
+      "E-1505": 52,
+      "E-5556": 52
+    },
+    "entity_risk_profiles": [
+      {
+        "entity_id": "E-1559",
+        "outlet_name": "Facility 1559",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 5,
+        "avg_interval": 9.6,
+        "collections_count": 9,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-12570",
+        "outlet_name": "Facility 12570",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 20.7,
+        "collections_count": 4,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-6942",
+        "outlet_name": "Facility 6942",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 12,
+        "avg_interval": 18.0,
+        "collections_count": 4,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-9653",
+        "outlet_name": "Facility 9653",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-9231",
+        "outlet_name": "Facility 9231",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 17,
+        "avg_interval": 16.2,
+        "collections_count": 5,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-3192",
+        "outlet_name": "Facility 3192",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 17.0,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-5354",
+        "outlet_name": "Facility 5354",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 7.2,
+        "collections_count": 12,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-10452",
+        "outlet_name": "Facility 10452",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 15,
+        "avg_interval": 16.5,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-6191",
+        "outlet_name": "Facility 6191",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 16.6,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-1387",
+        "outlet_name": "Facility 1387",
+        "category": "Bakery /confectionery",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 17.2,
+        "collections_count": 5,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-1394",
+        "outlet_name": "Facility 1394",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 11.4,
+        "collections_count": 8,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-10594",
+        "outlet_name": "Facility 10594",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 11,
+        "avg_interval": 14.2,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-3172",
+        "outlet_name": "Facility 3172",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 12.3,
+        "collections_count": 44,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-9093",
+        "outlet_name": "Facility 9093",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-9094",
+        "outlet_name": "Facility 9094",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-7325",
+        "outlet_name": "Facility 7325",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.2,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-10978",
+        "outlet_name": "Facility 10978",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 18.2,
+        "collections_count": 5,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-7319",
+        "outlet_name": "Facility 7319",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 23.3,
+        "collections_count": 4,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-12857",
+        "outlet_name": "Facility 12857",
+        "category": "Catering",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 52.0,
+        "collections_count": 2,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-2399",
+        "outlet_name": "Facility 2399",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 18.5,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-4035",
+        "outlet_name": "Facility 4035",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 8.6,
+        "collections_count": 10,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-4040",
+        "outlet_name": "Facility 4040",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 20.0,
+        "collections_count": 4,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-3323",
+        "outlet_name": "Facility 3323",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.4,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-4483",
+        "outlet_name": "Facility 4483",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 15.5,
+        "collections_count": 5,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-10403",
+        "outlet_name": "Facility 10403",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 34,
+        "avg_interval": 21.0,
+        "collections_count": 6,
+        "avg_gallons": 20.0
+      },
+      {
+        "entity_id": "E-2607",
+        "outlet_name": "Facility 2607",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 17,
+        "avg_interval": 19.3,
+        "collections_count": 4,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-10564",
+        "outlet_name": "Facility 10564",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 16.2,
+        "collections_count": 5,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-10678",
+        "outlet_name": "Facility 10678",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 18.8,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-5964",
+        "outlet_name": "Facility 5964",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 9.8,
+        "collections_count": 9,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-6261",
+        "outlet_name": "Facility 6261",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 12,
+        "avg_interval": 16.8,
+        "collections_count": 5,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-1567",
+        "outlet_name": "Facility 1567",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 24.3,
+        "collections_count": 4,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-10047",
+        "outlet_name": "Facility 10047",
+        "category": "Supermarket",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 10,
+        "avg_interval": 21.7,
+        "collections_count": 4,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-8067",
+        "outlet_name": "Facility 8067",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 29.5,
+        "collections_count": 3,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-9809",
+        "outlet_name": "Facility 9809",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 10,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-9379",
+        "outlet_name": "Facility 9379",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 5,
+        "avg_interval": 15.2,
+        "collections_count": 6,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-4635",
+        "outlet_name": "Facility 4635",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 7.2,
+        "collections_count": 12,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-6780",
+        "outlet_name": "Facility 6780",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 33,
+        "avg_interval": 14.7,
+        "collections_count": 4,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-2536",
+        "outlet_name": "Facility 2536",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.6,
+        "collections_count": 6,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-2576",
+        "outlet_name": "Facility 2576",
+        "category": "Accommodation",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.8,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-6665",
+        "outlet_name": "Facility 6665",
+        "category": "Hotel",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.8,
+        "collections_count": 6,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-4482",
+        "outlet_name": "Facility 4482",
+        "category": "Hotel",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 27,
+        "avg_interval": 16.7,
+        "collections_count": 4,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-8017",
+        "outlet_name": "Facility 8017",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 15.8,
+        "collections_count": 12,
+        "avg_gallons": 20.0
+      },
+      {
+        "entity_id": "E-3448",
+        "outlet_name": "Facility 3448",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.4,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-8707",
+        "outlet_name": "Facility 8707",
+        "category": "Supermarket",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 14.8,
+        "collections_count": 18,
+        "avg_gallons": 91.7
+      },
+      {
+        "entity_id": "E-293",
+        "outlet_name": "Facility 293",
+        "category": "Supermarket",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 12.8,
+        "collections_count": 12,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-9515",
+        "outlet_name": "Facility 9515",
+        "category": "Bakery /confectionery",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 14.0,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-12407",
+        "outlet_name": "Facility 12407",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 15,
+        "avg_interval": 25.0,
+        "collections_count": 3,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-2460",
+        "outlet_name": "Facility 2460",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 12.3,
+        "collections_count": 7,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-8111",
+        "outlet_name": "Facility 8111",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 17.2,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-9964",
+        "outlet_name": "Facility 9964",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 4,
+        "avg_interval": 15.6,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-8823",
+        "outlet_name": "Facility 8823",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 17.0,
+        "collections_count": 3,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-8085",
+        "outlet_name": "Facility 8085",
+        "category": "Supermarket",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 13.8,
+        "collections_count": 12,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-7645",
+        "outlet_name": "Facility 7645",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 15.0,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-10458",
+        "outlet_name": "Facility 10458",
+        "category": "Cafeteria",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 18.5,
+        "collections_count": 5,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-10243",
+        "outlet_name": "Facility 10243",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 4,
+        "avg_interval": 13.3,
+        "collections_count": 14,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-11844",
+        "outlet_name": "Facility 11844",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 3,
+        "avg_interval": 18.8,
+        "collections_count": 5,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-5462",
+        "outlet_name": "Facility 5462",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "upcoming",
+        "days_overdue": 5,
+        "avg_interval": 11.0,
+        "collections_count": 8,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-6871",
+        "outlet_name": "Facility 6871",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 14.8,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-849",
+        "outlet_name": "Facility 849",
+        "category": "Restaurant",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "critical",
+        "days_overdue": 15,
+        "avg_interval": 25.5,
+        "collections_count": 3,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-12113",
+        "outlet_name": "Facility 12113",
+        "category": "Coffee Shop",
+        "area": "Abu Hl",
+        "zone": "Der",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 39.0,
+        "collections_count": 4,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-2689",
+        "outlet_name": "Facility 2689",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 5.6,
+        "collections_count": 22,
+        "avg_gallons": 100.2
+      },
+      {
+        "entity_id": "E-1489",
+        "outlet_name": "Facility 1489",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 7.2,
+        "collections_count": 12,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-4591",
+        "outlet_name": "Facility 4591",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 16.2,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-4292",
+        "outlet_name": "Facility 4292",
+        "category": "Catering",
+        "area": "Al Brh",
+        "zone": "Der",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 4.2,
+        "collections_count": 33,
+        "avg_gallons": 73.2
+      },
+      {
+        "entity_id": "E-12264",
+        "outlet_name": "Facility 12264",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 14,
+        "avg_interval": 11.0,
+        "collections_count": 12,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-7145",
+        "outlet_name": "Facility 7145",
+        "category": "School",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 4,
+        "avg_interval": 15.4,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-3471",
+        "outlet_name": "Facility 3471",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 12,
+        "avg_interval": 8.6,
+        "collections_count": 11,
+        "avg_gallons": 156.4
+      },
+      {
+        "entity_id": "E-5407",
+        "outlet_name": "Facility 5407",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.8,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-5879",
+        "outlet_name": "Facility 5879",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 3,
+        "avg_interval": 7.9,
+        "collections_count": 11,
+        "avg_gallons": 83.2
+      },
+      {
+        "entity_id": "E-10532",
+        "outlet_name": "Facility 10532",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 19.0,
+        "collections_count": 8,
+        "avg_gallons": 30.0
+      },
+      {
+        "entity_id": "E-1262",
+        "outlet_name": "Facility 1262",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 25,
+        "avg_interval": 16.3,
+        "collections_count": 4,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-1891",
+        "outlet_name": "Facility 1891",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 13,
+        "avg_interval": 6.2,
+        "collections_count": 14,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-6295",
+        "outlet_name": "Facility 6295",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 29.0,
+        "collections_count": 2,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-6995",
+        "outlet_name": "Facility 6995",
+        "category": "Catering",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 15.0,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-9002",
+        "outlet_name": "Facility 9002",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 14.0,
+        "collections_count": 11,
+        "avg_gallons": 13.2
+      },
+      {
+        "entity_id": "E-12196",
+        "outlet_name": "Facility 12196",
+        "category": "Bakery /confectionery",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 47,
+        "avg_interval": 16.5,
+        "collections_count": 3,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-4688",
+        "outlet_name": "Facility 4688",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 15.4,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-11773",
+        "outlet_name": "Facility 11773",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 11,
+        "avg_interval": 16.0,
+        "collections_count": 5,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-13229",
+        "outlet_name": "Facility 13229",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 14.0,
+        "collections_count": 2,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-2126",
+        "outlet_name": "Facility 2126",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 8,
+        "avg_interval": 6.9,
+        "collections_count": 19,
+        "avg_gallons": 41.8
+      },
+      {
+        "entity_id": "E-5885",
+        "outlet_name": "Facility 5885",
+        "category": "Coffee Shop",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 1,
+        "avg_interval": 14.8,
+        "collections_count": 6,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-2252",
+        "outlet_name": "Facility 2252",
+        "category": "Hotel",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 14.0,
+        "collections_count": 6,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-2635",
+        "outlet_name": "Facility 2635",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 14.6,
+        "collections_count": 24,
+        "avg_gallons": 20.0
+      },
+      {
+        "entity_id": "E-1043",
+        "outlet_name": "Facility 1043",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-12436",
+        "outlet_name": "Facility 12436",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 13,
+        "avg_interval": 25.5,
+        "collections_count": 3,
+        "avg_gallons": 100.0
+      },
+      {
+        "entity_id": "E-11263",
+        "outlet_name": "Facility 11263",
+        "category": "Accommodation",
+        "area": "Al Quoz",
+        "zone": "Al Quoz",
+        "risk_level": "critical",
+        "days_overdue": 20,
+        "avg_interval": 5.2,
+        "collections_count": 23,
+        "avg_gallons": 100.9
+      },
+      {
+        "entity_id": "E-9123",
+        "outlet_name": "Facility 9123",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "critical",
+        "days_overdue": 13,
+        "avg_interval": 8.2,
+        "collections_count": 10,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-8558",
+        "outlet_name": "Facility 8558",
+        "category": "Restaurant",
+        "area": "Acdemc Cty",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 5,
+        "avg_interval": 17.8,
+        "collections_count": 5,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-5143",
+        "outlet_name": "Facility 5143",
+        "category": "Accommodation",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 7.5,
+        "collections_count": 48,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-1498",
+        "outlet_name": "Facility 1498",
+        "category": "Coffee Shop",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 7.0,
+        "collections_count": 12,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-6470",
+        "outlet_name": "Facility 6470",
+        "category": "Hotel",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 13.2,
+        "collections_count": 5,
+        "avg_gallons": 135.0
+      },
+      {
+        "entity_id": "E-4590",
+        "outlet_name": "Facility 4590",
+        "category": "Cafeteria",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 32.0,
+        "collections_count": 3,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-5411",
+        "outlet_name": "Facility 5411",
+        "category": "Restaurant",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 16.8,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-12161",
+        "outlet_name": "Facility 12161",
+        "category": "Coffee Shop",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 6,
+        "avg_interval": 28.5,
+        "collections_count": 3,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-7301",
+        "outlet_name": "Facility 7301",
+        "category": "Restaurant",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 7,
+        "avg_interval": 14.6,
+        "collections_count": 6,
+        "avg_gallons": 25.0
+      },
+      {
+        "entity_id": "E-7114",
+        "outlet_name": "Facility 7114",
+        "category": "Restaurant",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 5,
+        "avg_interval": 14.8,
+        "collections_count": 6,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-772",
+        "outlet_name": "Facility 772",
+        "category": "Cafeteria",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 26.3,
+        "collections_count": 4,
+        "avg_gallons": 40.0
+      },
+      {
+        "entity_id": "E-6902",
+        "outlet_name": "Facility 6902",
+        "category": "Accommodation",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "warning",
+        "days_overdue": 9,
+        "avg_interval": 10.9,
+        "collections_count": 13,
+        "avg_gallons": 91.2
+      },
+      {
+        "entity_id": "E-10414",
+        "outlet_name": "Facility 10414",
+        "category": "Restaurant",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "upcoming",
+        "days_overdue": 2,
+        "avg_interval": 17.5,
+        "collections_count": 5,
+        "avg_gallons": 15.0
+      },
+      {
+        "entity_id": "E-3416",
+        "outlet_name": "Facility 3416",
+        "category": "Coffee Shop",
+        "area": "Al Awr",
+        "zone": "Rs Al Khor",
+        "risk_level": "normal",
+        "days_overdue": 0,
+        "avg_interval": 38.5,
+        "collections_count": 3,
+        "avg_gallons": 15.0
+      }
+    ],
+    "category_behavior_patterns": {
+      "Restaurant": {
+        "total_entities": 1642,
+        "avg_collection_interval": 15.0,
+        "risk_distribution": {
+          "critical": 232,
+          "warning": 487,
+          "normal": 446
+        },
+        "volume_patterns": {
+          "min_gallons": 5,
+          "max_gallons": 500,
+          "avg_gallons": 44.1,
+          "std_gallons": 38.9
+        }
+      },
+      "Coffee Shop": {
+        "total_entities": 198,
+        "avg_collection_interval": 16.9,
+        "risk_distribution": {
+          "critical": 34,
+          "warning": 46,
+          "normal": 69
+        },
+        "volume_patterns": {
+          "min_gallons": 11,
+          "max_gallons": 250,
+          "avg_gallons": 21.0,
+          "std_gallons": 21.9
+        }
+      },
+      "Bakery /confectionery": {
+        "total_entities": 152,
+        "avg_collection_interval": 15.2,
+        "risk_distribution": {
+          "critical": 29,
+          "warning": 41,
+          "normal": 40
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 400,
+          "avg_gallons": 46.0,
+          "std_gallons": 46.4
+        }
+      },
+      "Accommodation": {
+        "total_entities": 208,
+        "avg_collection_interval": 17.4,
+        "risk_distribution": {
+          "critical": 23,
+          "warning": 61,
+          "normal": 74
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 720,
+          "avg_gallons": 82.8,
+          "std_gallons": 44.5
+        }
+      },
+      "Cafeteria": {
+        "total_entities": 435,
+        "avg_collection_interval": 17.2,
+        "risk_distribution": {
+          "critical": 90,
+          "warning": 114,
+          "normal": 119
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 135,
+          "avg_gallons": 32.5,
+          "std_gallons": 26.3
+        }
+      },
+      "Catering": {
+        "total_entities": 173,
+        "avg_collection_interval": 14.8,
+        "risk_distribution": {
+          "critical": 27,
+          "warning": 50,
+          "normal": 44
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 1578,
+          "avg_gallons": 116.1,
+          "std_gallons": 231.7
+        }
+      },
+      "Supermarket": {
+        "total_entities": 164,
+        "avg_collection_interval": 17.5,
+        "risk_distribution": {
+          "critical": 22,
+          "warning": 50,
+          "normal": 58
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 600,
+          "avg_gallons": 38.2,
+          "std_gallons": 42.3
+        }
+      },
+      "Hotel": {
+        "total_entities": 111,
+        "avg_collection_interval": 14.7,
+        "risk_distribution": {
+          "critical": 14,
+          "warning": 32,
+          "normal": 33
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 954,
+          "avg_gallons": 101.3,
+          "std_gallons": 114.1
+        }
+      },
+      "School": {
+        "total_entities": 5,
+        "avg_collection_interval": 14.9,
+        "risk_distribution": {
+          "critical": 1,
+          "warning": 0,
+          "normal": 1
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 135,
+          "avg_gallons": 52.1,
+          "std_gallons": 43.7
+        }
+      },
+      "Mall": {
+        "total_entities": 17,
+        "avg_collection_interval": 14.0,
+        "risk_distribution": {
+          "critical": 3,
+          "warning": 2,
+          "normal": 5
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 600,
+          "avg_gallons": 147.4,
+          "std_gallons": 148.8
+        }
+      },
+      "Hospital": {
+        "total_entities": 5,
+        "avg_collection_interval": 17.2,
+        "risk_distribution": {
+          "critical": 1,
+          "warning": 0,
+          "normal": 4
+        },
+        "volume_patterns": {
+          "min_gallons": 15,
+          "max_gallons": 800,
+          "avg_gallons": 93.7,
+          "std_gallons": 135.7
+        }
+      }
+    },
+    "intelligence_summary": {
+      "total_entities_analyzed": 3110,
+      "high_risk_entities": 1359,
+      "entities_needing_attention": 1359,
+      "avg_collection_frequency": 15.7
+    }
+  },
+  "predictive_patterns": {
+    "seasonal_patterns": {
+      "weekly_volumes": {
+        "1": {
+          "Total_Gallons": 134017,
+          "Avg_Gallons": 54.6,
+          "Collections": 2453
+        },
+        "2": {
+          "Total_Gallons": 133652,
+          "Avg_Gallons": 56.5,
+          "Collections": 2364
+        },
+        "3": {
+          "Total_Gallons": 133927,
+          "Avg_Gallons": 54.5,
+          "Collections": 2456
+        },
+        "4": {
+          "Total_Gallons": 124018,
+          "Avg_Gallons": 56.1,
+          "Collections": 2212
+        },
+        "5": {
+          "Total_Gallons": 128887,
+          "Avg_Gallons": 55.1,
+          "Collections": 2341
+        },
+        "6": {
+          "Total_Gallons": 136167,
+          "Avg_Gallons": 58.3,
+          "Collections": 2334
+        },
+        "7": {
+          "Total_Gallons": 127765,
+          "Avg_Gallons": 52.9,
+          "Collections": 2413
+        },
+        "8": {
+          "Total_Gallons": 143452,
+          "Avg_Gallons": 58.0,
+          "Collections": 2473
+        },
+        "9": {
+          "Total_Gallons": 135723,
+          "Avg_Gallons": 55.5,
+          "Collections": 2445
+        },
+        "10": {
+          "Total_Gallons": 127848,
+          "Avg_Gallons": 55.2,
+          "Collections": 2318
+        },
+        "11": {
+          "Total_Gallons": 135569,
+          "Avg_Gallons": 56.8,
+          "Collections": 2385
+        },
+        "12": {
+          "Total_Gallons": 127945,
+          "Avg_Gallons": 54.4,
+          "Collections": 2353
+        },
+        "13": {
+          "Total_Gallons": 73006,
+          "Avg_Gallons": 58.6,
+          "Collections": 1246
+        },
+        "52": {
+          "Total_Gallons": 9726,
+          "Avg_Gallons": 64.0,
+          "Collections": 152
+        }
+      },
+      "peak_week": 8,
+      "low_volume_week": 52
+    },
+    "growth_trajectory": {
+      "monthly_progression": {
+        "2023-01": {
+          "Collections": 10252,
+          "Total_Gallons": 570781,
+          "Active_Entities": 3129
+        },
+        "2023-02": {
+          "Collections": 9704,
+          "Total_Gallons": 542123,
+          "Active_Entities": 3105
+        },
+        "2023-03": {
+          "Collections": 9989,
+          "Total_Gallons": 558798,
+          "Active_Entities": 3060
+        }
+      },
+      "volume_trend": "Analyzing Q1 2023 volume progression",
+      "entity_growth": "New entity onboarding patterns"
+    },
+    "risk_escalation": {
+      "critical_hotspots": [
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 12,
+          "outlet": "Facility 6942"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Coffee Shop",
+          "days_overdue": 17,
+          "outlet": "Facility 9231"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 15,
+          "outlet": "Facility 10452"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 11,
+          "outlet": "Facility 10594"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Cafeteria",
+          "days_overdue": 34,
+          "outlet": "Facility 10403"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 17,
+          "outlet": "Facility 2607"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 12,
+          "outlet": "Facility 6261"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 33,
+          "outlet": "Facility 6780"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Hotel",
+          "days_overdue": 27,
+          "outlet": "Facility 4482"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Cafeteria",
+          "days_overdue": 15,
+          "outlet": "Facility 12407"
+        },
+        {
+          "area": "Abu Hl",
+          "category": "Restaurant",
+          "days_overdue": 15,
+          "outlet": "Facility 849"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Catering",
+          "days_overdue": 14,
+          "outlet": "Facility 12264"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Restaurant",
+          "days_overdue": 12,
+          "outlet": "Facility 3471"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Coffee Shop",
+          "days_overdue": 25,
+          "outlet": "Facility 1262"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Restaurant",
+          "days_overdue": 13,
+          "outlet": "Facility 1891"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Bakery /confectionery",
+          "days_overdue": 47,
+          "outlet": "Facility 12196"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Restaurant",
+          "days_overdue": 11,
+          "outlet": "Facility 11773"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Restaurant",
+          "days_overdue": 13,
+          "outlet": "Facility 12436"
+        },
+        {
+          "area": "Al Quoz",
+          "category": "Accommodation",
+          "days_overdue": 20,
+          "outlet": "Facility 11263"
+        },
+        {
+          "area": "Acdemc Cty",
+          "category": "Restaurant",
+          "days_overdue": 13,
+          "outlet": "Facility 9123"
+        }
+      ],
+      "warning_trends": 883,
+      "escalation_rate": "15.3%"
+    },
+    "provider_workload_forecast": {
+      "Service Provider 37": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 27,
+        "total_managed_entities": 36,
+        "avg_entity_interval": 15.1
+      },
+      "Service Provider 4": {
+        "upcoming_week_estimate": 97,
+        "overdue_collections": 242,
+        "total_managed_entities": 339,
+        "avg_entity_interval": 15.7
+      },
+      "Service Provider 2": {
+        "upcoming_week_estimate": 17,
+        "overdue_collections": 40,
+        "total_managed_entities": 57,
+        "avg_entity_interval": 18.8
+      },
+      "Service Provider 35": {
+        "upcoming_week_estimate": 29,
+        "overdue_collections": 77,
+        "total_managed_entities": 106,
+        "avg_entity_interval": 17.6
+      },
+      "Service Provider 23": {
+        "upcoming_week_estimate": 31,
+        "overdue_collections": 74,
+        "total_managed_entities": 105,
+        "avg_entity_interval": 17.6
+      },
+      "Service Provider 16": {
+        "upcoming_week_estimate": 73,
+        "overdue_collections": 147,
+        "total_managed_entities": 220,
+        "avg_entity_interval": 16.8
+      },
+      "Service Provider 6": {
+        "upcoming_week_estimate": 60,
+        "overdue_collections": 73,
+        "total_managed_entities": 133,
+        "avg_entity_interval": 19.5
+      },
+      "Service Provider 51": {
+        "upcoming_week_estimate": 30,
+        "overdue_collections": 91,
+        "total_managed_entities": 121,
+        "avg_entity_interval": 16.8
+      },
+      "Service Provider 50": {
+        "upcoming_week_estimate": 15,
+        "overdue_collections": 31,
+        "total_managed_entities": 46,
+        "avg_entity_interval": 14.0
+      },
+      "Service Provider 66": {
+        "upcoming_week_estimate": 1,
+        "overdue_collections": 0,
+        "total_managed_entities": 1,
+        "avg_entity_interval": 12.3
+      },
+      "Service Provider 17": {
+        "upcoming_week_estimate": 15,
+        "overdue_collections": 43,
+        "total_managed_entities": 58,
+        "avg_entity_interval": 15.6
+      },
+      "Service Provider 52": {
+        "upcoming_week_estimate": 10,
+        "overdue_collections": 29,
+        "total_managed_entities": 39,
+        "avg_entity_interval": 15.7
+      },
+      "Service Provider 8": {
+        "upcoming_week_estimate": 31,
+        "overdue_collections": 72,
+        "total_managed_entities": 103,
+        "avg_entity_interval": 15.5
+      },
+      "Service Provider 25": {
+        "upcoming_week_estimate": 33,
+        "overdue_collections": 72,
+        "total_managed_entities": 105,
+        "avg_entity_interval": 13.9
+      },
+      "Service Provider 5": {
+        "upcoming_week_estimate": 16,
+        "overdue_collections": 49,
+        "total_managed_entities": 65,
+        "avg_entity_interval": 12.9
+      },
+      "Service Provider 14": {
+        "upcoming_week_estimate": 14,
+        "overdue_collections": 37,
+        "total_managed_entities": 51,
+        "avg_entity_interval": 14.7
+      },
+      "Service Provider 12": {
+        "upcoming_week_estimate": 18,
+        "overdue_collections": 41,
+        "total_managed_entities": 59,
+        "avg_entity_interval": 14.9
+      },
+      "Service Provider 32": {
+        "upcoming_week_estimate": 13,
+        "overdue_collections": 37,
+        "total_managed_entities": 50,
+        "avg_entity_interval": 15.1
+      },
+      "Service Provider 15": {
+        "upcoming_week_estimate": 11,
+        "overdue_collections": 34,
+        "total_managed_entities": 45,
+        "avg_entity_interval": 16.3
+      },
+      "Service Provider 11": {
+        "upcoming_week_estimate": 27,
+        "overdue_collections": 76,
+        "total_managed_entities": 103,
+        "avg_entity_interval": 14.4
+      },
+      "Service Provider 46": {
+        "upcoming_week_estimate": 36,
+        "overdue_collections": 58,
+        "total_managed_entities": 94,
+        "avg_entity_interval": 18.7
+      },
+      "Service Provider 27": {
+        "upcoming_week_estimate": 6,
+        "overdue_collections": 23,
+        "total_managed_entities": 29,
+        "avg_entity_interval": 13.9
+      },
+      "Service Provider 54": {
+        "upcoming_week_estimate": 12,
+        "overdue_collections": 7,
+        "total_managed_entities": 19,
+        "avg_entity_interval": 17.6
+      },
+      "Service Provider 10": {
+        "upcoming_week_estimate": 33,
+        "overdue_collections": 80,
+        "total_managed_entities": 113,
+        "avg_entity_interval": 14.1
+      },
+      "Service Provider 24": {
+        "upcoming_week_estimate": 5,
+        "overdue_collections": 31,
+        "total_managed_entities": 36,
+        "avg_entity_interval": 12.7
+      },
+      "Service Provider 20": {
+        "upcoming_week_estimate": 6,
+        "overdue_collections": 44,
+        "total_managed_entities": 50,
+        "avg_entity_interval": 13.3
+      },
+      "Service Provider 13": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 23,
+        "total_managed_entities": 32,
+        "avg_entity_interval": 15.6
+      },
+      "Service Provider 30": {
+        "upcoming_week_estimate": 48,
+        "overdue_collections": 184,
+        "total_managed_entities": 232,
+        "avg_entity_interval": 13.7
+      },
+      "Service Provider 58": {
+        "upcoming_week_estimate": 4,
+        "overdue_collections": 8,
+        "total_managed_entities": 12,
+        "avg_entity_interval": 13.3
+      },
+      "Service Provider 28": {
+        "upcoming_week_estimate": 26,
+        "overdue_collections": 81,
+        "total_managed_entities": 107,
+        "avg_entity_interval": 15.5
+      },
+      "Service Provider 29": {
+        "upcoming_week_estimate": 7,
+        "overdue_collections": 9,
+        "total_managed_entities": 16,
+        "avg_entity_interval": 23.0
+      },
+      "Service Provider 22": {
+        "upcoming_week_estimate": 6,
+        "overdue_collections": 9,
+        "total_managed_entities": 15,
+        "avg_entity_interval": 18.1
+      },
+      "Service Provider 18": {
+        "upcoming_week_estimate": 11,
+        "overdue_collections": 21,
+        "total_managed_entities": 32,
+        "avg_entity_interval": 17.7
+      },
+      "Service Provider 9": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 47,
+        "total_managed_entities": 56,
+        "avg_entity_interval": 12.2
+      },
+      "Service Provider 26": {
+        "upcoming_week_estimate": 15,
+        "overdue_collections": 29,
+        "total_managed_entities": 44,
+        "avg_entity_interval": 19.0
+      },
+      "Service Provider 36": {
+        "upcoming_week_estimate": 18,
+        "overdue_collections": 29,
+        "total_managed_entities": 47,
+        "avg_entity_interval": 15.8
+      },
+      "Service Provider 48": {
+        "upcoming_week_estimate": 14,
+        "overdue_collections": 26,
+        "total_managed_entities": 40,
+        "avg_entity_interval": 15.7
+      },
+      "Service Provider 42": {
+        "upcoming_week_estimate": 8,
+        "overdue_collections": 25,
+        "total_managed_entities": 33,
+        "avg_entity_interval": 12.7
+      },
+      "Service Provider 38": {
+        "upcoming_week_estimate": 8,
+        "overdue_collections": 30,
+        "total_managed_entities": 38,
+        "avg_entity_interval": 14.9
+      },
+      "Service Provider 34": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 20,
+        "total_managed_entities": 29,
+        "avg_entity_interval": 15.2
+      },
+      "Service Provider 61": {
+        "upcoming_week_estimate": 7,
+        "overdue_collections": 35,
+        "total_managed_entities": 42,
+        "avg_entity_interval": 11.7
+      },
+      "Service Provider 47": {
+        "upcoming_week_estimate": 5,
+        "overdue_collections": 5,
+        "total_managed_entities": 10,
+        "avg_entity_interval": 17.0
+      },
+      "Service Provider 64": {
+        "upcoming_week_estimate": 1,
+        "overdue_collections": 2,
+        "total_managed_entities": 3,
+        "avg_entity_interval": 23.4
+      },
+      "Service Provider 33": {
+        "upcoming_week_estimate": 5,
+        "overdue_collections": 5,
+        "total_managed_entities": 10,
+        "avg_entity_interval": 16.9
+      },
+      "Service Provider 31": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 12,
+        "total_managed_entities": 15,
+        "avg_entity_interval": 18.6
+      },
+      "Service Provider 41": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 19,
+        "total_managed_entities": 28,
+        "avg_entity_interval": 18.8
+      },
+      "Service Provider 3": {
+        "upcoming_week_estimate": 5,
+        "overdue_collections": 8,
+        "total_managed_entities": 13,
+        "avg_entity_interval": 15.0
+      },
+      "Service Provider 7": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 8,
+        "total_managed_entities": 17,
+        "avg_entity_interval": 19.0
+      },
+      "Service Provider 39": {
+        "upcoming_week_estimate": 2,
+        "overdue_collections": 2,
+        "total_managed_entities": 4,
+        "avg_entity_interval": 15.2
+      },
+      "Service Provider 49": {
+        "upcoming_week_estimate": 6,
+        "overdue_collections": 10,
+        "total_managed_entities": 16,
+        "avg_entity_interval": 15.0
+      },
+      "Service Provider 62": {
+        "upcoming_week_estimate": 4,
+        "overdue_collections": 3,
+        "total_managed_entities": 7,
+        "avg_entity_interval": 14.0
+      },
+      "Service Provider 40": {
+        "upcoming_week_estimate": 2,
+        "overdue_collections": 5,
+        "total_managed_entities": 7,
+        "avg_entity_interval": 12.8
+      },
+      "Service Provider 1": {
+        "upcoming_week_estimate": 0,
+        "overdue_collections": 7,
+        "total_managed_entities": 7,
+        "avg_entity_interval": 15.6
+      },
+      "Service Provider 45": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 3,
+        "total_managed_entities": 6,
+        "avg_entity_interval": 20.9
+      },
+      "Service Provider 55": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 0,
+        "total_managed_entities": 3,
+        "avg_entity_interval": 14.4
+      },
+      "Service Provider 19": {
+        "upcoming_week_estimate": 9,
+        "overdue_collections": 4,
+        "total_managed_entities": 13,
+        "avg_entity_interval": 14.8
+      },
+      "Service Provider 44": {
+        "upcoming_week_estimate": 0,
+        "overdue_collections": 21,
+        "total_managed_entities": 21,
+        "avg_entity_interval": 11.4
+      },
+      "Service Provider 56": {
+        "upcoming_week_estimate": 1,
+        "overdue_collections": 5,
+        "total_managed_entities": 6,
+        "avg_entity_interval": 21.5
+      },
+      "Service Provider 53": {
+        "upcoming_week_estimate": 0,
+        "overdue_collections": 11,
+        "total_managed_entities": 11,
+        "avg_entity_interval": 9.7
+      },
+      "Service Provider 60": {
+        "upcoming_week_estimate": 4,
+        "overdue_collections": 12,
+        "total_managed_entities": 16,
+        "avg_entity_interval": 15.7
+      },
+      "Service Provider 43": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 14,
+        "total_managed_entities": 17,
+        "avg_entity_interval": 16.9
+      },
+      "Service Provider 21": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 3,
+        "total_managed_entities": 6,
+        "avg_entity_interval": 18.3
+      },
+      "Service Provider 63": {
+        "upcoming_week_estimate": 5,
+        "overdue_collections": 8,
+        "total_managed_entities": 13,
+        "avg_entity_interval": 21.1
+      },
+      "Service Provider 59": {
+        "upcoming_week_estimate": 0,
+        "overdue_collections": 4,
+        "total_managed_entities": 4,
+        "avg_entity_interval": 17.1
+      },
+      "Service Provider 57": {
+        "upcoming_week_estimate": 3,
+        "overdue_collections": 0,
+        "total_managed_entities": 3,
+        "avg_entity_interval": 14.4
+      },
+      "Service Provider 65": {
+        "upcoming_week_estimate": 1,
+        "overdue_collections": 0,
+        "total_managed_entities": 1,
+        "avg_entity_interval": 12.3
+      }
+    },
+    "capacity_planning": {
+      "next_30_days_forecast": {
+        "2023-04-11": 402,
+        "2023-04-12": 388,
+        "2023-04-13": 321,
+        "2023-04-14": 271,
+        "2023-04-15": 185,
+        "2023-04-16": 130,
+        "2023-04-17": 83,
+        "2023-04-18": 59,
+        "2023-04-19": 55,
+        "2023-04-20": 48,
+        "2023-04-21": 50,
+        "2023-04-22": 37,
+        "2023-04-23": 28,
+        "2023-04-24": 15,
+        "2023-04-25": 9,
+        "2023-04-26": 11,
+        "2023-04-27": 11,
+        "2023-04-28": 20,
+        "2023-04-29": 18,
+        "2023-04-30": 16,
+        "2023-05-01": 7,
+        "2023-05-02": 8,
+        "2023-05-03": 8,
+        "2023-05-04": 7,
+        "2023-05-05": 8,
+        "2023-05-06": 7,
+        "2023-05-07": 6,
+        "2023-05-08": 1,
+        "2023-05-09": 1,
+        "2023-05-10": 3
+      },
+      "peak_demand_days": [
+        [
+          "2023-04-11",
+          402
+        ],
+        [
+          "2023-04-12",
+          388
+        ],
+        [
+          "2023-04-13",
+          321
+        ],
+        [
+          "2023-04-14",
+          271
+        ],
+        [
+          "2023-04-15",
+          185
+        ],
+        [
+          "2023-04-16",
+          130
+        ],
+        [
+          "2023-04-17",
+          83
+        ],
+        [
+          "2023-04-18",
+          59
+        ],
+        [
+          "2023-04-19",
+          55
+        ],
+        [
+          "2023-04-21",
+          50
+        ]
+      ],
+      "resource_optimization": "Predictive scheduling recommendations"
+    }
+  },
+  "ai_query_examples": {
+    "sample_queries": [
+      "What are the top 5 areas with the most overdue collections?",
+      "Which restaurant category entities need immediate attention?",
+      "Show me the collection patterns for Al Quoz area",
+      "What's the average turnaround time for Service Provider 4?",
+      "Which entities collected the most grease in Q1 2023?",
+      "What are the peak collection days of the week?",
+      "Show entities that are more than 10 days overdue",
+      "Compare volume patterns between hotels and restaurants",
+      "Which vehicles are most productive in terms of gallons collected?",
+      "What's the delay rate by geographic zone?"
+    ],
+    "query_patterns": {
+      "geographic_queries": [
+        "area analysis",
+        "zone comparison",
+        "location-based delays",
+        "geographic distribution",
+        "area performance"
+      ],
+      "category_queries": [
+        "restaurant analysis",
+        "hotel patterns",
+        "category comparison",
+        "business type performance",
+        "sector insights"
+      ],
+      "temporal_queries": [
+        "monthly trends",
+        "daily patterns",
+        "seasonal analysis",
+        "time-based comparison",
+        "frequency analysis"
+      ],
+      "operational_queries": [
+        "provider performance",
+        "vehicle efficiency",
+        "turnaround times",
+        "capacity planning",
+        "resource optimization"
+      ],
+      "alert_queries": [
+        "overdue collections",
+        "critical alerts",
+        "risk assessment",
+        "delay patterns",
+        "urgent actions needed"
+      ]
+    },
+    "ai_response_guidelines": {
+      "data_scope": "Always specify responses are based on Q1 2023 Dubai grease trap collection data",
+      "date_context": "Reference date for delay calculations is April 10, 2023",
+      "entity_privacy": "Use entity IDs and outlet names, avoid personal information",
+      "metric_focus": "Emphasize gallons collected, collection frequency, and delay patterns",
+      "actionable_insights": "Provide specific, actionable recommendations when possible"
+    },
+    "response_templates": {
+      "delay_analysis": "Based on Q1 2023 data, [X] entities are overdue as of April 10, 2023...",
+      "performance_comparison": "Comparing [category/area/provider] performance in Q1 2023...",
+      "trend_analysis": "During Q1 2023 (Jan-Mar), the data shows...",
+      "capacity_planning": "Based on collection patterns, the recommended capacity for..."
+    }
+  }
+}

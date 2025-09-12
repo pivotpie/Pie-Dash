@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init:*)",
+      "Bash(npm run tailwindcss:*)",
+      "Bash(taskkill:*)",
+      "Bash(node:*)",
+      "Bash(copy \"Blue Data Analysis.csv\" \"public\\Blue Data Analysis.csv\")",
+      "Bash(cp:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(find:*)",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "Bash(npm start)",
+      "Bash(npm run dev:*)",
+      "Bash(rm:*)",
+      "Bash(awk:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(python:*)",
+      "Bash(move Dubai_Waste_Collection_Analysis.md src/assets/)",
+      "Bash(move data_insights.json src/assets/)",
+      "Bash(mv:*)",
+      "Bash(curl:*)",
+      "Bash(timeout 10 npm run dev)",
+      "Bash(mkdir:*)",
+      "Bash(/dev/null)",
+      "Bash(npm update:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "outputStyle": "default"
+}

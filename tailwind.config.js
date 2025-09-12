@@ -1,0 +1,147 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
+        accent: {
+          cyan: '#06b6d4',
+          teal: '#14b8a6',
+          emerald: '#10b981',
+          purple: '#8b5cf6',
+          pink: '#ec4899',
+          orange: '#f97316',
+          yellow: '#fbbf24',
+          indigo: '#6366f1',
+          violet: '#a855f7',
+          rose: '#f43f5e',
+          lime: '#84cc16',
+        },
+        neon: {
+          blue: '#00d4ff',
+          cyan: '#00ffff',
+          purple: '#bf00ff',
+          pink: '#ff0080',
+          green: '#00ff88',
+          yellow: '#ffff00',
+          orange: '#ff8000',
+        },
+        neutral: {
+          50: '#fafbfc',
+          100: '#f4f6f8',
+          200: '#e8ecef',
+          300: '#d1d9e0',
+          400: '#9ca6af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        },
+        glass: {
+          white: 'rgba(255, 255, 255, 0.15)',
+          strong: 'rgba(255, 255, 255, 0.25)',
+          blue: 'rgba(14, 165, 233, 0.08)',
+          purple: 'rgba(139, 92, 246, 0.08)',
+          pink: 'rgba(236, 72, 153, 0.08)',
+          border: 'rgba(255, 255, 255, 0.2)',
+          'border-strong': 'rgba(255, 255, 255, 0.3)',
+        }
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+        'gradient-rainbow': 'linear-gradient(135deg, #00d4ff 0%, #8b5cf6 25%, #ec4899 50%, #f97316 75%, #84cc16 100%)',
+        'gradient-neon': 'linear-gradient(135deg, #00ffff 0%, #bf00ff 50%, #ff0080 100%)',
+        'gradient-surface': 'linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(248, 250, 252, 0.15) 100%)',
+        'gradient-body': 'linear-gradient(135deg, #d6eafc 0%, #bfe0fc 25%, #e1d6fd 50%, #facaef 75%, #d4fcf5 100%)',
+        'gradient-mesh': 'radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)',
+        'gradient-glow': 'radial-gradient(circle, rgba(14, 165, 233, 0.4) 0%, rgba(139, 92, 246, 0.2) 50%, transparent 100%)',
+      },
+      boxShadow: {
+        'glow-blue': '0 0 30px rgba(14, 165, 233, 0.4), 0 0 60px rgba(14, 165, 233, 0.2)',
+        'glow-cyan': '0 0 30px rgba(6, 182, 212, 0.4), 0 0 60px rgba(6, 182, 212, 0.2)',
+        'glow-purple': '0 0 30px rgba(139, 92, 246, 0.4), 0 0 60px rgba(139, 92, 246, 0.2)',
+        'glow-pink': '0 0 30px rgba(236, 72, 153, 0.4), 0 0 60px rgba(236, 72, 153, 0.2)',
+        'glow-rainbow': '0 0 40px rgba(14, 165, 233, 0.3), 0 0 80px rgba(139, 92, 246, 0.2), 0 0 120px rgba(236, 72, 153, 0.1)',
+        'glow-subtle': '0 0 20px rgba(14, 165, 233, 0.15)',
+        'glass': '0 20px 40px -12px rgba(0, 0, 0, 0.15), 0 8px 32px -8px rgba(0, 0, 0, 0.1)',
+        'glass-strong': '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 12px 40px -8px rgba(0, 0, 0, 0.15)',
+        'floating': '0 32px 64px rgba(14, 165, 233, 0.15), 0 12px 24px rgba(0, 0, 0, 0.1)',
+        'neon': '0 0 5px currentColor, 0 0 20px currentColor, 0 0 40px currentColor',
+      },
+      backdropBlur: {
+        'glass': '24px',
+        'strong': '32px',
+      },
+      animation: {
+        'glow': 'glow 3s ease-in-out infinite',
+        'glow-rainbow': 'glowRainbow 4s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'fadeInUp': 'fadeInUp 0.8s ease-out',
+        'slideInRight': 'slideInRight 0.6s ease-out',
+        'slideInLeft': 'slideInLeft 0.6s ease-out',
+        'scaleIn': 'scaleIn 0.5s ease-out',
+        'shimmer': 'shimmer 2s linear infinite',
+      },
+      keyframes: {
+        glow: {
+          '0%, 100%': { boxShadow: '0 20px 40px -12px rgba(0, 0, 0, 0.15), 0 0 20px rgba(14, 165, 233, 0.2)' },
+          '50%': { boxShadow: '0 32px 64px -12px rgba(0, 0, 0, 0.25), 0 0 40px rgba(14, 165, 233, 0.4)' },
+        },
+        glowRainbow: {
+          '0%': { boxShadow: '0 0 30px rgba(14, 165, 233, 0.4)' },
+          '25%': { boxShadow: '0 0 30px rgba(139, 92, 246, 0.4)' },
+          '50%': { boxShadow: '0 0 30px rgba(236, 72, 153, 0.4)' },
+          '75%': { boxShadow: '0 0 30px rgba(16, 185, 129, 0.4)' },
+          '100%': { boxShadow: '0 0 30px rgba(14, 165, 233, 0.4)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+          '50%': { transform: 'translateY(-10px) rotate(1deg)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { boxShadow: '0 0 20px rgba(14, 165, 233, 0.2)' },
+          '50%': { boxShadow: '0 0 40px rgba(14, 165, 233, 0.6)' },
+        },
+        fadeInUp: {
+          'from': { opacity: '0', transform: 'translateY(30px)' },
+          'to': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideInRight: {
+          'from': { opacity: '0', transform: 'translateX(30px)' },
+          'to': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInLeft: {
+          'from': { opacity: '0', transform: 'translateX(-30px)' },
+          'to': { opacity: '1', transform: 'translateX(0)' },
+        },
+        scaleIn: {
+          'from': { opacity: '0', transform: 'scale(0.9)' },
+          'to': { opacity: '1', transform: 'scale(1)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      }
+    },
+  },
+  plugins: [],
+}

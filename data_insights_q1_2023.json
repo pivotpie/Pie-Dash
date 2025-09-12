@@ -1,0 +1,6222 @@
+{
+  "summary": {
+    "overview": {
+      "total_records": 29945,
+      "date_range": {
+        "start": "2023-01-01",
+        "end": "2023-03-31",
+        "duration_days": 89
+      },
+      "total_gallons": "1671702",
+      "average_gallons_per_collection": 55.83,
+      "unique_entities": 3314,
+      "unique_service_reports": 29945,
+      "unique_service_providers": 66,
+      "unique_vehicles": 167,
+      "unique_areas": 23,
+      "unique_zones": 7,
+      "unique_categories": 11
+    }
+  },
+  "geographic": {
+    "areas": {
+      "Al Quoz": {
+        "Collections": 7952,
+        "Total_Gallons": 553948,
+        "Avg_Gallons": 69.66,
+        "Unique_Entities": 905,
+        "Service_Providers": 61,
+        "Vehicles": 139,
+        "Percentage": 26.56
+      },
+      "Al Brsh": {
+        "Collections": 7566,
+        "Total_Gallons": 332571,
+        "Avg_Gallons": 43.96,
+        "Unique_Entities": 717,
+        "Service_Providers": 58,
+        "Vehicles": 135,
+        "Percentage": 25.27
+      },
+      "Al Krm": {
+        "Collections": 3934,
+        "Total_Gallons": 182459,
+        "Avg_Gallons": 46.38,
+        "Unique_Entities": 516,
+        "Service_Providers": 55,
+        "Vehicles": 123,
+        "Percentage": 13.14
+      },
+      "Al Grhoud": {
+        "Collections": 1824,
+        "Total_Gallons": 159076,
+        "Avg_Gallons": 87.21,
+        "Unique_Entities": 147,
+        "Service_Providers": 32,
+        "Vehicles": 74,
+        "Percentage": 6.09
+      },
+      "Al Nhd": {
+        "Collections": 1585,
+        "Total_Gallons": 72330,
+        "Avg_Gallons": 45.63,
+        "Unique_Entities": 200,
+        "Service_Providers": 48,
+        "Vehicles": 100,
+        "Percentage": 5.29
+      },
+      "Al Khwneej": {
+        "Collections": 1473,
+        "Total_Gallons": 70240,
+        "Avg_Gallons": 47.68,
+        "Unique_Entities": 161,
+        "Service_Providers": 42,
+        "Vehicles": 95,
+        "Percentage": 4.92
+      },
+      "Al jddf": {
+        "Collections": 823,
+        "Total_Gallons": 42590,
+        "Avg_Gallons": 51.75,
+        "Unique_Entities": 97,
+        "Service_Providers": 32,
+        "Vehicles": 68,
+        "Percentage": 2.75
+      },
+      "Al Bd": {
+        "Collections": 582,
+        "Total_Gallons": 24040,
+        "Avg_Gallons": 41.31,
+        "Unique_Entities": 83,
+        "Service_Providers": 32,
+        "Vehicles": 61,
+        "Percentage": 1.94
+      },
+      "Al Mn": {
+        "Collections": 563,
+        "Total_Gallons": 25095,
+        "Avg_Gallons": 44.57,
+        "Unique_Entities": 46,
+        "Service_Providers": 25,
+        "Vehicles": 55,
+        "Percentage": 1.88
+      },
+      "Al Qudr": {
+        "Collections": 550,
+        "Total_Gallons": 26495,
+        "Avg_Gallons": 48.17,
+        "Unique_Entities": 44,
+        "Service_Providers": 20,
+        "Vehicles": 38,
+        "Percentage": 1.84
+      },
+      "Al Awr": {
+        "Collections": 436,
+        "Total_Gallons": 48595,
+        "Avg_Gallons": 111.46,
+        "Unique_Entities": 51,
+        "Service_Providers": 22,
+        "Vehicles": 46,
+        "Percentage": 1.46
+      },
+      "Al Mzhr": {
+        "Collections": 385,
+        "Total_Gallons": 16870,
+        "Avg_Gallons": 43.82,
+        "Unique_Entities": 54,
+        "Service_Providers": 17,
+        "Vehicles": 35,
+        "Percentage": 1.29
+      },
+      "Abu Hl": {
+        "Collections": 380,
+        "Total_Gallons": 19465,
+        "Avg_Gallons": 51.22,
+        "Unique_Entities": 66,
+        "Service_Providers": 23,
+        "Vehicles": 44,
+        "Percentage": 1.27
+      },
+      "Al Mmzr": {
+        "Collections": 264,
+        "Total_Gallons": 10180,
+        "Avg_Gallons": 38.56,
+        "Unique_Entities": 42,
+        "Service_Providers": 20,
+        "Vehicles": 36,
+        "Percentage": 0.88
+      },
+      "Al Brh": {
+        "Collections": 251,
+        "Total_Gallons": 15285,
+        "Avg_Gallons": 60.9,
+        "Unique_Entities": 46,
+        "Service_Providers": 21,
+        "Vehicles": 36,
+        "Percentage": 0.84
+      },
+      "Acdemc Cty": {
+        "Collections": 244,
+        "Total_Gallons": 13635,
+        "Avg_Gallons": 55.88,
+        "Unique_Entities": 35,
+        "Service_Providers": 21,
+        "Vehicles": 40,
+        "Percentage": 0.81
+      },
+      "Al Furjn": {
+        "Collections": 227,
+        "Total_Gallons": 6851,
+        "Avg_Gallons": 30.18,
+        "Unique_Entities": 28,
+        "Service_Providers": 11,
+        "Vehicles": 28,
+        "Percentage": 0.76
+      },
+      "Al Lsl": {
+        "Collections": 220,
+        "Total_Gallons": 12650,
+        "Avg_Gallons": 57.5,
+        "Unique_Entities": 40,
+        "Service_Providers": 15,
+        "Vehicles": 27,
+        "Percentage": 0.73
+      },
+      "Al Jfly": {
+        "Collections": 205,
+        "Total_Gallons": 11571,
+        "Avg_Gallons": 56.44,
+        "Unique_Entities": 33,
+        "Service_Providers": 19,
+        "Vehicles": 42,
+        "Percentage": 0.68
+      },
+      "Al Khbs": {
+        "Collections": 175,
+        "Total_Gallons": 10275,
+        "Avg_Gallons": 58.71,
+        "Unique_Entities": 30,
+        "Service_Providers": 18,
+        "Vehicles": 33,
+        "Percentage": 0.58
+      },
+      "Al Brr": {
+        "Collections": 160,
+        "Total_Gallons": 8726,
+        "Avg_Gallons": 54.54,
+        "Unique_Entities": 14,
+        "Service_Providers": 10,
+        "Vehicles": 20,
+        "Percentage": 0.53
+      },
+      "Al Mnr": {
+        "Collections": 144,
+        "Total_Gallons": 8555,
+        "Avg_Gallons": 59.41,
+        "Unique_Entities": 17,
+        "Service_Providers": 12,
+        "Vehicles": 21,
+        "Percentage": 0.48
+      },
+      "Al Mrmoom": {
+        "Collections": 2,
+        "Total_Gallons": 200,
+        "Avg_Gallons": 100.0,
+        "Unique_Entities": 1,
+        "Service_Providers": 1,
+        "Vehicles": 2,
+        "Percentage": 0.01
+      }
+    },
+    "zones": {
+      "Al Quoz": {
+        "Collections": 15518,
+        "Total_Gallons": 886519,
+        "Avg_Gallons": 57.13,
+        "Unique_Entities": 1617,
+        "Areas": 2,
+        "Percentage": 51.82
+      },
+      "Bur Dub": {
+        "Collections": 6107,
+        "Total_Gallons": 285755,
+        "Avg_Gallons": 46.79,
+        "Unique_Entities": 774,
+        "Areas": 5,
+        "Percentage": 20.39
+      },
+      "Der": {
+        "Collections": 2894,
+        "Total_Gallons": 214281,
+        "Avg_Gallons": 74.04,
+        "Unique_Entities": 331,
+        "Areas": 5,
+        "Percentage": 9.66
+      },
+      "Rs Al Khor": {
+        "Collections": 2533,
+        "Total_Gallons": 153846,
+        "Avg_Gallons": 60.74,
+        "Unique_Entities": 299,
+        "Areas": 5,
+        "Percentage": 8.46
+      },
+      "Al Quss": {
+        "Collections": 1970,
+        "Total_Gallons": 89200,
+        "Avg_Gallons": 45.28,
+        "Unique_Entities": 254,
+        "Areas": 2,
+        "Percentage": 6.58
+      },
+      "Jebel Al": {
+        "Collections": 779,
+        "Total_Gallons": 33546,
+        "Avg_Gallons": 43.06,
+        "Unique_Entities": 73,
+        "Areas": 3,
+        "Percentage": 2.6
+      },
+      "Jumerh": {
+        "Collections": 144,
+        "Total_Gallons": 8555,
+        "Avg_Gallons": 59.41,
+        "Unique_Entities": 17,
+        "Areas": 1,
+        "Percentage": 0.48
+      }
+    },
+    "top_areas": {
+      "Al Quoz": {
+        "Collections": 7952,
+        "Total_Gallons": 553948,
+        "Avg_Gallons": 69.66,
+        "Unique_Entities": 905,
+        "Service_Providers": 61,
+        "Vehicles": 139,
+        "Percentage": 26.56
+      },
+      "Al Brsh": {
+        "Collections": 7566,
+        "Total_Gallons": 332571,
+        "Avg_Gallons": 43.96,
+        "Unique_Entities": 717,
+        "Service_Providers": 58,
+        "Vehicles": 135,
+        "Percentage": 25.27
+      },
+      "Al Krm": {
+        "Collections": 3934,
+        "Total_Gallons": 182459,
+        "Avg_Gallons": 46.38,
+        "Unique_Entities": 516,
+        "Service_Providers": 55,
+        "Vehicles": 123,
+        "Percentage": 13.14
+      },
+      "Al Grhoud": {
+        "Collections": 1824,
+        "Total_Gallons": 159076,
+        "Avg_Gallons": 87.21,
+        "Unique_Entities": 147,
+        "Service_Providers": 32,
+        "Vehicles": 74,
+        "Percentage": 6.09
+      },
+      "Al Nhd": {
+        "Collections": 1585,
+        "Total_Gallons": 72330,
+        "Avg_Gallons": 45.63,
+        "Unique_Entities": 200,
+        "Service_Providers": 48,
+        "Vehicles": 100,
+        "Percentage": 5.29
+      },
+      "Al Khwneej": {
+        "Collections": 1473,
+        "Total_Gallons": 70240,
+        "Avg_Gallons": 47.68,
+        "Unique_Entities": 161,
+        "Service_Providers": 42,
+        "Vehicles": 95,
+        "Percentage": 4.92
+      },
+      "Al jddf": {
+        "Collections": 823,
+        "Total_Gallons": 42590,
+        "Avg_Gallons": 51.75,
+        "Unique_Entities": 97,
+        "Service_Providers": 32,
+        "Vehicles": 68,
+        "Percentage": 2.75
+      },
+      "Al Bd": {
+        "Collections": 582,
+        "Total_Gallons": 24040,
+        "Avg_Gallons": 41.31,
+        "Unique_Entities": 83,
+        "Service_Providers": 32,
+        "Vehicles": 61,
+        "Percentage": 1.94
+      },
+      "Al Mn": {
+        "Collections": 563,
+        "Total_Gallons": 25095,
+        "Avg_Gallons": 44.57,
+        "Unique_Entities": 46,
+        "Service_Providers": 25,
+        "Vehicles": 55,
+        "Percentage": 1.88
+      },
+      "Al Qudr": {
+        "Collections": 550,
+        "Total_Gallons": 26495,
+        "Avg_Gallons": 48.17,
+        "Unique_Entities": 44,
+        "Service_Providers": 20,
+        "Vehicles": 38,
+        "Percentage": 1.84
+      }
+    },
+    "area_zone_mapping": {
+      "Abu Hl": "Der",
+      "Acdemc Cty": "Rs Al Khor",
+      "Al Awr": "Rs Al Khor",
+      "Al Bd": "Bur Dub",
+      "Al Brh": "Der",
+      "Al Brr": "Rs Al Khor",
+      "Al Brsh": "Al Quoz",
+      "Al Furjn": "Jebel Al",
+      "Al Grhoud": "Der",
+      "Al Jfly": "Bur Dub",
+      "Al Khbs": "Der",
+      "Al Khwneej": "Rs Al Khor",
+      "Al Krm": "Bur Dub",
+      "Al Lsl": "Rs Al Khor",
+      "Al Mmzr": "Der",
+      "Al Mn": "Bur Dub",
+      "Al Mnr": "Jumerh",
+      "Al Mrmoom": "Jebel Al",
+      "Al Mzhr": "Al Quss",
+      "Al Nhd": "Al Quss",
+      "Al Qudr": "Jebel Al",
+      "Al Quoz": "Al Quoz",
+      "Al jddf": "Bur Dub"
+    }
+  },
+  "categories": {
+    "categories": {
+      "Restaurant": {
+        "Collections": 14522,
+        "Total_Gallons": 640669,
+        "Avg_Gallons": 44.12,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 38.92,
+        "Unique_Entities": 1648,
+        "Areas_Served": 23,
+        "Service_Providers": 60,
+        "Percentage": 48.5
+      },
+      "Accommodation": {
+        "Collections": 3841,
+        "Total_Gallons": 317920,
+        "Avg_Gallons": 82.77,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 44.48,
+        "Unique_Entities": 350,
+        "Areas_Served": 18,
+        "Service_Providers": 42,
+        "Percentage": 12.83
+      },
+      "Cafeteria": {
+        "Collections": 2867,
+        "Total_Gallons": 93195,
+        "Avg_Gallons": 32.51,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 26.26,
+        "Unique_Entities": 453,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 9.57
+      },
+      "Catering": {
+        "Collections": 1957,
+        "Total_Gallons": 227181,
+        "Avg_Gallons": 116.09,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 231.73,
+        "Unique_Entities": 189,
+        "Areas_Served": 14,
+        "Service_Providers": 51,
+        "Percentage": 6.54
+      },
+      "Supermarket": {
+        "Collections": 1945,
+        "Total_Gallons": 74235,
+        "Avg_Gallons": 38.17,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 42.28,
+        "Unique_Entities": 162,
+        "Areas_Served": 18,
+        "Service_Providers": 36,
+        "Percentage": 6.5
+      },
+      "Coffee Shop": {
+        "Collections": 1462,
+        "Total_Gallons": 30765,
+        "Avg_Gallons": 21.04,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 21.9,
+        "Unique_Entities": 211,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 4.88
+      },
+      "Hotel": {
+        "Collections": 1364,
+        "Total_Gallons": 138197,
+        "Avg_Gallons": 101.32,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 114.11,
+        "Unique_Entities": 114,
+        "Areas_Served": 14,
+        "Service_Providers": 30,
+        "Percentage": 4.56
+      },
+      "Bakery /confectionery": {
+        "Collections": 1330,
+        "Total_Gallons": 61190,
+        "Avg_Gallons": 46.01,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 46.43,
+        "Unique_Entities": 153,
+        "Areas_Served": 19,
+        "Service_Providers": 45,
+        "Percentage": 4.44
+      },
+      "Mall": {
+        "Collections": 538,
+        "Total_Gallons": 79280,
+        "Avg_Gallons": 147.36,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 148.78,
+        "Unique_Entities": 18,
+        "Areas_Served": 8,
+        "Service_Providers": 8,
+        "Percentage": 1.8
+      },
+      "Hospital": {
+        "Collections": 69,
+        "Total_Gallons": 6465,
+        "Avg_Gallons": 93.7,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 135.69,
+        "Unique_Entities": 10,
+        "Areas_Served": 6,
+        "Service_Providers": 4,
+        "Percentage": 0.23
+      },
+      "School": {
+        "Collections": 50,
+        "Total_Gallons": 2605,
+        "Avg_Gallons": 52.1,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 43.68,
+        "Unique_Entities": 7,
+        "Areas_Served": 4,
+        "Service_Providers": 5,
+        "Percentage": 0.17
+      }
+    },
+    "subcategories": {
+      "Restaurant": {
+        "Collections": 14308,
+        "Total_Gallons": 630079,
+        "Avg_Gallons": 44.04,
+        "Percentage": 47.78
+      },
+      "Accommodation": {
+        "Collections": 3734,
+        "Total_Gallons": 309445,
+        "Avg_Gallons": 82.87,
+        "Percentage": 12.47
+      },
+      "Cafeteria": {
+        "Collections": 2805,
+        "Total_Gallons": 92105,
+        "Avg_Gallons": 32.84,
+        "Percentage": 9.37
+      },
+      "Supermarket": {
+        "Collections": 1610,
+        "Total_Gallons": 62950,
+        "Avg_Gallons": 39.1,
+        "Percentage": 5.38
+      },
+      "Coffee Shop": {
+        "Collections": 1349,
+        "Total_Gallons": 28305,
+        "Avg_Gallons": 20.98,
+        "Percentage": 4.5
+      },
+      "Hotel": {
+        "Collections": 1003,
+        "Total_Gallons": 93681,
+        "Avg_Gallons": 93.4,
+        "Percentage": 3.35
+      },
+      "Catering": {
+        "Collections": 985,
+        "Total_Gallons": 86240,
+        "Avg_Gallons": 87.55,
+        "Percentage": 3.29
+      },
+      "Bakery": {
+        "Collections": 759,
+        "Total_Gallons": 38215,
+        "Avg_Gallons": 50.35,
+        "Percentage": 2.53
+      },
+      "Catering Services": {
+        "Collections": 540,
+        "Total_Gallons": 110191,
+        "Avg_Gallons": 204.06,
+        "Percentage": 1.8
+      },
+      "Mall": {
+        "Collections": 538,
+        "Total_Gallons": 79280,
+        "Avg_Gallons": 147.36,
+        "Percentage": 1.8
+      },
+      "Department Store": {
+        "Collections": 335,
+        "Total_Gallons": 11285,
+        "Avg_Gallons": 33.69,
+        "Percentage": 1.12
+      },
+      "Four Star Hotels": {
+        "Collections": 157,
+        "Total_Gallons": 13797,
+        "Avg_Gallons": 87.88,
+        "Percentage": 0.52
+      },
+      "Five Star Hotel": {
+        "Collections": 145,
+        "Total_Gallons": 21262,
+        "Avg_Gallons": 146.63,
+        "Percentage": 0.48
+      },
+      "Cloud Kitchen": {
+        "Collections": 142,
+        "Total_Gallons": 6400,
+        "Avg_Gallons": 45.07,
+        "Percentage": 0.47
+      },
+      "Central Kitchen": {
+        "Collections": 140,
+        "Total_Gallons": 16120,
+        "Avg_Gallons": 115.14,
+        "Percentage": 0.47
+      },
+      "Bakery Products Manufacturing": {
+        "Collections": 116,
+        "Total_Gallons": 5640,
+        "Avg_Gallons": 48.62,
+        "Percentage": 0.39
+      },
+      "Food & Beverages Trading (Sub-activity of Food Service)": {
+        "Collections": 101,
+        "Total_Gallons": 4525,
+        "Avg_Gallons": 44.8,
+        "Percentage": 0.34
+      },
+      "Dairy Product Manufacturing": {
+        "Collections": 93,
+        "Total_Gallons": 3625,
+        "Avg_Gallons": 38.98,
+        "Percentage": 0.31
+      },
+      "Bakery with Production": {
+        "Collections": 87,
+        "Total_Gallons": 3130,
+        "Avg_Gallons": 35.98,
+        "Percentage": 0.29
+      },
+      "Bread & Bakery Products Trading": {
+        "Collections": 76,
+        "Total_Gallons": 1770,
+        "Avg_Gallons": 23.29,
+        "Percentage": 0.25
+      },
+      "Villa": {
+        "Collections": 73,
+        "Total_Gallons": 5545,
+        "Avg_Gallons": 75.96,
+        "Percentage": 0.24
+      },
+      "Sweets Manufacturing": {
+        "Collections": 72,
+        "Total_Gallons": 1995,
+        "Avg_Gallons": 27.71,
+        "Percentage": 0.24
+      },
+      "Governmental Hospital": {
+        "Collections": 69,
+        "Total_Gallons": 6465,
+        "Avg_Gallons": 93.7,
+        "Percentage": 0.23
+      },
+      "Ice Cream Shop": {
+        "Collections": 62,
+        "Total_Gallons": 1005,
+        "Avg_Gallons": 16.21,
+        "Percentage": 0.21
+      },
+      "Food stuff Supply Services": {
+        "Collections": 62,
+        "Total_Gallons": 5305,
+        "Avg_Gallons": 85.56,
+        "Percentage": 0.21
+      },
+      "Pastry &  Sweets Manufacturing": {
+        "Collections": 56,
+        "Total_Gallons": 1030,
+        "Avg_Gallons": 18.39,
+        "Percentage": 0.19
+      },
+      "Pastry Preparing": {
+        "Collections": 51,
+        "Total_Gallons": 2010,
+        "Avg_Gallons": 39.41,
+        "Percentage": 0.17
+      },
+      "School": {
+        "Collections": 50,
+        "Total_Gallons": 2605,
+        "Avg_Gallons": 52.1,
+        "Percentage": 0.17
+      },
+      "Global Village Establishments/ Kiosks": {
+        "Collections": 45,
+        "Total_Gallons": 835,
+        "Avg_Gallons": 18.56,
+        "Percentage": 0.15
+      },
+      "Common Kitchen in Labor Accommodations": {
+        "Collections": 34,
+        "Total_Gallons": 2930,
+        "Avg_Gallons": 86.18,
+        "Percentage": 0.11
+      },
+      "Roastery": {
+        "Collections": 32,
+        "Total_Gallons": 4490,
+        "Avg_Gallons": 140.31,
+        "Percentage": 0.11
+      },
+      "Food & Beverages Trading (Sub-activity of Trading)": {
+        "Collections": 31,
+        "Total_Gallons": 840,
+        "Avg_Gallons": 27.1,
+        "Percentage": 0.1
+      },
+      "Confectionery and Chocolate Trading (Retail)": {
+        "Collections": 30,
+        "Total_Gallons": 450,
+        "Avg_Gallons": 15.0,
+        "Percentage": 0.1
+      },
+      "Hotel Apartments": {
+        "Collections": 30,
+        "Total_Gallons": 3085,
+        "Avg_Gallons": 102.83,
+        "Percentage": 0.1
+      },
+      "Three Star Hotel": {
+        "Collections": 29,
+        "Total_Gallons": 6372,
+        "Avg_Gallons": 219.72,
+        "Percentage": 0.1
+      },
+      "Juice and Soft Drinks Shop": {
+        "Collections": 27,
+        "Total_Gallons": 405,
+        "Avg_Gallons": 15.0,
+        "Percentage": 0.09
+      },
+      "Hospitality Services": {
+        "Collections": 24,
+        "Total_Gallons": 1920,
+        "Avg_Gallons": 80.0,
+        "Percentage": 0.08
+      },
+      "Preparation of Sweets and Candies": {
+        "Collections": 17,
+        "Total_Gallons": 765,
+        "Avg_Gallons": 45.0,
+        "Percentage": 0.06
+      },
+      "Permanent Food Truck": {
+        "Collections": 17,
+        "Total_Gallons": 255,
+        "Avg_Gallons": 15.0,
+        "Percentage": 0.06
+      },
+      "Restaurant Management": {
+        "Collections": 16,
+        "Total_Gallons": 845,
+        "Avg_Gallons": 52.81,
+        "Percentage": 0.05
+      },
+      "Food Truck- Permanent Location": {
+        "Collections": 14,
+        "Total_Gallons": 210,
+        "Avg_Gallons": 15.0,
+        "Percentage": 0.05
+      },
+      "Confectionary & Chocolate Trading": {
+        "Collections": 12,
+        "Total_Gallons": 240,
+        "Avg_Gallons": 20.0,
+        "Percentage": 0.04
+      },
+      "Preparation of Local Sweets": {
+        "Collections": 11,
+        "Total_Gallons": 610,
+        "Avg_Gallons": 55.45,
+        "Percentage": 0.04
+      },
+      "Police Headquarters": {
+        "Collections": 9,
+        "Total_Gallons": 615,
+        "Avg_Gallons": 68.33,
+        "Percentage": 0.03
+      },
+      "Biscuit Manufacturing": {
+        "Collections": 8,
+        "Total_Gallons": 800,
+        "Avg_Gallons": 100.0,
+        "Percentage": 0.03
+      },
+      "Ice Cream Manufacturing": {
+        "Collections": 7,
+        "Total_Gallons": 175,
+        "Avg_Gallons": 25.0,
+        "Percentage": 0.02
+      },
+      "Food Karts": {
+        "Collections": 6,
+        "Total_Gallons": 700,
+        "Avg_Gallons": 116.67,
+        "Percentage": 0.02
+      },
+      "Ice Cream Trading": {
+        "Collections": 6,
+        "Total_Gallons": 150,
+        "Avg_Gallons": 25.0,
+        "Percentage": 0.02
+      },
+      "School - Supply of Snacks (Trading)": {
+        "Collections": 6,
+        "Total_Gallons": 600,
+        "Avg_Gallons": 100.0,
+        "Percentage": 0.02
+      },
+      "Preparation of Juices/Shakes": {
+        "Collections": 5,
+        "Total_Gallons": 125,
+        "Avg_Gallons": 25.0,
+        "Percentage": 0.02
+      },
+      "Warehousing": {
+        "Collections": 5,
+        "Total_Gallons": 200,
+        "Avg_Gallons": 40.0,
+        "Percentage": 0.02
+      },
+      "Pastry & Sweets Manufacturing (Retail and Food Service)": {
+        "Collections": 3,
+        "Total_Gallons": 45,
+        "Avg_Gallons": 15.0,
+        "Percentage": 0.01
+      },
+      "Food Truck- Beverages, Juices or Shakes": {
+        "Collections": 3,
+        "Total_Gallons": 35,
+        "Avg_Gallons": 11.67,
+        "Percentage": 0.01
+      }
+    },
+    "top_categories": {
+      "Restaurant": {
+        "Collections": 14522,
+        "Total_Gallons": 640669,
+        "Avg_Gallons": 44.12,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 38.92,
+        "Unique_Entities": 1648,
+        "Areas_Served": 23,
+        "Service_Providers": 60,
+        "Percentage": 48.5
+      },
+      "Accommodation": {
+        "Collections": 3841,
+        "Total_Gallons": 317920,
+        "Avg_Gallons": 82.77,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 44.48,
+        "Unique_Entities": 350,
+        "Areas_Served": 18,
+        "Service_Providers": 42,
+        "Percentage": 12.83
+      },
+      "Cafeteria": {
+        "Collections": 2867,
+        "Total_Gallons": 93195,
+        "Avg_Gallons": 32.51,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 26.26,
+        "Unique_Entities": 453,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 9.57
+      },
+      "Catering": {
+        "Collections": 1957,
+        "Total_Gallons": 227181,
+        "Avg_Gallons": 116.09,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 231.73,
+        "Unique_Entities": 189,
+        "Areas_Served": 14,
+        "Service_Providers": 51,
+        "Percentage": 6.54
+      },
+      "Supermarket": {
+        "Collections": 1945,
+        "Total_Gallons": 74235,
+        "Avg_Gallons": 38.17,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 42.28,
+        "Unique_Entities": 162,
+        "Areas_Served": 18,
+        "Service_Providers": 36,
+        "Percentage": 6.5
+      },
+      "Coffee Shop": {
+        "Collections": 1462,
+        "Total_Gallons": 30765,
+        "Avg_Gallons": 21.04,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 21.9,
+        "Unique_Entities": 211,
+        "Areas_Served": 22,
+        "Service_Providers": 50,
+        "Percentage": 4.88
+      },
+      "Hotel": {
+        "Collections": 1364,
+        "Total_Gallons": 138197,
+        "Avg_Gallons": 101.32,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 114.11,
+        "Unique_Entities": 114,
+        "Areas_Served": 14,
+        "Service_Providers": 30,
+        "Percentage": 4.56
+      },
+      "Bakery /confectionery": {
+        "Collections": 1330,
+        "Total_Gallons": 61190,
+        "Avg_Gallons": 46.01,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 46.43,
+        "Unique_Entities": 153,
+        "Areas_Served": 19,
+        "Service_Providers": 45,
+        "Percentage": 4.44
+      },
+      "Mall": {
+        "Collections": 538,
+        "Total_Gallons": 79280,
+        "Avg_Gallons": 147.36,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 148.78,
+        "Unique_Entities": 18,
+        "Areas_Served": 8,
+        "Service_Providers": 8,
+        "Percentage": 1.8
+      },
+      "Hospital": {
+        "Collections": 69,
+        "Total_Gallons": 6465,
+        "Avg_Gallons": 93.7,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 135.69,
+        "Unique_Entities": 10,
+        "Areas_Served": 6,
+        "Service_Providers": 4,
+        "Percentage": 0.23
+      }
+    },
+    "category_area_distribution": {
+      "('Accommodation', 'Abu Hl')": 9,
+      "('Accommodation', 'Acdemc Cty')": 23,
+      "('Accommodation', 'Al Awr')": 197,
+      "('Accommodation', 'Al Brr')": 1,
+      "('Accommodation', 'Al Brsh')": 77,
+      "('Accommodation', 'Al Furjn')": 4,
+      "('Accommodation', 'Al Grhoud')": 3,
+      "('Accommodation', 'Al Khwneej')": 134,
+      "('Accommodation', 'Al Krm')": 18,
+      "('Accommodation', 'Al Lsl')": 34,
+      "('Accommodation', 'Al Mmzr')": 3,
+      "('Accommodation', 'Al Mn')": 40,
+      "('Accommodation', 'Al Mnr')": 1,
+      "('Accommodation', 'Al Mzhr')": 4,
+      "('Accommodation', 'Al Nhd')": 19,
+      "('Accommodation', 'Al Qudr')": 131,
+      "('Accommodation', 'Al Quoz')": 3136,
+      "('Accommodation', 'Al jddf')": 7,
+      "('Bakery /confectionery', 'Abu Hl')": 11,
+      "('Bakery /confectionery', 'Acdemc Cty')": 3,
+      "('Bakery /confectionery', 'Al Awr')": 3,
+      "('Bakery /confectionery', 'Al Bd')": 8,
+      "('Bakery /confectionery', 'Al Brh')": 6,
+      "('Bakery /confectionery', 'Al Brsh')": 202,
+      "('Bakery /confectionery', 'Al Grhoud')": 47,
+      "('Bakery /confectionery', 'Al Jfly')": 18,
+      "('Bakery /confectionery', 'Al Khbs')": 54,
+      "('Bakery /confectionery', 'Al Khwneej')": 64,
+      "('Bakery /confectionery', 'Al Krm')": 218,
+      "('Bakery /confectionery', 'Al Lsl')": 8,
+      "('Bakery /confectionery', 'Al Mmzr')": 3,
+      "('Bakery /confectionery', 'Al Mn')": 11,
+      "('Bakery /confectionery', 'Al Mzhr')": 26,
+      "('Bakery /confectionery', 'Al Nhd')": 71,
+      "('Bakery /confectionery', 'Al Qudr')": 22,
+      "('Bakery /confectionery', 'Al Quoz')": 528,
+      "('Bakery /confectionery', 'Al jddf')": 27,
+      "('Cafeteria', 'Abu Hl')": 56,
+      "('Cafeteria', 'Acdemc Cty')": 1,
+      "('Cafeteria', 'Al Awr')": 52,
+      "('Cafeteria', 'Al Bd')": 149,
+      "('Cafeteria', 'Al Brh')": 46,
+      "('Cafeteria', 'Al Brr')": 13,
+      "('Cafeteria', 'Al Brsh')": 529,
+      "('Cafeteria', 'Al Furjn')": 9,
+      "('Cafeteria', 'Al Grhoud')": 93,
+      "('Cafeteria', 'Al Jfly')": 73,
+      "('Cafeteria', 'Al Khbs')": 14,
+      "('Cafeteria', 'Al Khwneej')": 223,
+      "('Cafeteria', 'Al Krm')": 695,
+      "('Cafeteria', 'Al Lsl')": 53,
+      "('Cafeteria', 'Al Mmzr')": 70,
+      "('Cafeteria', 'Al Mn')": 11,
+      "('Cafeteria', 'Al Mnr')": 12,
+      "('Cafeteria', 'Al Mzhr')": 55,
+      "('Cafeteria', 'Al Nhd')": 121,
+      "('Cafeteria', 'Al Qudr')": 41,
+      "('Cafeteria', 'Al Quoz')": 481,
+      "('Cafeteria', 'Al jddf')": 70,
+      "('Catering', 'Abu Hl')": 2,
+      "('Catering', 'Acdemc Cty')": 43,
+      "('Catering', 'Al Awr')": 23,
+      "('Catering', 'Al Brh')": 18,
+      "('Catering', 'Al Brr')": 3,
+      "('Catering', 'Al Brsh')": 121,
+      "('Catering', 'Al Grhoud')": 145,
+      "('Catering', 'Al Khbs')": 10,
+      "('Catering', 'Al Khwneej')": 79,
+      "('Catering', 'Al Krm')": 11,
+      "('Catering', 'Al Lsl')": 6,
+      "('Catering', 'Al Qudr')": 22,
+      "('Catering', 'Al Quoz')": 1470,
+      "('Catering', 'Al jddf')": 4,
+      "('Coffee Shop', 'Abu Hl')": 28,
+      "('Coffee Shop', 'Acdemc Cty')": 36,
+      "('Coffee Shop', 'Al Awr')": 34,
+      "('Coffee Shop', 'Al Bd')": 24,
+      "('Coffee Shop', 'Al Brh')": 12,
+      "('Coffee Shop', 'Al Brr')": 12,
+      "('Coffee Shop', 'Al Brsh')": 402,
+      "('Coffee Shop', 'Al Furjn')": 18,
+      "('Coffee Shop', 'Al Grhoud')": 255,
+      "('Coffee Shop', 'Al Jfly')": 37,
+      "('Coffee Shop', 'Al Khbs')": 7,
+      "('Coffee Shop', 'Al Khwneej')": 111,
+      "('Coffee Shop', 'Al Krm')": 92,
+      "('Coffee Shop', 'Al Lsl')": 6,
+      "('Coffee Shop', 'Al Mmzr')": 13,
+      "('Coffee Shop', 'Al Mn')": 18,
+      "('Coffee Shop', 'Al Mnr')": 6,
+      "('Coffee Shop', 'Al Mzhr')": 30,
+      "('Coffee Shop', 'Al Nhd')": 73,
+      "('Coffee Shop', 'Al Qudr')": 52,
+      "('Coffee Shop', 'Al Quoz')": 168,
+      "('Coffee Shop', 'Al jddf')": 28,
+      "('Hospital', 'Al Brsh')": 11,
+      "('Hospital', 'Al Grhoud')": 44,
+      "('Hospital', 'Al Khwneej')": 3,
+      "('Hospital', 'Al Mzhr')": 6,
+      "('Hospital', 'Al Nhd')": 3,
+      "('Hospital', 'Al jddf')": 2,
+      "('Hotel', 'Abu Hl')": 10,
+      "('Hotel', 'Acdemc Cty')": 6,
+      "('Hotel', 'Al Awr')": 5,
+      "('Hotel', 'Al Bd')": 6,
+      "('Hotel', 'Al Brh')": 10,
+      "('Hotel', 'Al Brsh')": 585,
+      "('Hotel', 'Al Furjn')": 58,
+      "('Hotel', 'Al Grhoud')": 207,
+      "('Hotel', 'Al Jfly')": 6,
+      "('Hotel', 'Al Krm')": 70,
+      "('Hotel', 'Al Mn')": 186,
+      "('Hotel', 'Al Nhd')": 39,
+      "('Hotel', 'Al Quoz')": 12,
+      "('Hotel', 'Al jddf')": 164,
+      "('Mall', 'Al Brr')": 50,
+      "('Mall', 'Al Brsh')": 174,
+      "('Mall', 'Al Grhoud')": 48,
+      "('Mall', 'Al Khwneej')": 144,
+      "('Mall', 'Al Mnr')": 16,
+      "('Mall', 'Al Mzhr')": 30,
+      "('Mall', 'Al Qudr')": 30,
+      "('Mall', 'Al Quoz')": 46,
+      "('Restaurant', 'Abu Hl')": 218,
+      "('Restaurant', 'Acdemc Cty')": 124,
+      "('Restaurant', 'Al Awr')": 122,
+      "('Restaurant', 'Al Bd')": 287,
+      "('Restaurant', 'Al Brh')": 135,
+      "('Restaurant', 'Al Brr')": 81,
+      "('Restaurant', 'Al Brsh')": 4790,
+      "('Restaurant', 'Al Furjn')": 107,
+      "('Restaurant', 'Al Grhoud')": 969,
+      "('Restaurant', 'Al Jfly')": 53,
+      "('Restaurant', 'Al Khbs')": 84,
+      "('Restaurant', 'Al Khwneej')": 665,
+      "('Restaurant', 'Al Krm')": 2657,
+      "('Restaurant', 'Al Lsl')": 105,
+      "('Restaurant', 'Al Mmzr')": 127,
+      "('Restaurant', 'Al Mn')": 238,
+      "('Restaurant', 'Al Mnr')": 106,
+      "('Restaurant', 'Al Mrmoom')": 2,
+      "('Restaurant', 'Al Mzhr')": 198,
+      "('Restaurant', 'Al Nhd')": 1008,
+      "('Restaurant', 'Al Qudr')": 228,
+      "('Restaurant', 'Al Quoz')": 1827,
+      "('Restaurant', 'Al jddf')": 391,
+      "('School', 'Acdemc Cty')": 8,
+      "('School', 'Al Brsh')": 24,
+      "('School', 'Al Furjn')": 15,
+      "('School', 'Al Mnr')": 3,
+      "('Supermarket', 'Abu Hl')": 46,
+      "('Supermarket', 'Al Bd')": 108,
+      "('Supermarket', 'Al Brh')": 24,
+      "('Supermarket', 'Al Brsh')": 651,
+      "('Supermarket', 'Al Furjn')": 16,
+      "('Supermarket', 'Al Grhoud')": 13,
+      "('Supermarket', 'Al Jfly')": 18,
+      "('Supermarket', 'Al Khbs')": 6,
+      "('Supermarket', 'Al Khwneej')": 50,
+      "('Supermarket', 'Al Krm')": 173,
+      "('Supermarket', 'Al Lsl')": 8,
+      "('Supermarket', 'Al Mmzr')": 48,
+      "('Supermarket', 'Al Mn')": 59,
+      "('Supermarket', 'Al Mzhr')": 36,
+      "('Supermarket', 'Al Nhd')": 251,
+      "('Supermarket', 'Al Qudr')": 24,
+      "('Supermarket', 'Al Quoz')": 284,
+      "('Supermarket', 'Al jddf')": 130
+    }
+  },
+  "providers": {
+    "providers": {
+      "Service Provider 4": {
+        "Collections": 3501,
+        "Total_Gallons": 235897,
+        "Avg_Gallons": 67.38,
+        "Unique_Entities": 365,
+        "Areas_Served": 22,
+        "Zones_Served": 7,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 44.98,
+        "Market_Share": 11.69,
+        "Collections_Per_Vehicle": 389.0
+      },
+      "Service Provider 30": {
+        "Collections": 2640,
+        "Total_Gallons": 106505,
+        "Avg_Gallons": 40.34,
+        "Unique_Entities": 231,
+        "Areas_Served": 21,
+        "Zones_Served": 7,
+        "Vehicles_Used": 12,
+        "Avg_Turnaround_Days": 46.14,
+        "Market_Share": 8.82,
+        "Collections_Per_Vehicle": 220.0
+      },
+      "Service Provider 10": {
+        "Collections": 1690,
+        "Total_Gallons": 140225,
+        "Avg_Gallons": 82.97,
+        "Unique_Entities": 132,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 44.44,
+        "Market_Share": 5.64,
+        "Collections_Per_Vehicle": 187.78
+      },
+      "Service Provider 16": {
+        "Collections": 1517,
+        "Total_Gallons": 82735,
+        "Avg_Gallons": 54.54,
+        "Unique_Entities": 229,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 8,
+        "Avg_Turnaround_Days": 44.9,
+        "Market_Share": 5.07,
+        "Collections_Per_Vehicle": 189.62
+      },
+      "Service Provider 8": {
+        "Collections": 1274,
+        "Total_Gallons": 69950,
+        "Avg_Gallons": 54.91,
+        "Unique_Entities": 148,
+        "Areas_Served": 16,
+        "Zones_Served": 7,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.35,
+        "Market_Share": 4.25,
+        "Collections_Per_Vehicle": 318.5
+      },
+      "Service Provider 25": {
+        "Collections": 1156,
+        "Total_Gallons": 55115,
+        "Avg_Gallons": 47.68,
+        "Unique_Entities": 105,
+        "Areas_Served": 18,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 46.84,
+        "Market_Share": 3.86,
+        "Collections_Per_Vehicle": 385.33
+      },
+      "Service Provider 51": {
+        "Collections": 1027,
+        "Total_Gallons": 61545,
+        "Avg_Gallons": 59.93,
+        "Unique_Entities": 127,
+        "Areas_Served": 16,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.77,
+        "Market_Share": 3.43,
+        "Collections_Per_Vehicle": 205.4
+      },
+      "Service Provider 9": {
+        "Collections": 998,
+        "Total_Gallons": 144141,
+        "Avg_Gallons": 144.43,
+        "Unique_Entities": 61,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.58,
+        "Market_Share": 3.33,
+        "Collections_Per_Vehicle": 249.5
+      },
+      "Service Provider 5": {
+        "Collections": 904,
+        "Total_Gallons": 30527,
+        "Avg_Gallons": 33.77,
+        "Unique_Entities": 67,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 45.09,
+        "Market_Share": 3.02,
+        "Collections_Per_Vehicle": 150.67
+      },
+      "Service Provider 11": {
+        "Collections": 884,
+        "Total_Gallons": 33040,
+        "Avg_Gallons": 37.38,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 42.18,
+        "Market_Share": 2.95,
+        "Collections_Per_Vehicle": 147.33
+      },
+      "Service Provider 6": {
+        "Collections": 744,
+        "Total_Gallons": 46175,
+        "Avg_Gallons": 62.06,
+        "Unique_Entities": 141,
+        "Areas_Served": 16,
+        "Zones_Served": 6,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 45.25,
+        "Market_Share": 2.48,
+        "Collections_Per_Vehicle": 148.8
+      },
+      "Service Provider 17": {
+        "Collections": 722,
+        "Total_Gallons": 41250,
+        "Avg_Gallons": 57.13,
+        "Unique_Entities": 64,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.57,
+        "Market_Share": 2.41,
+        "Collections_Per_Vehicle": 240.67
+      },
+      "Service Provider 28": {
+        "Collections": 708,
+        "Total_Gallons": 48115,
+        "Avg_Gallons": 67.96,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.25,
+        "Market_Share": 2.36,
+        "Collections_Per_Vehicle": 354.0
+      },
+      "Service Provider 20": {
+        "Collections": 703,
+        "Total_Gallons": 26150,
+        "Avg_Gallons": 37.2,
+        "Unique_Entities": 44,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 44.89,
+        "Market_Share": 2.35,
+        "Collections_Per_Vehicle": 234.33
+      },
+      "Service Provider 23": {
+        "Collections": 690,
+        "Total_Gallons": 36285,
+        "Avg_Gallons": 52.59,
+        "Unique_Entities": 105,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.81,
+        "Market_Share": 2.3,
+        "Collections_Per_Vehicle": 138.0
+      },
+      "Service Provider 35": {
+        "Collections": 595,
+        "Total_Gallons": 25970,
+        "Avg_Gallons": 43.65,
+        "Unique_Entities": 112,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 43.34,
+        "Market_Share": 1.99,
+        "Collections_Per_Vehicle": 148.75
+      },
+      "Service Provider 46": {
+        "Collections": 581,
+        "Total_Gallons": 20385,
+        "Avg_Gallons": 35.09,
+        "Unique_Entities": 98,
+        "Areas_Served": 14,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.15,
+        "Market_Share": 1.94,
+        "Collections_Per_Vehicle": 193.67
+      },
+      "Service Provider 12": {
+        "Collections": 512,
+        "Total_Gallons": 17830,
+        "Avg_Gallons": 34.82,
+        "Unique_Entities": 63,
+        "Areas_Served": 14,
+        "Zones_Served": 6,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 47.36,
+        "Market_Share": 1.71,
+        "Collections_Per_Vehicle": 170.67
+      },
+      "Service Provider 38": {
+        "Collections": 493,
+        "Total_Gallons": 11995,
+        "Avg_Gallons": 24.33,
+        "Unique_Entities": 41,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 46.05,
+        "Market_Share": 1.65,
+        "Collections_Per_Vehicle": 164.33
+      },
+      "Service Provider 14": {
+        "Collections": 455,
+        "Total_Gallons": 19145,
+        "Avg_Gallons": 42.08,
+        "Unique_Entities": 52,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 43.35,
+        "Market_Share": 1.52,
+        "Collections_Per_Vehicle": 227.5
+      },
+      "Service Provider 24": {
+        "Collections": 442,
+        "Total_Gallons": 16730,
+        "Avg_Gallons": 37.85,
+        "Unique_Entities": 40,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 43.05,
+        "Market_Share": 1.48,
+        "Collections_Per_Vehicle": 110.5
+      },
+      "Service Provider 61": {
+        "Collections": 428,
+        "Total_Gallons": 17115,
+        "Avg_Gallons": 39.99,
+        "Unique_Entities": 43,
+        "Areas_Served": 8,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.85,
+        "Market_Share": 1.43,
+        "Collections_Per_Vehicle": 428.0
+      },
+      "Service Provider 32": {
+        "Collections": 427,
+        "Total_Gallons": 19155,
+        "Avg_Gallons": 44.86,
+        "Unique_Entities": 52,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.4,
+        "Market_Share": 1.43,
+        "Collections_Per_Vehicle": 213.5
+      },
+      "Service Provider 49": {
+        "Collections": 409,
+        "Total_Gallons": 30799,
+        "Avg_Gallons": 75.3,
+        "Unique_Entities": 17,
+        "Areas_Served": 6,
+        "Zones_Served": 4,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 46.62,
+        "Market_Share": 1.37,
+        "Collections_Per_Vehicle": 102.25
+      },
+      "Service Provider 50": {
+        "Collections": 379,
+        "Total_Gallons": 16991,
+        "Avg_Gallons": 44.83,
+        "Unique_Entities": 50,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 45.88,
+        "Market_Share": 1.27,
+        "Collections_Per_Vehicle": 126.33
+      },
+      "Service Provider 18": {
+        "Collections": 355,
+        "Total_Gallons": 22410,
+        "Avg_Gallons": 63.13,
+        "Unique_Entities": 33,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.92,
+        "Market_Share": 1.19,
+        "Collections_Per_Vehicle": 355.0
+      },
+      "Service Provider 2": {
+        "Collections": 351,
+        "Total_Gallons": 17170,
+        "Avg_Gallons": 48.92,
+        "Unique_Entities": 61,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 45.14,
+        "Market_Share": 1.17,
+        "Collections_Per_Vehicle": 117.0
+      },
+      "Service Provider 37": {
+        "Collections": 344,
+        "Total_Gallons": 11320,
+        "Avg_Gallons": 32.91,
+        "Unique_Entities": 37,
+        "Areas_Served": 13,
+        "Zones_Served": 6,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.22,
+        "Market_Share": 1.15,
+        "Collections_Per_Vehicle": 172.0
+      },
+      "Service Provider 15": {
+        "Collections": 336,
+        "Total_Gallons": 22365,
+        "Avg_Gallons": 66.56,
+        "Unique_Entities": 48,
+        "Areas_Served": 14,
+        "Zones_Served": 7,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.42,
+        "Market_Share": 1.12,
+        "Collections_Per_Vehicle": 168.0
+      },
+      "Service Provider 36": {
+        "Collections": 326,
+        "Total_Gallons": 24065,
+        "Avg_Gallons": 73.82,
+        "Unique_Entities": 47,
+        "Areas_Served": 11,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.49,
+        "Market_Share": 1.09,
+        "Collections_Per_Vehicle": 326.0
+      },
+      "Service Provider 42": {
+        "Collections": 302,
+        "Total_Gallons": 13530,
+        "Avg_Gallons": 44.8,
+        "Unique_Entities": 35,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.7,
+        "Market_Share": 1.01,
+        "Collections_Per_Vehicle": 151.0
+      },
+      "Service Provider 48": {
+        "Collections": 286,
+        "Total_Gallons": 16295,
+        "Avg_Gallons": 56.98,
+        "Unique_Entities": 42,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.28,
+        "Market_Share": 0.96,
+        "Collections_Per_Vehicle": 143.0
+      },
+      "Service Provider 13": {
+        "Collections": 273,
+        "Total_Gallons": 10690,
+        "Avg_Gallons": 39.16,
+        "Unique_Entities": 34,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 46.71,
+        "Market_Share": 0.91,
+        "Collections_Per_Vehicle": 273.0
+      },
+      "Service Provider 34": {
+        "Collections": 265,
+        "Total_Gallons": 9990,
+        "Avg_Gallons": 37.7,
+        "Unique_Entities": 35,
+        "Areas_Served": 10,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.33,
+        "Market_Share": 0.88,
+        "Collections_Per_Vehicle": 265.0
+      },
+      "Service Provider 52": {
+        "Collections": 262,
+        "Total_Gallons": 11510,
+        "Avg_Gallons": 43.93,
+        "Unique_Entities": 39,
+        "Areas_Served": 9,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 43.77,
+        "Market_Share": 0.87,
+        "Collections_Per_Vehicle": 262.0
+      },
+      "Service Provider 27": {
+        "Collections": 258,
+        "Total_Gallons": 10795,
+        "Avg_Gallons": 41.84,
+        "Unique_Entities": 33,
+        "Areas_Served": 12,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 43.28,
+        "Market_Share": 0.86,
+        "Collections_Per_Vehicle": 129.0
+      },
+      "Service Provider 26": {
+        "Collections": 232,
+        "Total_Gallons": 14750,
+        "Avg_Gallons": 63.58,
+        "Unique_Entities": 48,
+        "Areas_Served": 8,
+        "Zones_Served": 3,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.12,
+        "Market_Share": 0.77,
+        "Collections_Per_Vehicle": 77.33
+      },
+      "Service Provider 44": {
+        "Collections": 208,
+        "Total_Gallons": 7230,
+        "Avg_Gallons": 34.76,
+        "Unique_Entities": 21,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 49.19,
+        "Market_Share": 0.69,
+        "Collections_Per_Vehicle": 104.0
+      },
+      "Service Provider 40": {
+        "Collections": 203,
+        "Total_Gallons": 18620,
+        "Avg_Gallons": 91.72,
+        "Unique_Entities": 9,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 46.34,
+        "Market_Share": 0.68,
+        "Collections_Per_Vehicle": 101.5
+      },
+      "Service Provider 41": {
+        "Collections": 197,
+        "Total_Gallons": 8355,
+        "Avg_Gallons": 42.41,
+        "Unique_Entities": 29,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 41.58,
+        "Market_Share": 0.66,
+        "Collections_Per_Vehicle": 197.0
+      },
+      "Service Provider 19": {
+        "Collections": 195,
+        "Total_Gallons": 5760,
+        "Avg_Gallons": 29.54,
+        "Unique_Entities": 11,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 47.82,
+        "Market_Share": 0.65,
+        "Collections_Per_Vehicle": 97.5
+      },
+      "Service Provider 7": {
+        "Collections": 144,
+        "Total_Gallons": 4245,
+        "Avg_Gallons": 29.48,
+        "Unique_Entities": 17,
+        "Areas_Served": 8,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.92,
+        "Market_Share": 0.48,
+        "Collections_Per_Vehicle": 144.0
+      },
+      "Service Provider 53": {
+        "Collections": 143,
+        "Total_Gallons": 6155,
+        "Avg_Gallons": 43.04,
+        "Unique_Entities": 11,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 44.41,
+        "Market_Share": 0.48,
+        "Collections_Per_Vehicle": 71.5
+      },
+      "Service Provider 54": {
+        "Collections": 134,
+        "Total_Gallons": 6305,
+        "Avg_Gallons": 47.05,
+        "Unique_Entities": 19,
+        "Areas_Served": 6,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 47.12,
+        "Market_Share": 0.45,
+        "Collections_Per_Vehicle": 134.0
+      },
+      "Service Provider 62": {
+        "Collections": 127,
+        "Total_Gallons": 9600,
+        "Avg_Gallons": 75.59,
+        "Unique_Entities": 8,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 47.55,
+        "Market_Share": 0.42,
+        "Collections_Per_Vehicle": 127.0
+      },
+      "Service Provider 29": {
+        "Collections": 110,
+        "Total_Gallons": 6035,
+        "Avg_Gallons": 54.86,
+        "Unique_Entities": 19,
+        "Areas_Served": 10,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 43.7,
+        "Market_Share": 0.37,
+        "Collections_Per_Vehicle": 110.0
+      },
+      "Service Provider 31": {
+        "Collections": 110,
+        "Total_Gallons": 6263,
+        "Avg_Gallons": 56.94,
+        "Unique_Entities": 15,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 42.22,
+        "Market_Share": 0.37,
+        "Collections_Per_Vehicle": 110.0
+      },
+      "Service Provider 3": {
+        "Collections": 101,
+        "Total_Gallons": 7934,
+        "Avg_Gallons": 78.55,
+        "Unique_Entities": 14,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 50.04,
+        "Market_Share": 0.34,
+        "Collections_Per_Vehicle": 101.0
+      },
+      "Service Provider 60": {
+        "Collections": 96,
+        "Total_Gallons": 3470,
+        "Avg_Gallons": 36.15,
+        "Unique_Entities": 17,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.61,
+        "Market_Share": 0.32,
+        "Collections_Per_Vehicle": 96.0
+      },
+      "Service Provider 22": {
+        "Collections": 92,
+        "Total_Gallons": 6315,
+        "Avg_Gallons": 68.64,
+        "Unique_Entities": 16,
+        "Areas_Served": 9,
+        "Zones_Served": 6,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 49.9,
+        "Market_Share": 0.31,
+        "Collections_Per_Vehicle": 92.0
+      },
+      "Service Provider 58": {
+        "Collections": 85,
+        "Total_Gallons": 5185,
+        "Avg_Gallons": 61.0,
+        "Unique_Entities": 12,
+        "Areas_Served": 7,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 49.21,
+        "Market_Share": 0.28,
+        "Collections_Per_Vehicle": 85.0
+      },
+      "Service Provider 1": {
+        "Collections": 83,
+        "Total_Gallons": 7145,
+        "Avg_Gallons": 86.08,
+        "Unique_Entities": 7,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 44.24,
+        "Market_Share": 0.28,
+        "Collections_Per_Vehicle": 83.0
+      },
+      "Service Provider 43": {
+        "Collections": 75,
+        "Total_Gallons": 1930,
+        "Avg_Gallons": 25.73,
+        "Unique_Entities": 18,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 44.44,
+        "Market_Share": 0.25,
+        "Collections_Per_Vehicle": 75.0
+      },
+      "Service Provider 33": {
+        "Collections": 65,
+        "Total_Gallons": 3545,
+        "Avg_Gallons": 54.54,
+        "Unique_Entities": 10,
+        "Areas_Served": 5,
+        "Zones_Served": 4,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 42.31,
+        "Market_Share": 0.22,
+        "Collections_Per_Vehicle": 65.0
+      },
+      "Service Provider 63": {
+        "Collections": 51,
+        "Total_Gallons": 3330,
+        "Avg_Gallons": 65.29,
+        "Unique_Entities": 16,
+        "Areas_Served": 4,
+        "Zones_Served": 4,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 49.92,
+        "Market_Share": 0.17,
+        "Collections_Per_Vehicle": 25.5
+      },
+      "Service Provider 45": {
+        "Collections": 37,
+        "Total_Gallons": 2925,
+        "Avg_Gallons": 79.05,
+        "Unique_Entities": 6,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 53.68,
+        "Market_Share": 0.12,
+        "Collections_Per_Vehicle": 37.0
+      },
+      "Service Provider 56": {
+        "Collections": 36,
+        "Total_Gallons": 2475,
+        "Avg_Gallons": 68.75,
+        "Unique_Entities": 6,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 41.14,
+        "Market_Share": 0.12,
+        "Collections_Per_Vehicle": 36.0
+      },
+      "Service Provider 21": {
+        "Collections": 29,
+        "Total_Gallons": 2195,
+        "Avg_Gallons": 75.69,
+        "Unique_Entities": 6,
+        "Areas_Served": 3,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 45.59,
+        "Market_Share": 0.1,
+        "Collections_Per_Vehicle": 29.0
+      },
+      "Service Provider 65": {
+        "Collections": 28,
+        "Total_Gallons": 1120,
+        "Avg_Gallons": 40.0,
+        "Unique_Entities": 1,
+        "Areas_Served": 1,
+        "Zones_Served": 1,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 65.25,
+        "Market_Share": 0.09,
+        "Collections_Per_Vehicle": 28.0
+      },
+      "Service Provider 55": {
+        "Collections": 25,
+        "Total_Gallons": 610,
+        "Avg_Gallons": 24.4,
+        "Unique_Entities": 3,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 52.92,
+        "Market_Share": 0.08,
+        "Collections_Per_Vehicle": 25.0
+      },
+      "Service Provider 57": {
+        "Collections": 24,
+        "Total_Gallons": 2820,
+        "Avg_Gallons": 117.5,
+        "Unique_Entities": 3,
+        "Areas_Served": 2,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 50.92,
+        "Market_Share": 0.08,
+        "Collections_Per_Vehicle": 24.0
+      },
+      "Service Provider 39": {
+        "Collections": 19,
+        "Total_Gallons": 530,
+        "Avg_Gallons": 27.89,
+        "Unique_Entities": 4,
+        "Areas_Served": 2,
+        "Zones_Served": 1,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 63.53,
+        "Market_Share": 0.06,
+        "Collections_Per_Vehicle": 19.0
+      },
+      "Service Provider 47": {
+        "Collections": 16,
+        "Total_Gallons": 535,
+        "Avg_Gallons": 33.44,
+        "Unique_Entities": 11,
+        "Areas_Served": 6,
+        "Zones_Served": 5,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 81.25,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 16.0
+      },
+      "Service Provider 66": {
+        "Collections": 16,
+        "Total_Gallons": 640,
+        "Avg_Gallons": 40.0,
+        "Unique_Entities": 2,
+        "Areas_Served": 2,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 21.12,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 16.0
+      },
+      "Service Provider 59": {
+        "Collections": 14,
+        "Total_Gallons": 1010,
+        "Avg_Gallons": 72.14,
+        "Unique_Entities": 6,
+        "Areas_Served": 4,
+        "Zones_Served": 3,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 51.93,
+        "Market_Share": 0.05,
+        "Collections_Per_Vehicle": 14.0
+      },
+      "Service Provider 64": {
+        "Collections": 13,
+        "Total_Gallons": 760,
+        "Avg_Gallons": 58.46,
+        "Unique_Entities": 4,
+        "Areas_Served": 3,
+        "Zones_Served": 2,
+        "Vehicles_Used": 1,
+        "Avg_Turnaround_Days": 39.92,
+        "Market_Share": 0.04,
+        "Collections_Per_Vehicle": 13.0
+      }
+    },
+    "top_providers": {
+      "Service Provider 4": {
+        "Collections": 3501,
+        "Total_Gallons": 235897,
+        "Avg_Gallons": 67.38,
+        "Unique_Entities": 365,
+        "Areas_Served": 22,
+        "Zones_Served": 7,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 44.98,
+        "Market_Share": 11.69,
+        "Collections_Per_Vehicle": 389.0
+      },
+      "Service Provider 30": {
+        "Collections": 2640,
+        "Total_Gallons": 106505,
+        "Avg_Gallons": 40.34,
+        "Unique_Entities": 231,
+        "Areas_Served": 21,
+        "Zones_Served": 7,
+        "Vehicles_Used": 12,
+        "Avg_Turnaround_Days": 46.14,
+        "Market_Share": 8.82,
+        "Collections_Per_Vehicle": 220.0
+      },
+      "Service Provider 10": {
+        "Collections": 1690,
+        "Total_Gallons": 140225,
+        "Avg_Gallons": 82.97,
+        "Unique_Entities": 132,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 9,
+        "Avg_Turnaround_Days": 44.44,
+        "Market_Share": 5.64,
+        "Collections_Per_Vehicle": 187.78
+      },
+      "Service Provider 16": {
+        "Collections": 1517,
+        "Total_Gallons": 82735,
+        "Avg_Gallons": 54.54,
+        "Unique_Entities": 229,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 8,
+        "Avg_Turnaround_Days": 44.9,
+        "Market_Share": 5.07,
+        "Collections_Per_Vehicle": 189.62
+      },
+      "Service Provider 8": {
+        "Collections": 1274,
+        "Total_Gallons": 69950,
+        "Avg_Gallons": 54.91,
+        "Unique_Entities": 148,
+        "Areas_Served": 16,
+        "Zones_Served": 7,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.35,
+        "Market_Share": 4.25,
+        "Collections_Per_Vehicle": 318.5
+      },
+      "Service Provider 25": {
+        "Collections": 1156,
+        "Total_Gallons": 55115,
+        "Avg_Gallons": 47.68,
+        "Unique_Entities": 105,
+        "Areas_Served": 18,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 46.84,
+        "Market_Share": 3.86,
+        "Collections_Per_Vehicle": 385.33
+      },
+      "Service Provider 51": {
+        "Collections": 1027,
+        "Total_Gallons": 61545,
+        "Avg_Gallons": 59.93,
+        "Unique_Entities": 127,
+        "Areas_Served": 16,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.77,
+        "Market_Share": 3.43,
+        "Collections_Per_Vehicle": 205.4
+      },
+      "Service Provider 9": {
+        "Collections": 998,
+        "Total_Gallons": 144141,
+        "Avg_Gallons": 144.43,
+        "Unique_Entities": 61,
+        "Areas_Served": 11,
+        "Zones_Served": 6,
+        "Vehicles_Used": 4,
+        "Avg_Turnaround_Days": 44.58,
+        "Market_Share": 3.33,
+        "Collections_Per_Vehicle": 249.5
+      },
+      "Service Provider 5": {
+        "Collections": 904,
+        "Total_Gallons": 30527,
+        "Avg_Gallons": 33.77,
+        "Unique_Entities": 67,
+        "Areas_Served": 17,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 45.09,
+        "Market_Share": 3.02,
+        "Collections_Per_Vehicle": 150.67
+      },
+      "Service Provider 11": {
+        "Collections": 884,
+        "Total_Gallons": 33040,
+        "Avg_Gallons": 37.38,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 6,
+        "Vehicles_Used": 6,
+        "Avg_Turnaround_Days": 42.18,
+        "Market_Share": 2.95,
+        "Collections_Per_Vehicle": 147.33
+      },
+      "Service Provider 6": {
+        "Collections": 744,
+        "Total_Gallons": 46175,
+        "Avg_Gallons": 62.06,
+        "Unique_Entities": 141,
+        "Areas_Served": 16,
+        "Zones_Served": 6,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 45.25,
+        "Market_Share": 2.48,
+        "Collections_Per_Vehicle": 148.8
+      },
+      "Service Provider 17": {
+        "Collections": 722,
+        "Total_Gallons": 41250,
+        "Avg_Gallons": 57.13,
+        "Unique_Entities": 64,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 43.57,
+        "Market_Share": 2.41,
+        "Collections_Per_Vehicle": 240.67
+      },
+      "Service Provider 28": {
+        "Collections": 708,
+        "Total_Gallons": 48115,
+        "Avg_Gallons": 67.96,
+        "Unique_Entities": 106,
+        "Areas_Served": 15,
+        "Zones_Served": 5,
+        "Vehicles_Used": 2,
+        "Avg_Turnaround_Days": 45.25,
+        "Market_Share": 2.36,
+        "Collections_Per_Vehicle": 354.0
+      },
+      "Service Provider 20": {
+        "Collections": 703,
+        "Total_Gallons": 26150,
+        "Avg_Gallons": 37.2,
+        "Unique_Entities": 44,
+        "Areas_Served": 17,
+        "Zones_Served": 7,
+        "Vehicles_Used": 3,
+        "Avg_Turnaround_Days": 44.89,
+        "Market_Share": 2.35,
+        "Collections_Per_Vehicle": 234.33
+      },
+      "Service Provider 23": {
+        "Collections": 690,
+        "Total_Gallons": 36285,
+        "Avg_Gallons": 52.59,
+        "Unique_Entities": 105,
+        "Areas_Served": 14,
+        "Zones_Served": 5,
+        "Vehicles_Used": 5,
+        "Avg_Turnaround_Days": 44.81,
+        "Market_Share": 2.3,
+        "Collections_Per_Vehicle": 138.0
+      }
+    },
+    "provider_rankings": {
+      "by_collections": {
+        "Service Provider 4": 3501,
+        "Service Provider 30": 2640,
+        "Service Provider 10": 1690,
+        "Service Provider 16": 1517,
+        "Service Provider 8": 1274,
+        "Service Provider 25": 1156,
+        "Service Provider 51": 1027,
+        "Service Provider 9": 998,
+        "Service Provider 5": 904,
+        "Service Provider 11": 884,
+        "Service Provider 6": 744,
+        "Service Provider 17": 722,
+        "Service Provider 28": 708,
+        "Service Provider 20": 703,
+        "Service Provider 23": 690,
+        "Service Provider 35": 595,
+        "Service Provider 46": 581,
+        "Service Provider 12": 512,
+        "Service Provider 38": 493,
+        "Service Provider 14": 455,
+        "Service Provider 24": 442,
+        "Service Provider 61": 428,
+        "Service Provider 32": 427,
+        "Service Provider 49": 409,
+        "Service Provider 50": 379,
+        "Service Provider 18": 355,
+        "Service Provider 2": 351,
+        "Service Provider 37": 344,
+        "Service Provider 15": 336,
+        "Service Provider 36": 326,
+        "Service Provider 42": 302,
+        "Service Provider 48": 286,
+        "Service Provider 13": 273,
+        "Service Provider 34": 265,
+        "Service Provider 52": 262,
+        "Service Provider 27": 258,
+        "Service Provider 26": 232,
+        "Service Provider 44": 208,
+        "Service Provider 40": 203,
+        "Service Provider 41": 197,
+        "Service Provider 19": 195,
+        "Service Provider 7": 144,
+        "Service Provider 53": 143,
+        "Service Provider 54": 134,
+        "Service Provider 62": 127,
+        "Service Provider 29": 110,
+        "Service Provider 31": 110,
+        "Service Provider 3": 101,
+        "Service Provider 60": 96,
+        "Service Provider 22": 92,
+        "Service Provider 58": 85,
+        "Service Provider 1": 83,
+        "Service Provider 43": 75,
+        "Service Provider 33": 65,
+        "Service Provider 63": 51,
+        "Service Provider 45": 37,
+        "Service Provider 56": 36,
+        "Service Provider 21": 29,
+        "Service Provider 65": 28,
+        "Service Provider 55": 25,
+        "Service Provider 57": 24,
+        "Service Provider 39": 19,
+        "Service Provider 47": 16,
+        "Service Provider 66": 16,
+        "Service Provider 59": 14,
+        "Service Provider 64": 13
+      },
+      "by_gallons": {
+        "Service Provider 4": 235897,
+        "Service Provider 30": 106505,
+        "Service Provider 10": 140225,
+        "Service Provider 16": 82735,
+        "Service Provider 8": 69950,
+        "Service Provider 25": 55115,
+        "Service Provider 51": 61545,
+        "Service Provider 9": 144141,
+        "Service Provider 5": 30527,
+        "Service Provider 11": 33040,
+        "Service Provider 6": 46175,
+        "Service Provider 17": 41250,
+        "Service Provider 28": 48115,
+        "Service Provider 20": 26150,
+        "Service Provider 23": 36285,
+        "Service Provider 35": 25970,
+        "Service Provider 46": 20385,
+        "Service Provider 12": 17830,
+        "Service Provider 38": 11995,
+        "Service Provider 14": 19145,
+        "Service Provider 24": 16730,
+        "Service Provider 61": 17115,
+        "Service Provider 32": 19155,
+        "Service Provider 49": 30799,
+        "Service Provider 50": 16991,
+        "Service Provider 18": 22410,
+        "Service Provider 2": 17170,
+        "Service Provider 37": 11320,
+        "Service Provider 15": 22365,
+        "Service Provider 36": 24065,
+        "Service Provider 42": 13530,
+        "Service Provider 48": 16295,
+        "Service Provider 13": 10690,
+        "Service Provider 34": 9990,
+        "Service Provider 52": 11510,
+        "Service Provider 27": 10795,
+        "Service Provider 26": 14750,
+        "Service Provider 44": 7230,
+        "Service Provider 40": 18620,
+        "Service Provider 41": 8355,
+        "Service Provider 19": 5760,
+        "Service Provider 7": 4245,
+        "Service Provider 53": 6155,
+        "Service Provider 54": 6305,
+        "Service Provider 62": 9600,
+        "Service Provider 29": 6035,
+        "Service Provider 31": 6263,
+        "Service Provider 3": 7934,
+        "Service Provider 60": 3470,
+        "Service Provider 22": 6315,
+        "Service Provider 58": 5185,
+        "Service Provider 1": 7145,
+        "Service Provider 43": 1930,
+        "Service Provider 33": 3545,
+        "Service Provider 63": 3330,
+        "Service Provider 45": 2925,
+        "Service Provider 56": 2475,
+        "Service Provider 21": 2195,
+        "Service Provider 65": 1120,
+        "Service Provider 55": 610,
+        "Service Provider 57": 2820,
+        "Service Provider 39": 530,
+        "Service Provider 47": 535,
+        "Service Provider 66": 640,
+        "Service Provider 59": 1010,
+        "Service Provider 64": 760
+      },
+      "by_efficiency": {
+        "Service Provider 4": 389.0,
+        "Service Provider 30": 220.0,
+        "Service Provider 10": 187.78,
+        "Service Provider 16": 189.62,
+        "Service Provider 8": 318.5,
+        "Service Provider 25": 385.33,
+        "Service Provider 51": 205.4,
+        "Service Provider 9": 249.5,
+        "Service Provider 5": 150.67,
+        "Service Provider 11": 147.33,
+        "Service Provider 6": 148.8,
+        "Service Provider 17": 240.67,
+        "Service Provider 28": 354.0,
+        "Service Provider 20": 234.33,
+        "Service Provider 23": 138.0,
+        "Service Provider 35": 148.75,
+        "Service Provider 46": 193.67,
+        "Service Provider 12": 170.67,
+        "Service Provider 38": 164.33,
+        "Service Provider 14": 227.5,
+        "Service Provider 24": 110.5,
+        "Service Provider 61": 428.0,
+        "Service Provider 32": 213.5,
+        "Service Provider 49": 102.25,
+        "Service Provider 50": 126.33,
+        "Service Provider 18": 355.0,
+        "Service Provider 2": 117.0,
+        "Service Provider 37": 172.0,
+        "Service Provider 15": 168.0,
+        "Service Provider 36": 326.0,
+        "Service Provider 42": 151.0,
+        "Service Provider 48": 143.0,
+        "Service Provider 13": 273.0,
+        "Service Provider 34": 265.0,
+        "Service Provider 52": 262.0,
+        "Service Provider 27": 129.0,
+        "Service Provider 26": 77.33,
+        "Service Provider 44": 104.0,
+        "Service Provider 40": 101.5,
+        "Service Provider 41": 197.0,
+        "Service Provider 19": 97.5,
+        "Service Provider 7": 144.0,
+        "Service Provider 53": 71.5,
+        "Service Provider 54": 134.0,
+        "Service Provider 62": 127.0,
+        "Service Provider 29": 110.0,
+        "Service Provider 31": 110.0,
+        "Service Provider 3": 101.0,
+        "Service Provider 60": 96.0,
+        "Service Provider 22": 92.0,
+        "Service Provider 58": 85.0,
+        "Service Provider 1": 83.0,
+        "Service Provider 43": 75.0,
+        "Service Provider 33": 65.0,
+        "Service Provider 63": 25.5,
+        "Service Provider 45": 37.0,
+        "Service Provider 56": 36.0,
+        "Service Provider 21": 29.0,
+        "Service Provider 65": 28.0,
+        "Service Provider 55": 25.0,
+        "Service Provider 57": 24.0,
+        "Service Provider 39": 19.0,
+        "Service Provider 47": 16.0,
+        "Service Provider 66": 16.0,
+        "Service Provider 59": 14.0,
+        "Service Provider 64": 13.0
+      }
+    }
+  },
+  "volumes": {
+    "distribution": {
+      "0-10": {
+        "count": "1",
+        "percentage": 0.0,
+        "total_gallons": "5",
+        "avg_gallons": 5.0
+      },
+      "11-25": {
+        "count": "9118",
+        "percentage": 30.45,
+        "total_gallons": "136382",
+        "avg_gallons": 14.96
+      },
+      "26-50": {
+        "count": "4002",
+        "percentage": 13.36,
+        "total_gallons": "159040",
+        "avg_gallons": 39.74
+      },
+      "51-100": {
+        "count": "0",
+        "percentage": 0.0,
+        "total_gallons": "0",
+        "avg_gallons": 0
+      },
+      "101-200": {
+        "count": "3215",
+        "percentage": 10.74,
+        "total_gallons": "434025",
+        "avg_gallons": 135.0
+      },
+      "201-500": {
+        "count": "119",
+        "percentage": 0.4,
+        "total_gallons": "35446",
+        "avg_gallons": 297.87
+      },
+      "500+": {
+        "count": "137",
+        "percentage": 0.46,
+        "total_gallons": "128454",
+        "avg_gallons": 937.62
+      }
+    },
+    "common_volumes": {
+      "15": 9021,
+      "25": 7502,
+      "100": 5818,
+      "40": 3911,
+      "135": 3215,
+      "11": 97,
+      "28": 65,
+      "250": 45,
+      "600": 43,
+      "1578": 42,
+      "30": 26,
+      "200": 16,
+      "530": 14,
+      "350": 12,
+      "700": 12,
+      "300": 12,
+      "500": 11,
+      "954": 9,
+      "235": 8,
+      "400": 6
+    },
+    "by_category": {
+      "Accommodation": {
+        "Collections": 3841,
+        "Total_Gallons": 317920,
+        "Avg_Gallons": 82.77,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 44.48
+      },
+      "Bakery /confectionery": {
+        "Collections": 1330,
+        "Total_Gallons": 61190,
+        "Avg_Gallons": 46.01,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 46.43
+      },
+      "Cafeteria": {
+        "Collections": 2867,
+        "Total_Gallons": 93195,
+        "Avg_Gallons": 32.51,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 26.26
+      },
+      "Catering": {
+        "Collections": 1957,
+        "Total_Gallons": 227181,
+        "Avg_Gallons": 116.09,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 231.73
+      },
+      "Coffee Shop": {
+        "Collections": 1462,
+        "Total_Gallons": 30765,
+        "Avg_Gallons": 21.04,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 21.9
+      },
+      "Hospital": {
+        "Collections": 69,
+        "Total_Gallons": 6465,
+        "Avg_Gallons": 93.7,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 135.69
+      },
+      "Hotel": {
+        "Collections": 1364,
+        "Total_Gallons": 138197,
+        "Avg_Gallons": 101.32,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 114.11
+      },
+      "Mall": {
+        "Collections": 538,
+        "Total_Gallons": 79280,
+        "Avg_Gallons": 147.36,
+        "Median_Gallons": 100.0,
+        "Std_Gallons": 148.78
+      },
+      "Restaurant": {
+        "Collections": 14522,
+        "Total_Gallons": 640669,
+        "Avg_Gallons": 44.12,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 38.92
+      },
+      "School": {
+        "Collections": 50,
+        "Total_Gallons": 2605,
+        "Avg_Gallons": 52.1,
+        "Median_Gallons": 25.0,
+        "Std_Gallons": 43.68
+      },
+      "Supermarket": {
+        "Collections": 1945,
+        "Total_Gallons": 74235,
+        "Avg_Gallons": 38.17,
+        "Median_Gallons": 15.0,
+        "Std_Gallons": 42.28
+      }
+    },
+    "statistics": {
+      "min": "5",
+      "max": "1578",
+      "mean": 55.83,
+      "median": 25.0,
+      "std": 81.32,
+      "q25": 15.0,
+      "q75": 100.0
+    }
+  },
+  "temporal": {
+    "monthly": {
+      "2023-01": {
+        "Collections": 10252,
+        "Total_Gallons": 570781,
+        "Unique_Entities": 3129,
+        "Active_Providers": 63
+      },
+      "2023-02": {
+        "Collections": 9704,
+        "Total_Gallons": 542123,
+        "Unique_Entities": 3105,
+        "Active_Providers": 64
+      },
+      "2023-03": {
+        "Collections": 9989,
+        "Total_Gallons": 558798,
+        "Unique_Entities": 3060,
+        "Active_Providers": 65
+      }
+    },
+    "day_of_week": {
+      "Monday": {
+        "Collections": 4789,
+        "Total_Gallons": 260445,
+        "Avg_Gallons": 54.38,
+        "Percentage": 15.99
+      },
+      "Tuesday": {
+        "Collections": 4912,
+        "Total_Gallons": 260629,
+        "Avg_Gallons": 53.06,
+        "Percentage": 16.4
+      },
+      "Wednesday": {
+        "Collections": 4356,
+        "Total_Gallons": 240627,
+        "Avg_Gallons": 55.24,
+        "Percentage": 14.55
+      },
+      "Thursday": {
+        "Collections": 2975,
+        "Total_Gallons": 159429,
+        "Avg_Gallons": 53.59,
+        "Percentage": 9.93
+      },
+      "Friday": {
+        "Collections": 3630,
+        "Total_Gallons": 210933,
+        "Avg_Gallons": 58.11,
+        "Percentage": 12.12
+      },
+      "Saturday": {
+        "Collections": 4588,
+        "Total_Gallons": 267626,
+        "Avg_Gallons": 58.33,
+        "Percentage": 15.32
+      },
+      "Sunday": {
+        "Collections": 4695,
+        "Total_Gallons": 272013,
+        "Avg_Gallons": 57.94,
+        "Percentage": 15.68
+      }
+    },
+    "hourly": {
+      "0": {
+        "Collections": 29945,
+        "Avg_Gallons": 55.83
+      }
+    },
+    "turnaround_time": {
+      "mean_days": 45.08,
+      "median_days": 45.0,
+      "min_days": 1.0,
+      "max_days": 90.0,
+      "std_days": 25.47
+    }
+  },
+  "efficiency": {
+    "vehicles": {
+      "O 96259": {
+        "Collections": 795,
+        "Total_Gallons": 28060,
+        "Avg_Gallons": 35.3,
+        "Areas_Served": 4,
+        "Entities_Served": 71,
+        "Service_Provider": "Service Provider 30"
+      },
+      "S 36847": {
+        "Collections": 672,
+        "Total_Gallons": 49295,
+        "Avg_Gallons": 73.36,
+        "Areas_Served": 11,
+        "Entities_Served": 60,
+        "Service_Provider": "Service Provider 9"
+      },
+      "M 45819": {
+        "Collections": 598,
+        "Total_Gallons": 39535,
+        "Avg_Gallons": 66.11,
+        "Areas_Served": 12,
+        "Entities_Served": 109,
+        "Service_Provider": "Service Provider 8"
+      },
+      "L 98369": {
+        "Collections": 579,
+        "Total_Gallons": 22220,
+        "Avg_Gallons": 38.38,
+        "Areas_Served": 17,
+        "Entities_Served": 65,
+        "Service_Provider": "Service Provider 25"
+      },
+      "H 95380": {
+        "Collections": 577,
+        "Total_Gallons": 30815,
+        "Avg_Gallons": 53.41,
+        "Areas_Served": 6,
+        "Entities_Served": 102,
+        "Service_Provider": "Service Provider 4"
+      },
+      "C 29843": {
+        "Collections": 568,
+        "Total_Gallons": 32360,
+        "Avg_Gallons": 56.97,
+        "Areas_Served": 11,
+        "Entities_Served": 54,
+        "Service_Provider": "Service Provider 25"
+      },
+      "Q 51720": {
+        "Collections": 510,
+        "Total_Gallons": 32265,
+        "Avg_Gallons": 63.26,
+        "Areas_Served": 13,
+        "Entities_Served": 88,
+        "Service_Provider": "Service Provider 4"
+      },
+      "I 85178": {
+        "Collections": 487,
+        "Total_Gallons": 8985,
+        "Avg_Gallons": 18.45,
+        "Areas_Served": 3,
+        "Entities_Served": 46,
+        "Service_Provider": "Service Provider 4"
+      },
+      "H 68505": {
+        "Collections": 468,
+        "Total_Gallons": 9700,
+        "Avg_Gallons": 20.73,
+        "Areas_Served": 17,
+        "Entities_Served": 33,
+        "Service_Provider": "Service Provider 20"
+      },
+      "R 64612": {
+        "Collections": 428,
+        "Total_Gallons": 17115,
+        "Avg_Gallons": 39.99,
+        "Areas_Served": 8,
+        "Entities_Served": 43,
+        "Service_Provider": "Service Provider 61"
+      },
+      "J 81876": {
+        "Collections": 422,
+        "Total_Gallons": 24610,
+        "Avg_Gallons": 58.32,
+        "Areas_Served": 7,
+        "Entities_Served": 81,
+        "Service_Provider": "Service Provider 4"
+      },
+      "P 35782": {
+        "Collections": 408,
+        "Total_Gallons": 49530,
+        "Avg_Gallons": 121.4,
+        "Areas_Served": 10,
+        "Entities_Served": 37,
+        "Service_Provider": "Service Provider 4"
+      },
+      "P 64054": {
+        "Collections": 399,
+        "Total_Gallons": 19830,
+        "Avg_Gallons": 49.7,
+        "Areas_Served": 5,
+        "Entities_Served": 28,
+        "Service_Provider": "Service Provider 30"
+      },
+      "18181": {
+        "Collections": 379,
+        "Total_Gallons": 38127,
+        "Avg_Gallons": 100.6,
+        "Areas_Served": 5,
+        "Entities_Served": 46,
+        "Service_Provider": "Service Provider 4"
+      },
+      "R 54671": {
+        "Collections": 373,
+        "Total_Gallons": 11020,
+        "Avg_Gallons": 29.54,
+        "Areas_Served": 4,
+        "Entities_Served": 47,
+        "Service_Provider": "Service Provider 30"
+      },
+      "T 85872": {
+        "Collections": 358,
+        "Total_Gallons": 24925,
+        "Avg_Gallons": 69.62,
+        "Areas_Served": 15,
+        "Entities_Served": 101,
+        "Service_Provider": "Service Provider 28"
+      },
+      "B 38979": {
+        "Collections": 355,
+        "Total_Gallons": 22410,
+        "Avg_Gallons": 63.13,
+        "Areas_Served": 9,
+        "Entities_Served": 33,
+        "Service_Provider": "Service Provider 18"
+      },
+      "T 41049": {
+        "Collections": 350,
+        "Total_Gallons": 23190,
+        "Avg_Gallons": 66.26,
+        "Areas_Served": 15,
+        "Entities_Served": 98,
+        "Service_Provider": "Service Provider 28"
+      },
+      "R 16108": {
+        "Collections": 326,
+        "Total_Gallons": 24065,
+        "Avg_Gallons": 73.82,
+        "Areas_Served": 11,
+        "Entities_Served": 47,
+        "Service_Provider": "Service Provider 36"
+      },
+      "K 42297": {
+        "Collections": 321,
+        "Total_Gallons": 27705,
+        "Avg_Gallons": 86.31,
+        "Areas_Served": 12,
+        "Entities_Served": 49,
+        "Service_Provider": "Service Provider 51"
+      }
+    },
+    "trap_types": {
+      "AG2": {
+        "Collections": 7502,
+        "Total_Gallons": 187550,
+        "Avg_Gallons": 25.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 25.05
+      },
+      "AG1": {
+        "Collections": 5942,
+        "Total_Gallons": 89130,
+        "Avg_Gallons": 15.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 19.84
+      },
+      "B": {
+        "Collections": 5803,
+        "Total_Gallons": 580300,
+        "Avg_Gallons": 100.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 19.38
+      },
+      "A": {
+        "Collections": 3707,
+        "Total_Gallons": 148280,
+        "Avg_Gallons": 40.0,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 12.38
+      },
+      "C": {
+        "Collections": 3227,
+        "Total_Gallons": 435225,
+        "Avg_Gallons": 134.87,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 10.78
+      },
+      "D": {
+        "Collections": 3079,
+        "Total_Gallons": 46185,
+        "Avg_Gallons": 15.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 10.28
+      },
+      "AG3": {
+        "Collections": 185,
+        "Total_Gallons": 7400,
+        "Avg_Gallons": 40.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 0.62
+      },
+      "Coffee Catcher": {
+        "Collections": 97,
+        "Total_Gallons": 1067,
+        "Avg_Gallons": 11.0,
+        "Most_Common_Category": "Coffee Shop",
+        "Percentage": 0.32
+      },
+      "Custom Separator -28 GL(Tank Plast)": {
+        "Collections": 65,
+        "Total_Gallons": 1820,
+        "Avg_Gallons": 28.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 0.22
+      },
+      "Kessel ( 1578 )": {
+        "Collections": 42,
+        "Total_Gallons": 66276,
+        "Avg_Gallons": 1578.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.14
+      },
+      "TNK-250-300(1)": {
+        "Collections": 27,
+        "Total_Gallons": 6750,
+        "Avg_Gallons": 250.0,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 0.09
+      },
+      "Custom GT 30 GL": {
+        "Collections": 26,
+        "Total_Gallons": 780,
+        "Avg_Gallons": 30.0,
+        "Most_Common_Category": "Cafeteria",
+        "Percentage": 0.09
+      },
+      "TNK-600-700(1)": {
+        "Collections": 25,
+        "Total_Gallons": 15000,
+        "Avg_Gallons": 600.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.08
+      },
+      "TNK-600-1000(2)": {
+        "Collections": 18,
+        "Total_Gallons": 10800,
+        "Avg_Gallons": 600.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.06
+      },
+      "Kessel (530)": {
+        "Collections": 14,
+        "Total_Gallons": 7420,
+        "Avg_Gallons": 530.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.05
+      },
+      "TNK-250-350(1)": {
+        "Collections": 12,
+        "Total_Gallons": 3000,
+        "Avg_Gallons": 250.0,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 0.04
+      },
+      "TNK-350-500(1)": {
+        "Collections": 12,
+        "Total_Gallons": 4200,
+        "Avg_Gallons": 350.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.04
+      },
+      "TNK-700-900(1)": {
+        "Collections": 12,
+        "Total_Gallons": 8400,
+        "Avg_Gallons": 700.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.04
+      },
+      "TNK-300-400(0.5)": {
+        "Collections": 12,
+        "Total_Gallons": 3600,
+        "Avg_Gallons": 300.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.04
+      },
+      "TNK-200-250(1.5)": {
+        "Collections": 11,
+        "Total_Gallons": 2200,
+        "Avg_Gallons": 200.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.04
+      },
+      "ACO NS 15 SEPARATOR (ROUND)": {
+        "Collections": 9,
+        "Total_Gallons": 8586,
+        "Avg_Gallons": 954.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.03
+      },
+      "ACO NS 4 SEPARATOR (ROUND)": {
+        "Collections": 8,
+        "Total_Gallons": 1880,
+        "Avg_Gallons": 235.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.03
+      },
+      "TNK-500-1000(1)": {
+        "Collections": 8,
+        "Total_Gallons": 4000,
+        "Avg_Gallons": 500.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.03
+      },
+      "Tank 40-60": {
+        "Collections": 8,
+        "Total_Gallons": 320,
+        "Avg_Gallons": 40.0,
+        "Most_Common_Category": "Cafeteria",
+        "Percentage": 0.03
+      },
+      "UG3": {
+        "Collections": 6,
+        "Total_Gallons": 240,
+        "Avg_Gallons": 40.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.02
+      },
+      "Custom GT (50 Gallons)": {
+        "Collections": 6,
+        "Total_Gallons": 300,
+        "Avg_Gallons": 50.0,
+        "Most_Common_Category": "Supermarket",
+        "Percentage": 0.02
+      },
+      "TNK-450-500(1)": {
+        "Collections": 6,
+        "Total_Gallons": 2700,
+        "Avg_Gallons": 450.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.02
+      },
+      "AG5": {
+        "Collections": 6,
+        "Total_Gallons": 1500,
+        "Avg_Gallons": 250.0,
+        "Most_Common_Category": "Coffee Shop",
+        "Percentage": 0.02
+      },
+      "CUSTOM GT 270": {
+        "Collections": 6,
+        "Total_Gallons": 1620,
+        "Avg_Gallons": 270.0,
+        "Most_Common_Category": "Mall",
+        "Percentage": 0.02
+      },
+      "TNK-400-500(1)": {
+        "Collections": 6,
+        "Total_Gallons": 2400,
+        "Avg_Gallons": 400.0,
+        "Most_Common_Category": "Bakery /confectionery",
+        "Percentage": 0.02
+      },
+      "KESSEL NG 4 SEPARATOR": {
+        "Collections": 6,
+        "Total_Gallons": 1476,
+        "Avg_Gallons": 246.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.02
+      },
+      "KESSEL NS 20 SEPARATOR": {
+        "Collections": 6,
+        "Total_Gallons": 5340,
+        "Avg_Gallons": 890.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.02
+      },
+      "Kessel (398)": {
+        "Collections": 5,
+        "Total_Gallons": 1990,
+        "Avg_Gallons": 398.0,
+        "Most_Common_Category": "Catering",
+        "Percentage": 0.02
+      },
+      "TNK-200-300(1)": {
+        "Collections": 5,
+        "Total_Gallons": 1000,
+        "Avg_Gallons": 200.0,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 0.02
+      },
+      "Custom GT 40 GL": {
+        "Collections": 5,
+        "Total_Gallons": 200,
+        "Avg_Gallons": 40.0,
+        "Most_Common_Category": "Coffee Shop",
+        "Percentage": 0.02
+      },
+      "KESSEL NS 10 SEPARATOR": {
+        "Collections": 4,
+        "Total_Gallons": 2008,
+        "Avg_Gallons": 502.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.01
+      },
+      "KESSEL NS 4 SEPARATOR": {
+        "Collections": 4,
+        "Total_Gallons": 844,
+        "Avg_Gallons": 211.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.01
+      },
+      "ACO NS 7 SEPARATOR (OVAL)": {
+        "Collections": 4,
+        "Total_Gallons": 1692,
+        "Avg_Gallons": 423.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 0.01
+      },
+      "ACO NS 10 SEPARATOR (OVAL)": {
+        "Collections": 3,
+        "Total_Gallons": 1584,
+        "Avg_Gallons": 528.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.01
+      },
+      "TNK-500-600(1)": {
+        "Collections": 3,
+        "Total_Gallons": 1500,
+        "Avg_Gallons": 500.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 0.01
+      },
+      "ACO NS 5.5 SEPARATOR (OVAL)": {
+        "Collections": 3,
+        "Total_Gallons": 1134,
+        "Avg_Gallons": 378.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.01
+      },
+      "SPT-100-5000(2)": {
+        "Collections": 3,
+        "Total_Gallons": 300,
+        "Avg_Gallons": 100.0,
+        "Most_Common_Category": "Hotel",
+        "Percentage": 0.01
+      },
+      "Custom Tank (720)": {
+        "Collections": 2,
+        "Total_Gallons": 1440,
+        "Avg_Gallons": 720.0,
+        "Most_Common_Category": "Accommodation",
+        "Percentage": 0.01
+      },
+      "Tank 330": {
+        "Collections": 2,
+        "Total_Gallons": 660,
+        "Avg_Gallons": 330.0,
+        "Most_Common_Category": "Supermarket",
+        "Percentage": 0.01
+      },
+      "CUSTOM GT 5GL": {
+        "Collections": 1,
+        "Total_Gallons": 5,
+        "Avg_Gallons": 5.0,
+        "Most_Common_Category": "Restaurant",
+        "Percentage": 0.0
+      },
+      "TNK-800-1000(1)": {
+        "Collections": 1,
+        "Total_Gallons": 800,
+        "Avg_Gallons": 800.0,
+        "Most_Common_Category": "Hospital",
+        "Percentage": 0.0
+      },
+      "TNK-800-1500(0.5)": {
+        "Collections": 1,
+        "Total_Gallons": 800,
+        "Avg_Gallons": 800.0,
+        "Most_Common_Category": "Hospital",
+        "Percentage": 0.0
+      }
+    },
+    "completion_rate": 100.0,
+    "avg_traps_per_service": 1.0,
+    "top_vehicles": {
+      "O 96259": {
+        "Collections": 795,
+        "Total_Gallons": 28060,
+        "Avg_Gallons": 35.3,
+        "Areas_Served": 4,
+        "Entities_Served": 71,
+        "Service_Provider": "Service Provider 30"
+      },
+      "S 36847": {
+        "Collections": 672,
+        "Total_Gallons": 49295,
+        "Avg_Gallons": 73.36,
+        "Areas_Served": 11,
+        "Entities_Served": 60,
+        "Service_Provider": "Service Provider 9"
+      },
+      "M 45819": {
+        "Collections": 598,
+        "Total_Gallons": 39535,
+        "Avg_Gallons": 66.11,
+        "Areas_Served": 12,
+        "Entities_Served": 109,
+        "Service_Provider": "Service Provider 8"
+      },
+      "L 98369": {
+        "Collections": 579,
+        "Total_Gallons": 22220,
+        "Avg_Gallons": 38.38,
+        "Areas_Served": 17,
+        "Entities_Served": 65,
+        "Service_Provider": "Service Provider 25"
+      },
+      "H 95380": {
+        "Collections": 577,
+        "Total_Gallons": 30815,
+        "Avg_Gallons": 53.41,
+        "Areas_Served": 6,
+        "Entities_Served": 102,
+        "Service_Provider": "Service Provider 4"
+      },
+      "C 29843": {
+        "Collections": 568,
+        "Total_Gallons": 32360,
+        "Avg_Gallons": 56.97,
+        "Areas_Served": 11,
+        "Entities_Served": 54,
+        "Service_Provider": "Service Provider 25"
+      },
+      "Q 51720": {
+        "Collections": 510,
+        "Total_Gallons": 32265,
+        "Avg_Gallons": 63.26,
+        "Areas_Served": 13,
+        "Entities_Served": 88,
+        "Service_Provider": "Service Provider 4"
+      },
+      "I 85178": {
+        "Collections": 487,
+        "Total_Gallons": 8985,
+        "Avg_Gallons": 18.45,
+        "Areas_Served": 3,
+        "Entities_Served": 46,
+        "Service_Provider": "Service Provider 4"
+      },
+      "H 68505": {
+        "Collections": 468,
+        "Total_Gallons": 9700,
+        "Avg_Gallons": 20.73,
+        "Areas_Served": 17,
+        "Entities_Served": 33,
+        "Service_Provider": "Service Provider 20"
+      },
+      "R 64612": {
+        "Collections": 428,
+        "Total_Gallons": 17115,
+        "Avg_Gallons": 39.99,
+        "Areas_Served": 8,
+        "Entities_Served": 43,
+        "Service_Provider": "Service Provider 61"
+      }
+    },
+    "provider_area_efficiency": {
+      "('Service Provider 1', 'Al Brsh')": {
+        "Collections": 11,
+        "Avg_Gallons": 85.0,
+        "Avg_Turnaround": 42.91
+      },
+      "('Service Provider 1', 'Al Khwneej')": {
+        "Collections": 9,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.89
+      },
+      "('Service Provider 1', 'Al Krm')": {
+        "Collections": 3,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 27.33
+      },
+      "('Service Provider 1', 'Al Mnr')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.33
+      },
+      "('Service Provider 1', 'Al Quoz')": {
+        "Collections": 54,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 10', 'Acdemc Cty')": {
+        "Collections": 42,
+        "Avg_Gallons": 75.0,
+        "Avg_Turnaround": 45.64
+      },
+      "('Service Provider 10', 'Al Awr')": {
+        "Collections": 65,
+        "Avg_Gallons": 112.85,
+        "Avg_Turnaround": 45.48
+      },
+      "('Service Provider 10', 'Al Bd')": {
+        "Collections": 7,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 44.0
+      },
+      "('Service Provider 10', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 51.0
+      },
+      "('Service Provider 10', 'Al Brr')": {
+        "Collections": 5,
+        "Avg_Gallons": 97.0,
+        "Avg_Turnaround": 27.0
+      },
+      "('Service Provider 10', 'Al Brsh')": {
+        "Collections": 334,
+        "Avg_Gallons": 154.6,
+        "Avg_Turnaround": 44.64
+      },
+      "('Service Provider 10', 'Al Furjn')": {
+        "Collections": 26,
+        "Avg_Gallons": 73.65,
+        "Avg_Turnaround": 47.88
+      },
+      "('Service Provider 10', 'Al Grhoud')": {
+        "Collections": 27,
+        "Avg_Gallons": 108.33,
+        "Avg_Turnaround": 45.56
+      },
+      "('Service Provider 10', 'Al Jfly')": {
+        "Collections": 16,
+        "Avg_Gallons": 243.75,
+        "Avg_Turnaround": 40.19
+      },
+      "('Service Provider 10', 'Al Khbs')": {
+        "Collections": 9,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 41.67
+      },
+      "('Service Provider 10', 'Al Khwneej')": {
+        "Collections": 48,
+        "Avg_Gallons": 48.02,
+        "Avg_Turnaround": 45.31
+      },
+      "('Service Provider 10', 'Al Krm')": {
+        "Collections": 165,
+        "Avg_Gallons": 46.24,
+        "Avg_Turnaround": 46.73
+      },
+      "('Service Provider 10', 'Al Mn')": {
+        "Collections": 181,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 44.8
+      },
+      "('Service Provider 10', 'Al Nhd')": {
+        "Collections": 40,
+        "Avg_Gallons": 27.25,
+        "Avg_Turnaround": 43.9
+      },
+      "('Service Provider 10', 'Al Qudr')": {
+        "Collections": 18,
+        "Avg_Gallons": 18.89,
+        "Avg_Turnaround": 29.22
+      },
+      "('Service Provider 10', 'Al Quoz')": {
+        "Collections": 618,
+        "Avg_Gallons": 69.87,
+        "Avg_Turnaround": 43.47
+      },
+      "('Service Provider 10', 'Al jddf')": {
+        "Collections": 83,
+        "Avg_Gallons": 98.55,
+        "Avg_Turnaround": 47.53
+      },
+      "('Service Provider 11', 'Abu Hl')": {
+        "Collections": 1,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 24.0
+      },
+      "('Service Provider 11', 'Acdemc Cty')": {
+        "Collections": 30,
+        "Avg_Gallons": 43.0,
+        "Avg_Turnaround": 49.6
+      },
+      "('Service Provider 11', 'Al Awr')": {
+        "Collections": 3,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 32.33
+      },
+      "('Service Provider 11', 'Al Bd')": {
+        "Collections": 18,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 44.89
+      },
+      "('Service Provider 11', 'Al Brsh')": {
+        "Collections": 238,
+        "Avg_Gallons": 29.68,
+        "Avg_Turnaround": 45.26
+      },
+      "('Service Provider 11', 'Al Grhoud')": {
+        "Collections": 110,
+        "Avg_Gallons": 18.23,
+        "Avg_Turnaround": 25.5
+      },
+      "('Service Provider 11', 'Al Khbs')": {
+        "Collections": 21,
+        "Avg_Gallons": 62.62,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 11', 'Al Khwneej')": {
+        "Collections": 111,
+        "Avg_Gallons": 31.22,
+        "Avg_Turnaround": 45.25
+      },
+      "('Service Provider 11', 'Al Krm')": {
+        "Collections": 64,
+        "Avg_Gallons": 38.12,
+        "Avg_Turnaround": 43.81
+      },
+      "('Service Provider 11', 'Al Mmzr')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 40.0
+      },
+      "('Service Provider 11', 'Al Mzhr')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 50.5
+      },
+      "('Service Provider 11', 'Al Nhd')": {
+        "Collections": 40,
+        "Avg_Gallons": 66.25,
+        "Avg_Turnaround": 47.52
+      },
+      "('Service Provider 11', 'Al Qudr')": {
+        "Collections": 29,
+        "Avg_Gallons": 19.14,
+        "Avg_Turnaround": 44.45
+      },
+      "('Service Provider 11', 'Al Quoz')": {
+        "Collections": 154,
+        "Avg_Gallons": 54.71,
+        "Avg_Turnaround": 41.62
+      },
+      "('Service Provider 11', 'Al jddf')": {
+        "Collections": 53,
+        "Avg_Gallons": 35.85,
+        "Avg_Turnaround": 45.7
+      },
+      "('Service Provider 12', 'Abu Hl')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 37.25
+      },
+      "('Service Provider 12', 'Acdemc Cty')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 67.5
+      },
+      "('Service Provider 12', 'Al Bd')": {
+        "Collections": 14,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 56.57
+      },
+      "('Service Provider 12', 'Al Brsh')": {
+        "Collections": 104,
+        "Avg_Gallons": 26.54,
+        "Avg_Turnaround": 48.41
+      },
+      "('Service Provider 12', 'Al Grhoud')": {
+        "Collections": 31,
+        "Avg_Gallons": 37.1,
+        "Avg_Turnaround": 46.32
+      },
+      "('Service Provider 12', 'Al Khbs')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 58.0
+      },
+      "('Service Provider 12', 'Al Khwneej')": {
+        "Collections": 8,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 12', 'Al Krm')": {
+        "Collections": 72,
+        "Avg_Gallons": 38.19,
+        "Avg_Turnaround": 49.96
+      },
+      "('Service Provider 12', 'Al Lsl')": {
+        "Collections": 36,
+        "Avg_Gallons": 46.67,
+        "Avg_Turnaround": 44.39
+      },
+      "('Service Provider 12', 'Al Mmzr')": {
+        "Collections": 16,
+        "Avg_Gallons": 22.5,
+        "Avg_Turnaround": 46.69
+      },
+      "('Service Provider 12', 'Al Mn')": {
+        "Collections": 12,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 38.67
+      },
+      "('Service Provider 12', 'Al Nhd')": {
+        "Collections": 103,
+        "Avg_Gallons": 23.54,
+        "Avg_Turnaround": 45.77
+      },
+      "('Service Provider 12', 'Al Qudr')": {
+        "Collections": 37,
+        "Avg_Gallons": 17.97,
+        "Avg_Turnaround": 49.49
+      },
+      "('Service Provider 12', 'Al Quoz')": {
+        "Collections": 71,
+        "Avg_Gallons": 71.13,
+        "Avg_Turnaround": 46.01
+      },
+      "('Service Provider 13', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 50.17
+      },
+      "('Service Provider 13', 'Al Bd')": {
+        "Collections": 10,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 44.6
+      },
+      "('Service Provider 13', 'Al Brh')": {
+        "Collections": 9,
+        "Avg_Gallons": 66.11,
+        "Avg_Turnaround": 44.22
+      },
+      "('Service Provider 13', 'Al Brsh')": {
+        "Collections": 114,
+        "Avg_Gallons": 44.78,
+        "Avg_Turnaround": 47.1
+      },
+      "('Service Provider 13', 'Al Khwneej')": {
+        "Collections": 24,
+        "Avg_Gallons": 18.33,
+        "Avg_Turnaround": 49.92
+      },
+      "('Service Provider 13', 'Al Krm')": {
+        "Collections": 12,
+        "Avg_Gallons": 56.25,
+        "Avg_Turnaround": 44.33
+      },
+      "('Service Provider 13', 'Al Mn')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 43.2
+      },
+      "('Service Provider 13', 'Al Mnr')": {
+        "Collections": 20,
+        "Avg_Gallons": 47.0,
+        "Avg_Turnaround": 51.35
+      },
+      "('Service Provider 13', 'Al Mzhr')": {
+        "Collections": 5,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 48.4
+      },
+      "('Service Provider 13', 'Al Nhd')": {
+        "Collections": 26,
+        "Avg_Gallons": 21.15,
+        "Avg_Turnaround": 47.08
+      },
+      "('Service Provider 13', 'Al Quoz')": {
+        "Collections": 42,
+        "Avg_Gallons": 33.81,
+        "Avg_Turnaround": 42.86
+      },
+      "('Service Provider 14', 'Abu Hl')": {
+        "Collections": 28,
+        "Avg_Gallons": 64.29,
+        "Avg_Turnaround": 43.68
+      },
+      "('Service Provider 14', 'Al Bd')": {
+        "Collections": 48,
+        "Avg_Gallons": 20.62,
+        "Avg_Turnaround": 45.69
+      },
+      "('Service Provider 14', 'Al Brsh')": {
+        "Collections": 117,
+        "Avg_Gallons": 23.63,
+        "Avg_Turnaround": 42.19
+      },
+      "('Service Provider 14', 'Al Jfly')": {
+        "Collections": 15,
+        "Avg_Gallons": 60.0,
+        "Avg_Turnaround": 42.0
+      },
+      "('Service Provider 14', 'Al Khbs')": {
+        "Collections": 18,
+        "Avg_Gallons": 62.5,
+        "Avg_Turnaround": 43.17
+      },
+      "('Service Provider 14', 'Al Khwneej')": {
+        "Collections": 10,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 43.5
+      },
+      "('Service Provider 14', 'Al Krm')": {
+        "Collections": 97,
+        "Avg_Gallons": 34.9,
+        "Avg_Turnaround": 43.37
+      },
+      "('Service Provider 14', 'Al Mmzr')": {
+        "Collections": 22,
+        "Avg_Gallons": 33.18,
+        "Avg_Turnaround": 41.45
+      },
+      "('Service Provider 14', 'Al Mn')": {
+        "Collections": 29,
+        "Avg_Gallons": 62.93,
+        "Avg_Turnaround": 39.34
+      },
+      "('Service Provider 14', 'Al Nhd')": {
+        "Collections": 14,
+        "Avg_Gallons": 67.86,
+        "Avg_Turnaround": 40.36
+      },
+      "('Service Provider 14', 'Al Quoz')": {
+        "Collections": 57,
+        "Avg_Gallons": 77.63,
+        "Avg_Turnaround": 47.47
+      },
+      "('Service Provider 15', 'Abu Hl')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.83
+      },
+      "('Service Provider 15', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 47.33
+      },
+      "('Service Provider 15', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 44.83
+      },
+      "('Service Provider 15', 'Al Brsh')": {
+        "Collections": 126,
+        "Avg_Gallons": 75.36,
+        "Avg_Turnaround": 44.17
+      },
+      "('Service Provider 15', 'Al Khbs')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.4
+      },
+      "('Service Provider 15', 'Al Khwneej')": {
+        "Collections": 10,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 39.2
+      },
+      "('Service Provider 15', 'Al Krm')": {
+        "Collections": 37,
+        "Avg_Gallons": 49.86,
+        "Avg_Turnaround": 44.27
+      },
+      "('Service Provider 15', 'Al Mn')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 45.5
+      },
+      "('Service Provider 15', 'Al Mnr')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 40.33
+      },
+      "('Service Provider 15', 'Al Mzhr')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 38.0
+      },
+      "('Service Provider 15', 'Al Nhd')": {
+        "Collections": 9,
+        "Avg_Gallons": 31.67,
+        "Avg_Turnaround": 41.56
+      },
+      "('Service Provider 15', 'Al Qudr')": {
+        "Collections": 15,
+        "Avg_Gallons": 55.0,
+        "Avg_Turnaround": 44.2
+      },
+      "('Service Provider 15', 'Al Quoz')": {
+        "Collections": 100,
+        "Avg_Gallons": 68.8,
+        "Avg_Turnaround": 45.31
+      },
+      "('Service Provider 15', 'Al jddf')": {
+        "Collections": 3,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 68.33
+      },
+      "('Service Provider 16', 'Abu Hl')": {
+        "Collections": 20,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 40.9
+      },
+      "('Service Provider 16', 'Acdemc Cty')": {
+        "Collections": 8,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 39.0
+      },
+      "('Service Provider 16', 'Al Awr')": {
+        "Collections": 24,
+        "Avg_Gallons": 76.25,
+        "Avg_Turnaround": 43.88
+      },
+      "('Service Provider 16', 'Al Bd')": {
+        "Collections": 56,
+        "Avg_Gallons": 34.29,
+        "Avg_Turnaround": 43.95
+      },
+      "('Service Provider 16', 'Al Brh')": {
+        "Collections": 23,
+        "Avg_Gallons": 52.61,
+        "Avg_Turnaround": 42.78
+      },
+      "('Service Provider 16', 'Al Brsh')": {
+        "Collections": 375,
+        "Avg_Gallons": 34.72,
+        "Avg_Turnaround": 44.8
+      },
+      "('Service Provider 16', 'Al Furjn')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.5
+      },
+      "('Service Provider 16', 'Al Grhoud')": {
+        "Collections": 29,
+        "Avg_Gallons": 55.34,
+        "Avg_Turnaround": 45.59
+      },
+      "('Service Provider 16', 'Al Jfly')": {
+        "Collections": 18,
+        "Avg_Gallons": 49.72,
+        "Avg_Turnaround": 46.67
+      },
+      "('Service Provider 16', 'Al Khbs')": {
+        "Collections": 1,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 33.0
+      },
+      "('Service Provider 16', 'Al Khwneej')": {
+        "Collections": 15,
+        "Avg_Gallons": 30.0,
+        "Avg_Turnaround": 43.8
+      },
+      "('Service Provider 16', 'Al Krm')": {
+        "Collections": 364,
+        "Avg_Gallons": 44.63,
+        "Avg_Turnaround": 45.65
+      },
+      "('Service Provider 16', 'Al Mmzr')": {
+        "Collections": 6,
+        "Avg_Gallons": 60.0,
+        "Avg_Turnaround": 34.17
+      },
+      "('Service Provider 16', 'Al Mn')": {
+        "Collections": 55,
+        "Avg_Gallons": 20.09,
+        "Avg_Turnaround": 44.67
+      },
+      "('Service Provider 16', 'Al Mnr')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 50.0
+      },
+      "('Service Provider 16', 'Al Nhd')": {
+        "Collections": 74,
+        "Avg_Gallons": 42.23,
+        "Avg_Turnaround": 44.8
+      },
+      "('Service Provider 16', 'Al Quoz')": {
+        "Collections": 438,
+        "Avg_Gallons": 89.59,
+        "Avg_Turnaround": 45.01
+      },
+      "('Service Provider 17', 'Abu Hl')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 86.0
+      },
+      "('Service Provider 17', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 48.33
+      },
+      "('Service Provider 17', 'Al Awr')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 47.0
+      },
+      "('Service Provider 17', 'Al Bd')": {
+        "Collections": 13,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 45.85
+      },
+      "('Service Provider 17', 'Al Brsh')": {
+        "Collections": 124,
+        "Avg_Gallons": 33.75,
+        "Avg_Turnaround": 44.94
+      },
+      "('Service Provider 17', 'Al Grhoud')": {
+        "Collections": 53,
+        "Avg_Gallons": 35.09,
+        "Avg_Turnaround": 43.94
+      },
+      "('Service Provider 17', 'Al Jfly')": {
+        "Collections": 12,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.5
+      },
+      "('Service Provider 17', 'Al Khwneej')": {
+        "Collections": 20,
+        "Avg_Gallons": 51.0,
+        "Avg_Turnaround": 37.3
+      },
+      "('Service Provider 17', 'Al Krm')": {
+        "Collections": 106,
+        "Avg_Gallons": 62.08,
+        "Avg_Turnaround": 44.25
+      },
+      "('Service Provider 17', 'Al Lsl')": {
+        "Collections": 10,
+        "Avg_Gallons": 121.0,
+        "Avg_Turnaround": 40.4
+      },
+      "('Service Provider 17', 'Al Mmzr')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 43.33
+      },
+      "('Service Provider 17', 'Al Mzhr')": {
+        "Collections": 13,
+        "Avg_Gallons": 44.23,
+        "Avg_Turnaround": 43.38
+      },
+      "('Service Provider 17', 'Al Nhd')": {
+        "Collections": 37,
+        "Avg_Gallons": 63.65,
+        "Avg_Turnaround": 44.11
+      },
+      "('Service Provider 17', 'Al Quoz')": {
+        "Collections": 316,
+        "Avg_Gallons": 66.77,
+        "Avg_Turnaround": 42.64
+      },
+      "('Service Provider 18', 'Al Awr')": {
+        "Collections": 9,
+        "Avg_Gallons": 30.0,
+        "Avg_Turnaround": 40.56
+      },
+      "('Service Provider 18', 'Al Bd')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 46.2
+      },
+      "('Service Provider 18', 'Al Brsh')": {
+        "Collections": 25,
+        "Avg_Gallons": 22.2,
+        "Avg_Turnaround": 47.44
+      },
+      "('Service Provider 18', 'Al Khwneej')": {
+        "Collections": 11,
+        "Avg_Gallons": 26.36,
+        "Avg_Turnaround": 44.09
+      },
+      "('Service Provider 18', 'Al Krm')": {
+        "Collections": 94,
+        "Avg_Gallons": 35.48,
+        "Avg_Turnaround": 41.69
+      },
+      "('Service Provider 18', 'Al Nhd')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 25.0
+      },
+      "('Service Provider 18', 'Al Qudr')": {
+        "Collections": 10,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 39.6
+      },
+      "('Service Provider 18', 'Al Quoz')": {
+        "Collections": 188,
+        "Avg_Gallons": 92.1,
+        "Avg_Turnaround": 48.75
+      },
+      "('Service Provider 18', 'Al jddf')": {
+        "Collections": 11,
+        "Avg_Gallons": 26.36,
+        "Avg_Turnaround": 45.82
+      },
+      "('Service Provider 19', 'Al Brsh')": {
+        "Collections": 99,
+        "Avg_Gallons": 42.42,
+        "Avg_Turnaround": 49.17
+      },
+      "('Service Provider 19', 'Al Nhd')": {
+        "Collections": 48,
+        "Avg_Gallons": 17.5,
+        "Avg_Turnaround": 43.71
+      },
+      "('Service Provider 19', 'Al Quoz')": {
+        "Collections": 18,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.17
+      },
+      "('Service Provider 19', 'Al jddf')": {
+        "Collections": 30,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 51.53
+      },
+      "('Service Provider 2', 'Abu Hl')": {
+        "Collections": 13,
+        "Avg_Gallons": 42.31,
+        "Avg_Turnaround": 47.46
+      },
+      "('Service Provider 2', 'Al Bd')": {
+        "Collections": 27,
+        "Avg_Gallons": 60.19,
+        "Avg_Turnaround": 47.33
+      },
+      "('Service Provider 2', 'Al Brh')": {
+        "Collections": 1,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 7.0
+      },
+      "('Service Provider 2', 'Al Brsh')": {
+        "Collections": 52,
+        "Avg_Gallons": 29.71,
+        "Avg_Turnaround": 42.4
+      },
+      "('Service Provider 2', 'Al Jfly')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 65.5
+      },
+      "('Service Provider 2', 'Al Khwneej')": {
+        "Collections": 3,
+        "Avg_Gallons": 71.67,
+        "Avg_Turnaround": 69.33
+      },
+      "('Service Provider 2', 'Al Krm')": {
+        "Collections": 98,
+        "Avg_Gallons": 41.89,
+        "Avg_Turnaround": 47.9
+      },
+      "('Service Provider 2', 'Al Mmzr')": {
+        "Collections": 8,
+        "Avg_Gallons": 30.62,
+        "Avg_Turnaround": 45.62
+      },
+      "('Service Provider 2', 'Al Nhd')": {
+        "Collections": 68,
+        "Avg_Gallons": 47.06,
+        "Avg_Turnaround": 42.69
+      },
+      "('Service Provider 2', 'Al Quoz')": {
+        "Collections": 61,
+        "Avg_Gallons": 72.87,
+        "Avg_Turnaround": 43.92
+      },
+      "('Service Provider 2', 'Al jddf')": {
+        "Collections": 18,
+        "Avg_Gallons": 61.67,
+        "Avg_Turnaround": 42.0
+      },
+      "('Service Provider 20', 'Acdemc Cty')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 33.5
+      },
+      "('Service Provider 20', 'Al Awr')": {
+        "Collections": 19,
+        "Avg_Gallons": 17.63,
+        "Avg_Turnaround": 37.79
+      },
+      "('Service Provider 20', 'Al Bd')": {
+        "Collections": 18,
+        "Avg_Gallons": 95.0,
+        "Avg_Turnaround": 41.28
+      },
+      "('Service Provider 20', 'Al Brh')": {
+        "Collections": 11,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.55
+      },
+      "('Service Provider 20', 'Al Brsh')": {
+        "Collections": 149,
+        "Avg_Gallons": 18.76,
+        "Avg_Turnaround": 49.51
+      },
+      "('Service Provider 20', 'Al Furjn')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 48.67
+      },
+      "('Service Provider 20', 'Al Grhoud')": {
+        "Collections": 18,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 45.28
+      },
+      "('Service Provider 20', 'Al Khbs')": {
+        "Collections": 18,
+        "Avg_Gallons": 21.67,
+        "Avg_Turnaround": 43.67
+      },
+      "('Service Provider 20', 'Al Khwneej')": {
+        "Collections": 45,
+        "Avg_Gallons": 36.11,
+        "Avg_Turnaround": 45.04
+      },
+      "('Service Provider 20', 'Al Krm')": {
+        "Collections": 93,
+        "Avg_Gallons": 42.1,
+        "Avg_Turnaround": 42.42
+      },
+      "('Service Provider 20', 'Al Lsl')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 50.5
+      },
+      "('Service Provider 20', 'Al Mn')": {
+        "Collections": 49,
+        "Avg_Gallons": 35.82,
+        "Avg_Turnaround": 45.96
+      },
+      "('Service Provider 20', 'Al Mnr')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 44.0
+      },
+      "('Service Provider 20', 'Al Nhd')": {
+        "Collections": 30,
+        "Avg_Gallons": 68.0,
+        "Avg_Turnaround": 40.7
+      },
+      "('Service Provider 20', 'Al Qudr')": {
+        "Collections": 18,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 41.83
+      },
+      "('Service Provider 20', 'Al Quoz')": {
+        "Collections": 87,
+        "Avg_Gallons": 48.16,
+        "Avg_Turnaround": 44.46
+      },
+      "('Service Provider 20', 'Al jddf')": {
+        "Collections": 126,
+        "Avg_Gallons": 40.48,
+        "Avg_Turnaround": 44.1
+      },
+      "('Service Provider 21', 'Al Khwneej')": {
+        "Collections": 3,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 50.0
+      },
+      "('Service Provider 21', 'Al Nhd')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 44.4
+      },
+      "('Service Provider 21', 'Al Quoz')": {
+        "Collections": 21,
+        "Avg_Gallons": 81.67,
+        "Avg_Turnaround": 45.24
+      },
+      "('Service Provider 22', 'Acdemc Cty')": {
+        "Collections": 5,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 57.6
+      },
+      "('Service Provider 22', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 51.0
+      },
+      "('Service Provider 22', 'Al Brsh')": {
+        "Collections": 22,
+        "Avg_Gallons": 72.27,
+        "Avg_Turnaround": 47.45
+      },
+      "('Service Provider 22', 'Al Krm')": {
+        "Collections": 38,
+        "Avg_Gallons": 56.58,
+        "Avg_Turnaround": 52.34
+      },
+      "('Service Provider 22', 'Al Lsl')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 47.6
+      },
+      "('Service Provider 22', 'Al Mmzr')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 48.0
+      },
+      "('Service Provider 22', 'Al Nhd')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.0
+      },
+      "('Service Provider 22', 'Al Qudr')": {
+        "Collections": 5,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 45.4
+      },
+      "('Service Provider 22', 'Al jddf')": {
+        "Collections": 1,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 54.0
+      },
+      "('Service Provider 23', 'Abu Hl')": {
+        "Collections": 39,
+        "Avg_Gallons": 38.46,
+        "Avg_Turnaround": 42.85
+      },
+      "('Service Provider 23', 'Al Awr')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 43.5
+      },
+      "('Service Provider 23', 'Al Bd')": {
+        "Collections": 67,
+        "Avg_Gallons": 54.33,
+        "Avg_Turnaround": 44.85
+      },
+      "('Service Provider 23', 'Al Brh')": {
+        "Collections": 11,
+        "Avg_Gallons": 89.09,
+        "Avg_Turnaround": 41.64
+      },
+      "('Service Provider 23', 'Al Brsh')": {
+        "Collections": 78,
+        "Avg_Gallons": 28.08,
+        "Avg_Turnaround": 47.22
+      },
+      "('Service Provider 23', 'Al Grhoud')": {
+        "Collections": 38,
+        "Avg_Gallons": 52.37,
+        "Avg_Turnaround": 44.92
+      },
+      "('Service Provider 23', 'Al Jfly')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 36.2
+      },
+      "('Service Provider 23', 'Al Khbs')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 34.33
+      },
+      "('Service Provider 23', 'Al Krm')": {
+        "Collections": 208,
+        "Avg_Gallons": 53.39,
+        "Avg_Turnaround": 43.98
+      },
+      "('Service Provider 23', 'Al Mn')": {
+        "Collections": 6,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 49.17
+      },
+      "('Service Provider 23', 'Al Mzhr')": {
+        "Collections": 4,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 47.0
+      },
+      "('Service Provider 23', 'Al Nhd')": {
+        "Collections": 141,
+        "Avg_Gallons": 60.0,
+        "Avg_Turnaround": 45.4
+      },
+      "('Service Provider 23', 'Al Quoz')": {
+        "Collections": 78,
+        "Avg_Gallons": 59.23,
+        "Avg_Turnaround": 45.54
+      },
+      "('Service Provider 23', 'Al jddf')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 44.33
+      },
+      "('Service Provider 24', 'Acdemc Cty')": {
+        "Collections": 15,
+        "Avg_Gallons": 18.33,
+        "Avg_Turnaround": 40.27
+      },
+      "('Service Provider 24', 'Al Brh')": {
+        "Collections": 12,
+        "Avg_Gallons": 35.0,
+        "Avg_Turnaround": 46.5
+      },
+      "('Service Provider 24', 'Al Brsh')": {
+        "Collections": 220,
+        "Avg_Gallons": 26.75,
+        "Avg_Turnaround": 41.38
+      },
+      "('Service Provider 24', 'Al Furjn')": {
+        "Collections": 24,
+        "Avg_Gallons": 31.25,
+        "Avg_Turnaround": 46.79
+      },
+      "('Service Provider 24', 'Al Krm')": {
+        "Collections": 24,
+        "Avg_Gallons": 26.25,
+        "Avg_Turnaround": 43.79
+      },
+      "('Service Provider 24', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 57.75
+      },
+      "('Service Provider 24', 'Al Qudr')": {
+        "Collections": 6,
+        "Avg_Gallons": 16.67,
+        "Avg_Turnaround": 65.0
+      },
+      "('Service Provider 24', 'Al Quoz')": {
+        "Collections": 123,
+        "Avg_Gallons": 67.8,
+        "Avg_Turnaround": 42.72
+      },
+      "('Service Provider 24', 'Al jddf')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 42.0
+      },
+      "('Service Provider 25', 'Abu Hl')": {
+        "Collections": 6,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 24.0
+      },
+      "('Service Provider 25', 'Acdemc Cty')": {
+        "Collections": 11,
+        "Avg_Gallons": 156.36,
+        "Avg_Turnaround": 41.0
+      },
+      "('Service Provider 25', 'Al Bd')": {
+        "Collections": 26,
+        "Avg_Gallons": 62.31,
+        "Avg_Turnaround": 46.12
+      },
+      "('Service Provider 25', 'Al Brh')": {
+        "Collections": 24,
+        "Avg_Gallons": 60.0,
+        "Avg_Turnaround": 46.38
+      },
+      "('Service Provider 25', 'Al Brsh')": {
+        "Collections": 507,
+        "Avg_Gallons": 39.74,
+        "Avg_Turnaround": 48.08
+      },
+      "('Service Provider 25', 'Al Grhoud')": {
+        "Collections": 28,
+        "Avg_Gallons": 71.61,
+        "Avg_Turnaround": 54.57
+      },
+      "('Service Provider 25', 'Al Jfly')": {
+        "Collections": 9,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 47.11
+      },
+      "('Service Provider 25', 'Al Khwneej')": {
+        "Collections": 45,
+        "Avg_Gallons": 21.44,
+        "Avg_Turnaround": 47.87
+      },
+      "('Service Provider 25', 'Al Krm')": {
+        "Collections": 74,
+        "Avg_Gallons": 44.66,
+        "Avg_Turnaround": 47.3
+      },
+      "('Service Provider 25', 'Al Lsl')": {
+        "Collections": 13,
+        "Avg_Gallons": 19.62,
+        "Avg_Turnaround": 52.38
+      },
+      "('Service Provider 25', 'Al Mmzr')": {
+        "Collections": 3,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 47.0
+      },
+      "('Service Provider 25', 'Al Mn')": {
+        "Collections": 7,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 40.14
+      },
+      "('Service Provider 25', 'Al Mnr')": {
+        "Collections": 22,
+        "Avg_Gallons": 109.55,
+        "Avg_Turnaround": 46.5
+      },
+      "('Service Provider 25', 'Al Mzhr')": {
+        "Collections": 33,
+        "Avg_Gallons": 45.91,
+        "Avg_Turnaround": 56.3
+      },
+      "('Service Provider 25', 'Al Nhd')": {
+        "Collections": 41,
+        "Avg_Gallons": 37.07,
+        "Avg_Turnaround": 43.22
+      },
+      "('Service Provider 25', 'Al Qudr')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 25', 'Al Quoz')": {
+        "Collections": 258,
+        "Avg_Gallons": 50.27,
+        "Avg_Turnaround": 43.67
+      },
+      "('Service Provider 25', 'Al jddf')": {
+        "Collections": 43,
+        "Avg_Gallons": 90.12,
+        "Avg_Turnaround": 45.98
+      },
+      "('Service Provider 26', 'Al Awr')": {
+        "Collections": 5,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 43.6
+      },
+      "('Service Provider 26', 'Al Bd')": {
+        "Collections": 13,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 44.08
+      },
+      "('Service Provider 26', 'Al Brsh')": {
+        "Collections": 37,
+        "Avg_Gallons": 61.22,
+        "Avg_Turnaround": 41.89
+      },
+      "('Service Provider 26', 'Al Jfly')": {
+        "Collections": 16,
+        "Avg_Gallons": 21.25,
+        "Avg_Turnaround": 40.88
+      },
+      "('Service Provider 26', 'Al Khwneej')": {
+        "Collections": 10,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 42.4
+      },
+      "('Service Provider 26', 'Al Krm')": {
+        "Collections": 36,
+        "Avg_Gallons": 30.28,
+        "Avg_Turnaround": 45.0
+      },
+      "('Service Provider 26', 'Al Mn')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 9.0
+      },
+      "('Service Provider 26', 'Al Quoz')": {
+        "Collections": 113,
+        "Avg_Gallons": 87.65,
+        "Avg_Turnaround": 43.79
+      },
+      "('Service Provider 27', 'Abu Hl')": {
+        "Collections": 1,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 27', 'Acdemc Cty')": {
+        "Collections": 10,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.6
+      },
+      "('Service Provider 27', 'Al Bd')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 27', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 60.0,
+        "Avg_Turnaround": 54.0
+      },
+      "('Service Provider 27', 'Al Brr')": {
+        "Collections": 18,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 43.39
+      },
+      "('Service Provider 27', 'Al Brsh')": {
+        "Collections": 68,
+        "Avg_Gallons": 20.44,
+        "Avg_Turnaround": 42.15
+      },
+      "('Service Provider 27', 'Al Grhoud')": {
+        "Collections": 10,
+        "Avg_Gallons": 70.0,
+        "Avg_Turnaround": 59.9
+      },
+      "('Service Provider 27', 'Al Khwneej')": {
+        "Collections": 16,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 38.0
+      },
+      "('Service Provider 27', 'Al Krm')": {
+        "Collections": 8,
+        "Avg_Gallons": 45.0,
+        "Avg_Turnaround": 18.88
+      },
+      "('Service Provider 27', 'Al Nhd')": {
+        "Collections": 16,
+        "Avg_Gallons": 18.75,
+        "Avg_Turnaround": 47.12
+      },
+      "('Service Provider 27', 'Al Quoz')": {
+        "Collections": 97,
+        "Avg_Gallons": 60.77,
+        "Avg_Turnaround": 43.95
+      },
+      "('Service Provider 27', 'Al jddf')": {
+        "Collections": 2,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 28', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 50.33
+      },
+      "('Service Provider 28', 'Al Awr')": {
+        "Collections": 9,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 48.0
+      },
+      "('Service Provider 28', 'Al Bd')": {
+        "Collections": 33,
+        "Avg_Gallons": 49.55,
+        "Avg_Turnaround": 45.94
+      },
+      "('Service Provider 28', 'Al Brr')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 47.5
+      },
+      "('Service Provider 28', 'Al Brsh')": {
+        "Collections": 43,
+        "Avg_Gallons": 62.91,
+        "Avg_Turnaround": 46.91
+      },
+      "('Service Provider 28', 'Al Grhoud')": {
+        "Collections": 6,
+        "Avg_Gallons": 50.0,
+        "Avg_Turnaround": 37.67
+      },
+      "('Service Provider 28', 'Al Jfly')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 40.33
+      },
+      "('Service Provider 28', 'Al Khwneej')": {
+        "Collections": 11,
+        "Avg_Gallons": 53.64,
+        "Avg_Turnaround": 46.36
+      },
+      "('Service Provider 28', 'Al Krm')": {
+        "Collections": 299,
+        "Avg_Gallons": 59.88,
+        "Avg_Turnaround": 45.27
+      },
+      "('Service Provider 28', 'Al Mmzr')": {
+        "Collections": 11,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 48.64
+      },
+      "('Service Provider 28', 'Al Mn')": {
+        "Collections": 9,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 53.89
+      },
+      "('Service Provider 28', 'Al Mzhr')": {
+        "Collections": 17,
+        "Avg_Gallons": 75.0,
+        "Avg_Turnaround": 44.0
+      },
+      "('Service Provider 28', 'Al Nhd')": {
+        "Collections": 53,
+        "Avg_Gallons": 60.85,
+        "Avg_Turnaround": 44.94
+      },
+      "('Service Provider 28', 'Al Quoz')": {
+        "Collections": 197,
+        "Avg_Gallons": 94.62,
+        "Avg_Turnaround": 44.38
+      },
+      "('Service Provider 28', 'Al jddf')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 43.5
+      },
+      "('Service Provider 29', 'Acdemc Cty')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 42.5
+      },
+      "('Service Provider 29', 'Al Awr')": {
+        "Collections": 9,
+        "Avg_Gallons": 68.33,
+        "Avg_Turnaround": 50.22
+      },
+      "('Service Provider 29', 'Al Brsh')": {
+        "Collections": 36,
+        "Avg_Gallons": 55.83,
+        "Avg_Turnaround": 45.06
+      },
+      "('Service Provider 29', 'Al Grhoud')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 30.75
+      },
+      "('Service Provider 29', 'Al Khwneej')": {
+        "Collections": 18,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 29', 'Al Krm')": {
+        "Collections": 17,
+        "Avg_Gallons": 42.35,
+        "Avg_Turnaround": 40.41
+      },
+      "('Service Provider 29', 'Al Mn')": {
+        "Collections": 5,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 42.2
+      },
+      "('Service Provider 29', 'Al Mzhr')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 39.5
+      },
+      "('Service Provider 29', 'Al Qudr')": {
+        "Collections": 8,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 43.25
+      },
+      "('Service Provider 29', 'Al Quoz')": {
+        "Collections": 9,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 41.56
+      },
+      "('Service Provider 3', 'Al Brr')": {
+        "Collections": 9,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 45.56
+      },
+      "('Service Provider 3', 'Al Brsh')": {
+        "Collections": 13,
+        "Avg_Gallons": 53.46,
+        "Avg_Turnaround": 59.92
+      },
+      "('Service Provider 3', 'Al Grhoud')": {
+        "Collections": 6,
+        "Avg_Gallons": 356.5,
+        "Avg_Turnaround": 52.0
+      },
+      "('Service Provider 3', 'Al Khwneej')": {
+        "Collections": 1,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 29.0
+      },
+      "('Service Provider 3', 'Al Mzhr')": {
+        "Collections": 10,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 58.2
+      },
+      "('Service Provider 3', 'Al Nhd')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 76.0
+      },
+      "('Service Provider 3', 'Al Qudr')": {
+        "Collections": 18,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 50.67
+      },
+      "('Service Provider 3', 'Al Quoz')": {
+        "Collections": 36,
+        "Avg_Gallons": 72.5,
+        "Avg_Turnaround": 45.42
+      },
+      "('Service Provider 3', 'Al jddf')": {
+        "Collections": 6,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 40.5
+      },
+      "('Service Provider 30', 'Acdemc Cty')": {
+        "Collections": 22,
+        "Avg_Gallons": 43.64,
+        "Avg_Turnaround": 45.18
+      },
+      "('Service Provider 30', 'Al Awr')": {
+        "Collections": 44,
+        "Avg_Gallons": 34.66,
+        "Avg_Turnaround": 42.93
+      },
+      "('Service Provider 30', 'Al Bd')": {
+        "Collections": 12,
+        "Avg_Gallons": 80.0,
+        "Avg_Turnaround": 45.17
+      },
+      "('Service Provider 30', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 45.67
+      },
+      "('Service Provider 30', 'Al Brr')": {
+        "Collections": 38,
+        "Avg_Gallons": 23.55,
+        "Avg_Turnaround": 48.68
+      },
+      "('Service Provider 30', 'Al Brsh')": {
+        "Collections": 1124,
+        "Avg_Gallons": 37.55,
+        "Avg_Turnaround": 45.24
+      },
+      "('Service Provider 30', 'Al Furjn')": {
+        "Collections": 37,
+        "Avg_Gallons": 24.73,
+        "Avg_Turnaround": 47.43
+      },
+      "('Service Provider 30', 'Al Grhoud')": {
+        "Collections": 541,
+        "Avg_Gallons": 36.13,
+        "Avg_Turnaround": 51.83
+      },
+      "('Service Provider 30', 'Al Jfly')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 41.67
+      },
+      "('Service Provider 30', 'Al Khbs')": {
+        "Collections": 9,
+        "Avg_Gallons": 28.33,
+        "Avg_Turnaround": 39.44
+      },
+      "('Service Provider 30', 'Al Khwneej')": {
+        "Collections": 48,
+        "Avg_Gallons": 65.21,
+        "Avg_Turnaround": 45.02
+      },
+      "('Service Provider 30', 'Al Krm')": {
+        "Collections": 99,
+        "Avg_Gallons": 36.72,
+        "Avg_Turnaround": 40.46
+      },
+      "('Service Provider 30', 'Al Lsl')": {
+        "Collections": 3,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 18.67
+      },
+      "('Service Provider 30', 'Al Mmzr')": {
+        "Collections": 21,
+        "Avg_Gallons": 30.71,
+        "Avg_Turnaround": 49.67
+      },
+      "('Service Provider 30', 'Al Mn')": {
+        "Collections": 4,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 35.5
+      },
+      "('Service Provider 30', 'Al Mnr')": {
+        "Collections": 49,
+        "Avg_Gallons": 27.86,
+        "Avg_Turnaround": 44.82
+      },
+      "('Service Provider 30', 'Al Mzhr')": {
+        "Collections": 118,
+        "Avg_Gallons": 35.21,
+        "Avg_Turnaround": 46.08
+      },
+      "('Service Provider 30', 'Al Nhd')": {
+        "Collections": 67,
+        "Avg_Gallons": 48.58,
+        "Avg_Turnaround": 43.85
+      },
+      "('Service Provider 30', 'Al Qudr')": {
+        "Collections": 71,
+        "Avg_Gallons": 55.28,
+        "Avg_Turnaround": 45.28
+      },
+      "('Service Provider 30', 'Al Quoz')": {
+        "Collections": 300,
+        "Avg_Gallons": 52.92,
+        "Avg_Turnaround": 43.4
+      },
+      "('Service Provider 30', 'Al jddf')": {
+        "Collections": 21,
+        "Avg_Gallons": 107.86,
+        "Avg_Turnaround": 37.62
+      },
+      "('Service Provider 31', 'Al Brh')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 49.5
+      },
+      "('Service Provider 31', 'Al Brsh')": {
+        "Collections": 46,
+        "Avg_Gallons": 38.91,
+        "Avg_Turnaround": 39.93
+      },
+      "('Service Provider 31', 'Al Grhoud')": {
+        "Collections": 2,
+        "Avg_Gallons": 356.5,
+        "Avg_Turnaround": 16.0
+      },
+      "('Service Provider 31', 'Al Khbs')": {
+        "Collections": 2,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 48.5
+      },
+      "('Service Provider 31', 'Al Krm')": {
+        "Collections": 28,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 46.14
+      },
+      "('Service Provider 31', 'Al Nhd')": {
+        "Collections": 8,
+        "Avg_Gallons": 57.5,
+        "Avg_Turnaround": 41.38
+      },
+      "('Service Provider 31', 'Al Quoz')": {
+        "Collections": 22,
+        "Avg_Gallons": 109.55,
+        "Avg_Turnaround": 43.45
+      },
+      "('Service Provider 32', 'Abu Hl')": {
+        "Collections": 37,
+        "Avg_Gallons": 31.08,
+        "Avg_Turnaround": 43.38
+      },
+      "('Service Provider 32', 'Al Brsh')": {
+        "Collections": 97,
+        "Avg_Gallons": 39.33,
+        "Avg_Turnaround": 45.69
+      },
+      "('Service Provider 32', 'Al Grhoud')": {
+        "Collections": 10,
+        "Avg_Gallons": 57.5,
+        "Avg_Turnaround": 48.8
+      },
+      "('Service Provider 32', 'Al Khbs')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 38.67
+      },
+      "('Service Provider 32', 'Al Khwneej')": {
+        "Collections": 13,
+        "Avg_Gallons": 83.46,
+        "Avg_Turnaround": 44.69
+      },
+      "('Service Provider 32', 'Al Krm')": {
+        "Collections": 237,
+        "Avg_Gallons": 44.51,
+        "Avg_Turnaround": 43.8
+      },
+      "('Service Provider 32', 'Al Mn')": {
+        "Collections": 12,
+        "Avg_Gallons": 117.5,
+        "Avg_Turnaround": 45.58
+      },
+      "('Service Provider 32', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 43.67
+      },
+      "('Service Provider 32', 'Al Quoz')": {
+        "Collections": 3,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 56.67
+      },
+      "('Service Provider 33', 'Al Bd')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 39.33
+      },
+      "('Service Provider 33', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 42.0
+      },
+      "('Service Provider 33', 'Al Brsh')": {
+        "Collections": 13,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 44.62
+      },
+      "('Service Provider 33', 'Al Krm')": {
+        "Collections": 34,
+        "Avg_Gallons": 67.35,
+        "Avg_Turnaround": 42.44
+      },
+      "('Service Provider 33', 'Al Nhd')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 39.83
+      },
+      "('Service Provider 34', 'Al Bd')": {
+        "Collections": 12,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 44.92
+      },
+      "('Service Provider 34', 'Al Brsh')": {
+        "Collections": 95,
+        "Avg_Gallons": 20.68,
+        "Avg_Turnaround": 47.02
+      },
+      "('Service Provider 34', 'Al Furjn')": {
+        "Collections": 9,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 47.78
+      },
+      "('Service Provider 34', 'Al Grhoud')": {
+        "Collections": 15,
+        "Avg_Gallons": 18.33,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 34', 'Al Khwneej')": {
+        "Collections": 9,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 37.44
+      },
+      "('Service Provider 34', 'Al Krm')": {
+        "Collections": 36,
+        "Avg_Gallons": 47.92,
+        "Avg_Turnaround": 43.28
+      },
+      "('Service Provider 34', 'Al Mn')": {
+        "Collections": 13,
+        "Avg_Gallons": 67.31,
+        "Avg_Turnaround": 42.69
+      },
+      "('Service Provider 34', 'Al Qudr')": {
+        "Collections": 1,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 32.0
+      },
+      "('Service Provider 34', 'Al Quoz')": {
+        "Collections": 74,
+        "Avg_Gallons": 58.38,
+        "Avg_Turnaround": 45.5
+      },
+      "('Service Provider 34', 'Al jddf')": {
+        "Collections": 1,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 37.0
+      },
+      "('Service Provider 35', 'Abu Hl')": {
+        "Collections": 14,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 37.64
+      },
+      "('Service Provider 35', 'Acdemc Cty')": {
+        "Collections": 1,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 35.0
+      },
+      "('Service Provider 35', 'Al Awr')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 47.67
+      },
+      "('Service Provider 35', 'Al Bd')": {
+        "Collections": 25,
+        "Avg_Gallons": 62.8,
+        "Avg_Turnaround": 42.72
+      },
+      "('Service Provider 35', 'Al Brsh')": {
+        "Collections": 147,
+        "Avg_Gallons": 34.52,
+        "Avg_Turnaround": 44.91
+      },
+      "('Service Provider 35', 'Al Jfly')": {
+        "Collections": 8,
+        "Avg_Gallons": 78.75,
+        "Avg_Turnaround": 34.25
+      },
+      "('Service Provider 35', 'Al Khbs')": {
+        "Collections": 4,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 49.75
+      },
+      "('Service Provider 35', 'Al Khwneej')": {
+        "Collections": 29,
+        "Avg_Gallons": 28.1,
+        "Avg_Turnaround": 40.21
+      },
+      "('Service Provider 35', 'Al Krm')": {
+        "Collections": 226,
+        "Avg_Gallons": 36.28,
+        "Avg_Turnaround": 42.79
+      },
+      "('Service Provider 35', 'Al Lsl')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 37.5
+      },
+      "('Service Provider 35', 'Al Mmzr')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 78.0
+      },
+      "('Service Provider 35', 'Al Nhd')": {
+        "Collections": 34,
+        "Avg_Gallons": 22.5,
+        "Avg_Turnaround": 42.91
+      },
+      "('Service Provider 35', 'Al Quoz')": {
+        "Collections": 67,
+        "Avg_Gallons": 81.94,
+        "Avg_Turnaround": 44.34
+      },
+      "('Service Provider 35', 'Al jddf')": {
+        "Collections": 29,
+        "Avg_Gallons": 37.93,
+        "Avg_Turnaround": 42.03
+      },
+      "('Service Provider 36', 'Al Awr')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 47.4
+      },
+      "('Service Provider 36', 'Al Bd')": {
+        "Collections": 11,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 46.45
+      },
+      "('Service Provider 36', 'Al Brsh')": {
+        "Collections": 56,
+        "Avg_Gallons": 45.09,
+        "Avg_Turnaround": 48.68
+      },
+      "('Service Provider 36', 'Al Grhoud')": {
+        "Collections": 12,
+        "Avg_Gallons": 19.17,
+        "Avg_Turnaround": 41.25
+      },
+      "('Service Provider 36', 'Al Jfly')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 42.67
+      },
+      "('Service Provider 36', 'Al Khwneej')": {
+        "Collections": 5,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 57.6
+      },
+      "('Service Provider 36', 'Al Krm')": {
+        "Collections": 127,
+        "Avg_Gallons": 73.62,
+        "Avg_Turnaround": 44.58
+      },
+      "('Service Provider 36', 'Al Mn')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 47.0
+      },
+      "('Service Provider 36', 'Al Nhd')": {
+        "Collections": 25,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 44.6
+      },
+      "('Service Provider 36', 'Al Quoz')": {
+        "Collections": 65,
+        "Avg_Gallons": 95.08,
+        "Avg_Turnaround": 45.48
+      },
+      "('Service Provider 36', 'Al jddf')": {
+        "Collections": 12,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 40.75
+      },
+      "('Service Provider 37', 'Abu Hl')": {
+        "Collections": 9,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 48.22
+      },
+      "('Service Provider 37', 'Al Brsh')": {
+        "Collections": 35,
+        "Avg_Gallons": 60.14,
+        "Avg_Turnaround": 41.74
+      },
+      "('Service Provider 37', 'Al Furjn')": {
+        "Collections": 12,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 42.42
+      },
+      "('Service Provider 37', 'Al Khwneej')": {
+        "Collections": 12,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 45.67
+      },
+      "('Service Provider 37', 'Al Krm')": {
+        "Collections": 96,
+        "Avg_Gallons": 34.9,
+        "Avg_Turnaround": 47.99
+      },
+      "('Service Provider 37', 'Al Lsl')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.33
+      },
+      "('Service Provider 37', 'Al Mmzr')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 39.0
+      },
+      "('Service Provider 37', 'Al Mn')": {
+        "Collections": 3,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 56.33
+      },
+      "('Service Provider 37', 'Al Mzhr')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 38.33
+      },
+      "('Service Provider 37', 'Al Nhd')": {
+        "Collections": 26,
+        "Avg_Gallons": 18.85,
+        "Avg_Turnaround": 43.04
+      },
+      "('Service Provider 37', 'Al Qudr')": {
+        "Collections": 1,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 4.0
+      },
+      "('Service Provider 37', 'Al Quoz')": {
+        "Collections": 62,
+        "Avg_Gallons": 34.84,
+        "Avg_Turnaround": 46.69
+      },
+      "('Service Provider 37', 'Al jddf')": {
+        "Collections": 74,
+        "Avg_Gallons": 24.59,
+        "Avg_Turnaround": 43.89
+      },
+      "('Service Provider 38', 'Al Bd')": {
+        "Collections": 9,
+        "Avg_Gallons": 71.67,
+        "Avg_Turnaround": 56.11
+      },
+      "('Service Provider 38', 'Al Brsh')": {
+        "Collections": 211,
+        "Avg_Gallons": 24.72,
+        "Avg_Turnaround": 45.58
+      },
+      "('Service Provider 38', 'Al Grhoud')": {
+        "Collections": 12,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 50.83
+      },
+      "('Service Provider 38', 'Al Khwneej')": {
+        "Collections": 132,
+        "Avg_Gallons": 20.53,
+        "Avg_Turnaround": 44.97
+      },
+      "('Service Provider 38', 'Al Krm')": {
+        "Collections": 65,
+        "Avg_Gallons": 27.38,
+        "Avg_Turnaround": 45.2
+      },
+      "('Service Provider 38', 'Al Mn')": {
+        "Collections": 33,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 49.58
+      },
+      "('Service Provider 38', 'Al Quoz')": {
+        "Collections": 31,
+        "Avg_Gallons": 27.42,
+        "Avg_Turnaround": 47.06
+      },
+      "('Service Provider 39', 'Al Brsh')": {
+        "Collections": 14,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 60.36
+      },
+      "('Service Provider 39', 'Al Quoz')": {
+        "Collections": 5,
+        "Avg_Gallons": 64.0,
+        "Avg_Turnaround": 72.4
+      },
+      "('Service Provider 4', 'Abu Hl')": {
+        "Collections": 68,
+        "Avg_Gallons": 92.94,
+        "Avg_Turnaround": 44.49
+      },
+      "('Service Provider 4', 'Acdemc Cty')": {
+        "Collections": 42,
+        "Avg_Gallons": 68.93,
+        "Avg_Turnaround": 41.9
+      },
+      "('Service Provider 4', 'Al Awr')": {
+        "Collections": 113,
+        "Avg_Gallons": 206.42,
+        "Avg_Turnaround": 46.04
+      },
+      "('Service Provider 4', 'Al Bd')": {
+        "Collections": 62,
+        "Avg_Gallons": 25.81,
+        "Avg_Turnaround": 43.03
+      },
+      "('Service Provider 4', 'Al Brh')": {
+        "Collections": 18,
+        "Avg_Gallons": 50.0,
+        "Avg_Turnaround": 45.22
+      },
+      "('Service Provider 4', 'Al Brr')": {
+        "Collections": 58,
+        "Avg_Gallons": 86.9,
+        "Avg_Turnaround": 47.67
+      },
+      "('Service Provider 4', 'Al Brsh')": {
+        "Collections": 890,
+        "Avg_Gallons": 45.68,
+        "Avg_Turnaround": 45.08
+      },
+      "('Service Provider 4', 'Al Furjn')": {
+        "Collections": 80,
+        "Avg_Gallons": 19.0,
+        "Avg_Turnaround": 48.7
+      },
+      "('Service Provider 4', 'Al Grhoud')": {
+        "Collections": 172,
+        "Avg_Gallons": 107.65,
+        "Avg_Turnaround": 46.97
+      },
+      "('Service Provider 4', 'Al Jfly')": {
+        "Collections": 23,
+        "Avg_Gallons": 20.43,
+        "Avg_Turnaround": 45.09
+      },
+      "('Service Provider 4', 'Al Khbs')": {
+        "Collections": 39,
+        "Avg_Gallons": 40.77,
+        "Avg_Turnaround": 49.41
+      },
+      "('Service Provider 4', 'Al Khwneej')": {
+        "Collections": 251,
+        "Avg_Gallons": 94.42,
+        "Avg_Turnaround": 43.98
+      },
+      "('Service Provider 4', 'Al Krm')": {
+        "Collections": 190,
+        "Avg_Gallons": 64.13,
+        "Avg_Turnaround": 44.15
+      },
+      "('Service Provider 4', 'Al Lsl')": {
+        "Collections": 5,
+        "Avg_Gallons": 49.0,
+        "Avg_Turnaround": 37.4
+      },
+      "('Service Provider 4', 'Al Mmzr')": {
+        "Collections": 66,
+        "Avg_Gallons": 41.36,
+        "Avg_Turnaround": 44.79
+      },
+      "('Service Provider 4', 'Al Mn')": {
+        "Collections": 43,
+        "Avg_Gallons": 56.86,
+        "Avg_Turnaround": 44.91
+      },
+      "('Service Provider 4', 'Al Mnr')": {
+        "Collections": 5,
+        "Avg_Gallons": 111.0,
+        "Avg_Turnaround": 48.4
+      },
+      "('Service Provider 4', 'Al Mzhr')": {
+        "Collections": 77,
+        "Avg_Gallons": 59.94,
+        "Avg_Turnaround": 45.42
+      },
+      "('Service Provider 4', 'Al Nhd')": {
+        "Collections": 132,
+        "Avg_Gallons": 61.55,
+        "Avg_Turnaround": 43.57
+      },
+      "('Service Provider 4', 'Al Qudr')": {
+        "Collections": 83,
+        "Avg_Gallons": 51.69,
+        "Avg_Turnaround": 48.84
+      },
+      "('Service Provider 4', 'Al Quoz')": {
+        "Collections": 1010,
+        "Avg_Gallons": 70.64,
+        "Avg_Turnaround": 44.33
+      },
+      "('Service Provider 4', 'Al jddf')": {
+        "Collections": 74,
+        "Avg_Gallons": 38.24,
+        "Avg_Turnaround": 45.74
+      },
+      "('Service Provider 40', 'Al Brsh')": {
+        "Collections": 28,
+        "Avg_Gallons": 41.07,
+        "Avg_Turnaround": 45.96
+      },
+      "('Service Provider 40', 'Al Grhoud')": {
+        "Collections": 55,
+        "Avg_Gallons": 97.27,
+        "Avg_Turnaround": 44.71
+      },
+      "('Service Provider 40', 'Al Khwneej')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 65.0
+      },
+      "('Service Provider 40', 'Al Quoz')": {
+        "Collections": 114,
+        "Avg_Gallons": 105.53,
+        "Avg_Turnaround": 46.25
+      },
+      "('Service Provider 41', 'Al Brh')": {
+        "Collections": 5,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 41.8
+      },
+      "('Service Provider 41', 'Al Brsh')": {
+        "Collections": 17,
+        "Avg_Gallons": 21.47,
+        "Avg_Turnaround": 43.53
+      },
+      "('Service Provider 41', 'Al Khbs')": {
+        "Collections": 4,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 32.75
+      },
+      "('Service Provider 41', 'Al Khwneej')": {
+        "Collections": 10,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 41', 'Al Krm')": {
+        "Collections": 89,
+        "Avg_Gallons": 43.76,
+        "Avg_Turnaround": 41.81
+      },
+      "('Service Provider 41', 'Al Mmzr')": {
+        "Collections": 7,
+        "Avg_Gallons": 29.29,
+        "Avg_Turnaround": 35.29
+      },
+      "('Service Provider 41', 'Al Nhd')": {
+        "Collections": 23,
+        "Avg_Gallons": 20.65,
+        "Avg_Turnaround": 43.22
+      },
+      "('Service Provider 41', 'Al Quoz')": {
+        "Collections": 42,
+        "Avg_Gallons": 62.86,
+        "Avg_Turnaround": 40.93
+      },
+      "('Service Provider 42', 'Al Awr')": {
+        "Collections": 14,
+        "Avg_Gallons": 67.14,
+        "Avg_Turnaround": 40.14
+      },
+      "('Service Provider 42', 'Al Brsh')": {
+        "Collections": 20,
+        "Avg_Gallons": 16.5,
+        "Avg_Turnaround": 42.75
+      },
+      "('Service Provider 42', 'Al Khwneej')": {
+        "Collections": 26,
+        "Avg_Gallons": 53.85,
+        "Avg_Turnaround": 39.88
+      },
+      "('Service Provider 42', 'Al Krm')": {
+        "Collections": 20,
+        "Avg_Gallons": 41.5,
+        "Avg_Turnaround": 47.35
+      },
+      "('Service Provider 42', 'Al Lsl')": {
+        "Collections": 20,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 36.7
+      },
+      "('Service Provider 42', 'Al Mnr')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 46.5
+      },
+      "('Service Provider 42', 'Al Nhd')": {
+        "Collections": 11,
+        "Avg_Gallons": 59.09,
+        "Avg_Turnaround": 42.73
+      },
+      "('Service Provider 42', 'Al Quoz')": {
+        "Collections": 175,
+        "Avg_Gallons": 43.31,
+        "Avg_Turnaround": 47.0
+      },
+      "('Service Provider 42', 'Al jddf')": {
+        "Collections": 10,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 38.9
+      },
+      "('Service Provider 43', 'Al Khwneej')": {
+        "Collections": 34,
+        "Avg_Gallons": 25.59,
+        "Avg_Turnaround": 43.68
+      },
+      "('Service Provider 43', 'Al Krm')": {
+        "Collections": 6,
+        "Avg_Gallons": 16.67,
+        "Avg_Turnaround": 55.0
+      },
+      "('Service Provider 43', 'Al Mzhr')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 57.5
+      },
+      "('Service Provider 43', 'Al jddf')": {
+        "Collections": 33,
+        "Avg_Gallons": 28.18,
+        "Avg_Turnaround": 42.52
+      },
+      "('Service Provider 44', 'Al Brsh')": {
+        "Collections": 117,
+        "Avg_Gallons": 36.03,
+        "Avg_Turnaround": 44.58
+      },
+      "('Service Provider 44', 'Al Khwneej')": {
+        "Collections": 7,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 63.0
+      },
+      "('Service Provider 44', 'Al Krm')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 44.67
+      },
+      "('Service Provider 44', 'Al Qudr')": {
+        "Collections": 16,
+        "Avg_Gallons": 17.5,
+        "Avg_Turnaround": 61.38
+      },
+      "('Service Provider 44', 'Al Quoz')": {
+        "Collections": 62,
+        "Avg_Gallons": 37.42,
+        "Avg_Turnaround": 53.63
+      },
+      "('Service Provider 45', 'Al Brsh')": {
+        "Collections": 12,
+        "Avg_Gallons": 27.5,
+        "Avg_Turnaround": 43.58
+      },
+      "('Service Provider 45', 'Al Grhoud')": {
+        "Collections": 3,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 38.0
+      },
+      "('Service Provider 45', 'Al Krm')": {
+        "Collections": 4,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 58.0
+      },
+      "('Service Provider 45', 'Al Quoz')": {
+        "Collections": 18,
+        "Avg_Gallons": 99.44,
+        "Avg_Turnaround": 62.06
+      },
+      "('Service Provider 46', 'Abu Hl')": {
+        "Collections": 15,
+        "Avg_Gallons": 32.0,
+        "Avg_Turnaround": 47.67
+      },
+      "('Service Provider 46', 'Al Bd')": {
+        "Collections": 15,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 44.4
+      },
+      "('Service Provider 46', 'Al Brr')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 44.0
+      },
+      "('Service Provider 46', 'Al Brsh')": {
+        "Collections": 144,
+        "Avg_Gallons": 28.23,
+        "Avg_Turnaround": 43.24
+      },
+      "('Service Provider 46', 'Al Jfly')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 50.2
+      },
+      "('Service Provider 46', 'Al Krm')": {
+        "Collections": 12,
+        "Avg_Gallons": 30.0,
+        "Avg_Turnaround": 41.67
+      },
+      "('Service Provider 46', 'Al Lsl')": {
+        "Collections": 61,
+        "Avg_Gallons": 36.15,
+        "Avg_Turnaround": 38.69
+      },
+      "('Service Provider 46', 'Al Mmzr')": {
+        "Collections": 12,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 47.17
+      },
+      "('Service Provider 46', 'Al Mn')": {
+        "Collections": 22,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 47.55
+      },
+      "('Service Provider 46', 'Al Mnr')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.67
+      },
+      "('Service Provider 46', 'Al Mrmoom')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 32.0
+      },
+      "('Service Provider 46', 'Al Nhd')": {
+        "Collections": 15,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.47
+      },
+      "('Service Provider 46', 'Al Quoz')": {
+        "Collections": 233,
+        "Avg_Gallons": 46.22,
+        "Avg_Turnaround": 43.28
+      },
+      "('Service Provider 46', 'Al jddf')": {
+        "Collections": 35,
+        "Avg_Gallons": 23.57,
+        "Avg_Turnaround": 42.89
+      },
+      "('Service Provider 47', 'Al Bd')": {
+        "Collections": 3,
+        "Avg_Gallons": 21.67,
+        "Avg_Turnaround": 82.33
+      },
+      "('Service Provider 47', 'Al Brh')": {
+        "Collections": 1,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 81.0
+      },
+      "('Service Provider 47', 'Al Brsh')": {
+        "Collections": 1,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 84.0
+      },
+      "('Service Provider 47', 'Al Khwneej')": {
+        "Collections": 3,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 85.67
+      },
+      "('Service Provider 47', 'Al Krm')": {
+        "Collections": 6,
+        "Avg_Gallons": 22.5,
+        "Avg_Turnaround": 79.17
+      },
+      "('Service Provider 47', 'Al Nhd')": {
+        "Collections": 2,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 78.0
+      },
+      "('Service Provider 48', 'Al Awr')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 38.5
+      },
+      "('Service Provider 48', 'Al Brsh')": {
+        "Collections": 66,
+        "Avg_Gallons": 31.36,
+        "Avg_Turnaround": 46.67
+      },
+      "('Service Provider 48', 'Al Grhoud')": {
+        "Collections": 12,
+        "Avg_Gallons": 75.0,
+        "Avg_Turnaround": 50.25
+      },
+      "('Service Provider 48', 'Al Khwneej')": {
+        "Collections": 51,
+        "Avg_Gallons": 72.06,
+        "Avg_Turnaround": 38.29
+      },
+      "('Service Provider 48', 'Al Krm')": {
+        "Collections": 18,
+        "Avg_Gallons": 80.0,
+        "Avg_Turnaround": 45.83
+      },
+      "('Service Provider 48', 'Al Mn')": {
+        "Collections": 2,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 53.5
+      },
+      "('Service Provider 48', 'Al Nhd')": {
+        "Collections": 11,
+        "Avg_Gallons": 67.27,
+        "Avg_Turnaround": 52.64
+      },
+      "('Service Provider 48', 'Al Quoz')": {
+        "Collections": 120,
+        "Avg_Gallons": 55.0,
+        "Avg_Turnaround": 46.43
+      },
+      "('Service Provider 49', 'Al Brsh')": {
+        "Collections": 175,
+        "Avg_Gallons": 92.71,
+        "Avg_Turnaround": 46.42
+      },
+      "('Service Provider 49', 'Al Khwneej')": {
+        "Collections": 114,
+        "Avg_Gallons": 51.32,
+        "Avg_Turnaround": 48.35
+      },
+      "('Service Provider 49', 'Al Krm')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 9.0
+      },
+      "('Service Provider 49', 'Al Qudr')": {
+        "Collections": 36,
+        "Avg_Gallons": 35.83,
+        "Avg_Turnaround": 52.0
+      },
+      "('Service Provider 49', 'Al Quoz')": {
+        "Collections": 75,
+        "Avg_Gallons": 85.73,
+        "Avg_Turnaround": 44.8
+      },
+      "('Service Provider 49', 'Al jddf')": {
+        "Collections": 3,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 48.67
+      },
+      "('Service Provider 5', 'Abu Hl')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 34.5
+      },
+      "('Service Provider 5', 'Acdemc Cty')": {
+        "Collections": 11,
+        "Avg_Gallons": 13.18,
+        "Avg_Turnaround": 38.82
+      },
+      "('Service Provider 5', 'Al Awr')": {
+        "Collections": 18,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 44.83
+      },
+      "('Service Provider 5', 'Al Brr')": {
+        "Collections": 12,
+        "Avg_Gallons": 13.0,
+        "Avg_Turnaround": 48.67
+      },
+      "('Service Provider 5', 'Al Brsh')": {
+        "Collections": 203,
+        "Avg_Gallons": 24.01,
+        "Avg_Turnaround": 45.98
+      },
+      "('Service Provider 5', 'Al Furjn')": {
+        "Collections": 18,
+        "Avg_Gallons": 15.89,
+        "Avg_Turnaround": 40.61
+      },
+      "('Service Provider 5', 'Al Grhoud')": {
+        "Collections": 194,
+        "Avg_Gallons": 17.67,
+        "Avg_Turnaround": 44.73
+      },
+      "('Service Provider 5', 'Al Jfly')": {
+        "Collections": 18,
+        "Avg_Gallons": 13.67,
+        "Avg_Turnaround": 42.0
+      },
+      "('Service Provider 5', 'Al Khwneej')": {
+        "Collections": 120,
+        "Avg_Gallons": 22.38,
+        "Avg_Turnaround": 45.48
+      },
+      "('Service Provider 5', 'Al Krm')": {
+        "Collections": 21,
+        "Avg_Gallons": 16.62,
+        "Avg_Turnaround": 40.81
+      },
+      "('Service Provider 5', 'Al Lsl')": {
+        "Collections": 32,
+        "Avg_Gallons": 119.22,
+        "Avg_Turnaround": 52.19
+      },
+      "('Service Provider 5', 'Al Mmzr')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 53.67
+      },
+      "('Service Provider 5', 'Al Mzhr')": {
+        "Collections": 29,
+        "Avg_Gallons": 36.72,
+        "Avg_Turnaround": 45.69
+      },
+      "('Service Provider 5', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 52.33
+      },
+      "('Service Provider 5', 'Al Qudr')": {
+        "Collections": 50,
+        "Avg_Gallons": 19.0,
+        "Avg_Turnaround": 44.1
+      },
+      "('Service Provider 5', 'Al Quoz')": {
+        "Collections": 127,
+        "Avg_Gallons": 53.41,
+        "Avg_Turnaround": 44.54
+      },
+      "('Service Provider 5', 'Al jddf')": {
+        "Collections": 32,
+        "Avg_Gallons": 109.38,
+        "Avg_Turnaround": 42.06
+      },
+      "('Service Provider 50', 'Abu Hl')": {
+        "Collections": 18,
+        "Avg_Gallons": 49.72,
+        "Avg_Turnaround": 44.11
+      },
+      "('Service Provider 50', 'Acdemc Cty')": {
+        "Collections": 3,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 21.0
+      },
+      "('Service Provider 50', 'Al Brsh')": {
+        "Collections": 159,
+        "Avg_Gallons": 42.4,
+        "Avg_Turnaround": 45.55
+      },
+      "('Service Provider 50', 'Al Furjn')": {
+        "Collections": 3,
+        "Avg_Gallons": 18.33,
+        "Avg_Turnaround": 80.67
+      },
+      "('Service Provider 50', 'Al Grhoud')": {
+        "Collections": 115,
+        "Avg_Gallons": 45.3,
+        "Avg_Turnaround": 45.07
+      },
+      "('Service Provider 50', 'Al Jfly')": {
+        "Collections": 4,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 37.25
+      },
+      "('Service Provider 50', 'Al Krm')": {
+        "Collections": 12,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 48.67
+      },
+      "('Service Provider 50', 'Al Lsl')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 43.67
+      },
+      "('Service Provider 50', 'Al Nhd')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 30.4
+      },
+      "('Service Provider 50', 'Al Quoz')": {
+        "Collections": 44,
+        "Avg_Gallons": 76.36,
+        "Avg_Turnaround": 50.73
+      },
+      "('Service Provider 50', 'Al jddf')": {
+        "Collections": 10,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 48.6
+      },
+      "('Service Provider 51', 'Abu Hl')": {
+        "Collections": 14,
+        "Avg_Gallons": 31.43,
+        "Avg_Turnaround": 44.14
+      },
+      "('Service Provider 51', 'Al Awr')": {
+        "Collections": 56,
+        "Avg_Gallons": 101.61,
+        "Avg_Turnaround": 46.12
+      },
+      "('Service Provider 51', 'Al Bd')": {
+        "Collections": 16,
+        "Avg_Gallons": 38.12,
+        "Avg_Turnaround": 42.81
+      },
+      "('Service Provider 51', 'Al Brh')": {
+        "Collections": 64,
+        "Avg_Gallons": 62.03,
+        "Avg_Turnaround": 43.69
+      },
+      "('Service Provider 51', 'Al Brsh')": {
+        "Collections": 109,
+        "Avg_Gallons": 60.32,
+        "Avg_Turnaround": 45.28
+      },
+      "('Service Provider 51', 'Al Grhoud')": {
+        "Collections": 2,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 25.0
+      },
+      "('Service Provider 51', 'Al Jfly')": {
+        "Collections": 27,
+        "Avg_Gallons": 35.37,
+        "Avg_Turnaround": 41.41
+      },
+      "('Service Provider 51', 'Al Khbs')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 38.0
+      },
+      "('Service Provider 51', 'Al Khwneej')": {
+        "Collections": 64,
+        "Avg_Gallons": 63.2,
+        "Avg_Turnaround": 43.0
+      },
+      "('Service Provider 51', 'Al Krm')": {
+        "Collections": 169,
+        "Avg_Gallons": 32.9,
+        "Avg_Turnaround": 46.85
+      },
+      "('Service Provider 51', 'Al Lsl')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 27.5
+      },
+      "('Service Provider 51', 'Al Mmzr')": {
+        "Collections": 5,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 46.4
+      },
+      "('Service Provider 51', 'Al Mn')": {
+        "Collections": 7,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 43.86
+      },
+      "('Service Provider 51', 'Al Mzhr')": {
+        "Collections": 41,
+        "Avg_Gallons": 38.66,
+        "Avg_Turnaround": 43.05
+      },
+      "('Service Provider 51', 'Al Nhd')": {
+        "Collections": 127,
+        "Avg_Gallons": 32.99,
+        "Avg_Turnaround": 44.49
+      },
+      "('Service Provider 51', 'Al Quoz')": {
+        "Collections": 319,
+        "Avg_Gallons": 83.82,
+        "Avg_Turnaround": 44.89
+      },
+      "('Service Provider 52', 'Abu Hl')": {
+        "Collections": 48,
+        "Avg_Gallons": 46.88,
+        "Avg_Turnaround": 44.42
+      },
+      "('Service Provider 52', 'Al Awr')": {
+        "Collections": 6,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 46.83
+      },
+      "('Service Provider 52', 'Al Bd')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 36.75
+      },
+      "('Service Provider 52', 'Al Brh')": {
+        "Collections": 9,
+        "Avg_Gallons": 73.33,
+        "Avg_Turnaround": 37.0
+      },
+      "('Service Provider 52', 'Al Khbs')": {
+        "Collections": 18,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 42.33
+      },
+      "('Service Provider 52', 'Al Krm')": {
+        "Collections": 116,
+        "Avg_Gallons": 33.79,
+        "Avg_Turnaround": 44.59
+      },
+      "('Service Provider 52', 'Al Mmzr')": {
+        "Collections": 2,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 30.5
+      },
+      "('Service Provider 52', 'Al Nhd')": {
+        "Collections": 38,
+        "Avg_Gallons": 26.18,
+        "Avg_Turnaround": 48.03
+      },
+      "('Service Provider 52', 'Al Quoz')": {
+        "Collections": 21,
+        "Avg_Gallons": 91.19,
+        "Avg_Turnaround": 35.95
+      },
+      "('Service Provider 53', 'Al Brsh')": {
+        "Collections": 42,
+        "Avg_Gallons": 23.57,
+        "Avg_Turnaround": 45.33
+      },
+      "('Service Provider 53', 'Al Grhoud')": {
+        "Collections": 15,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 48.6
+      },
+      "('Service Provider 53', 'Al Krm')": {
+        "Collections": 18,
+        "Avg_Gallons": 50.0,
+        "Avg_Turnaround": 45.17
+      },
+      "('Service Provider 53', 'Al Quoz')": {
+        "Collections": 68,
+        "Avg_Gallons": 59.41,
+        "Avg_Turnaround": 42.71
+      },
+      "('Service Provider 54', 'Abu Hl')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 56.5
+      },
+      "('Service Provider 54', 'Al Bd')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 40.67
+      },
+      "('Service Provider 54', 'Al Brsh')": {
+        "Collections": 57,
+        "Avg_Gallons": 55.79,
+        "Avg_Turnaround": 48.18
+      },
+      "('Service Provider 54', 'Al Krm')": {
+        "Collections": 15,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 45.4
+      },
+      "('Service Provider 54', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 48.83
+      },
+      "('Service Provider 54', 'Al Quoz')": {
+        "Collections": 40,
+        "Avg_Gallons": 35.0,
+        "Avg_Turnaround": 45.78
+      },
+      "('Service Provider 55', 'Al Brsh')": {
+        "Collections": 12,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 51.83
+      },
+      "('Service Provider 55', 'Al Nhd')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 52.83
+      },
+      "('Service Provider 55', 'Al Quoz')": {
+        "Collections": 7,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 54.86
+      },
+      "('Service Provider 56', 'Al Brsh')": {
+        "Collections": 3,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 36.0
+      },
+      "('Service Provider 56', 'Al Nhd')": {
+        "Collections": 3,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 52.67
+      },
+      "('Service Provider 56', 'Al Quoz')": {
+        "Collections": 30,
+        "Avg_Gallons": 78.5,
+        "Avg_Turnaround": 40.5
+      },
+      "('Service Provider 57', 'Al Krm')": {
+        "Collections": 12,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 52.33
+      },
+      "('Service Provider 57', 'Al Quoz')": {
+        "Collections": 12,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 49.5
+      },
+      "('Service Provider 58', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 58', 'Al Bd')": {
+        "Collections": 7,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.14
+      },
+      "('Service Provider 58', 'Al Brsh')": {
+        "Collections": 33,
+        "Avg_Gallons": 89.55,
+        "Avg_Turnaround": 49.03
+      },
+      "('Service Provider 58', 'Al Krm')": {
+        "Collections": 17,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 47.12
+      },
+      "('Service Provider 58', 'Al Mzhr')": {
+        "Collections": 9,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 45.78
+      },
+      "('Service Provider 58', 'Al Quoz')": {
+        "Collections": 10,
+        "Avg_Gallons": 117.5,
+        "Avg_Turnaround": 54.1
+      },
+      "('Service Provider 58', 'Al jddf')": {
+        "Collections": 3,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 73.0
+      },
+      "('Service Provider 59', 'Al Krm')": {
+        "Collections": 9,
+        "Avg_Gallons": 62.22,
+        "Avg_Turnaround": 46.33
+      },
+      "('Service Provider 59', 'Al Mn')": {
+        "Collections": 2,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 64.5
+      },
+      "('Service Provider 59', 'Al Nhd')": {
+        "Collections": 1,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 76.0
+      },
+      "('Service Provider 59', 'Al Quoz')": {
+        "Collections": 2,
+        "Avg_Gallons": 117.5,
+        "Avg_Turnaround": 52.5
+      },
+      "('Service Provider 6', 'Abu Hl')": {
+        "Collections": 21,
+        "Avg_Gallons": 38.81,
+        "Avg_Turnaround": 45.81
+      },
+      "('Service Provider 6', 'Acdemc Cty')": {
+        "Collections": 6,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 46.67
+      },
+      "('Service Provider 6', 'Al Awr')": {
+        "Collections": 4,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 34.5
+      },
+      "('Service Provider 6', 'Al Bd')": {
+        "Collections": 14,
+        "Avg_Gallons": 25.71,
+        "Avg_Turnaround": 45.0
+      },
+      "('Service Provider 6', 'Al Brh')": {
+        "Collections": 19,
+        "Avg_Gallons": 84.21,
+        "Avg_Turnaround": 48.21
+      },
+      "('Service Provider 6', 'Al Brsh')": {
+        "Collections": 121,
+        "Avg_Gallons": 47.52,
+        "Avg_Turnaround": 44.88
+      },
+      "('Service Provider 6', 'Al Grhoud')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 38.5
+      },
+      "('Service Provider 6', 'Al Jfly')": {
+        "Collections": 3,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 58.33
+      },
+      "('Service Provider 6', 'Al Khbs')": {
+        "Collections": 4,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 48.5
+      },
+      "('Service Provider 6', 'Al Khwneej')": {
+        "Collections": 22,
+        "Avg_Gallons": 26.59,
+        "Avg_Turnaround": 48.82
+      },
+      "('Service Provider 6', 'Al Krm')": {
+        "Collections": 84,
+        "Avg_Gallons": 46.31,
+        "Avg_Turnaround": 43.13
+      },
+      "('Service Provider 6', 'Al Mmzr')": {
+        "Collections": 51,
+        "Avg_Gallons": 57.65,
+        "Avg_Turnaround": 45.51
+      },
+      "('Service Provider 6', 'Al Mnr')": {
+        "Collections": 5,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 41.2
+      },
+      "('Service Provider 6', 'Al Nhd')": {
+        "Collections": 101,
+        "Avg_Gallons": 51.39,
+        "Avg_Turnaround": 46.12
+      },
+      "('Service Provider 6', 'Al Quoz')": {
+        "Collections": 257,
+        "Avg_Gallons": 85.49,
+        "Avg_Turnaround": 45.16
+      },
+      "('Service Provider 6', 'Al jddf')": {
+        "Collections": 28,
+        "Avg_Gallons": 70.89,
+        "Avg_Turnaround": 46.36
+      },
+      "('Service Provider 60', 'Al Brsh')": {
+        "Collections": 17,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 40.53
+      },
+      "('Service Provider 60', 'Al Grhoud')": {
+        "Collections": 2,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 82.0
+      },
+      "('Service Provider 60', 'Al Krm')": {
+        "Collections": 37,
+        "Avg_Gallons": 40.27,
+        "Avg_Turnaround": 43.57
+      },
+      "('Service Provider 60', 'Al Nhd')": {
+        "Collections": 27,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 40.3
+      },
+      "('Service Provider 60', 'Al Quoz')": {
+        "Collections": 13,
+        "Avg_Gallons": 63.85,
+        "Avg_Turnaround": 63.54
+      },
+      "('Service Provider 61', 'Al Bd')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 42.5
+      },
+      "('Service Provider 61', 'Al Brh')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 43.67
+      },
+      "('Service Provider 61', 'Al Brsh')": {
+        "Collections": 261,
+        "Avg_Gallons": 23.2,
+        "Avg_Turnaround": 45.23
+      },
+      "('Service Provider 61', 'Al Grhoud')": {
+        "Collections": 8,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 62.5
+      },
+      "('Service Provider 61', 'Al Krm')": {
+        "Collections": 34,
+        "Avg_Gallons": 61.18,
+        "Avg_Turnaround": 47.21
+      },
+      "('Service Provider 61', 'Al Nhd')": {
+        "Collections": 20,
+        "Avg_Gallons": 51.25,
+        "Avg_Turnaround": 46.0
+      },
+      "('Service Provider 61', 'Al Quoz')": {
+        "Collections": 61,
+        "Avg_Gallons": 98.93,
+        "Avg_Turnaround": 45.72
+      },
+      "('Service Provider 61', 'Al jddf')": {
+        "Collections": 32,
+        "Avg_Gallons": 18.75,
+        "Avg_Turnaround": 46.53
+      },
+      "('Service Provider 62', 'Al Brsh')": {
+        "Collections": 3,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 41.0
+      },
+      "('Service Provider 62', 'Al Mn')": {
+        "Collections": 28,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 45.96
+      },
+      "('Service Provider 62', 'Al Nhd')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 52.5
+      },
+      "('Service Provider 62', 'Al Quoz')": {
+        "Collections": 90,
+        "Avg_Gallons": 60.67,
+        "Avg_Turnaround": 47.93
+      },
+      "('Service Provider 63', 'Al Khwneej')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 37.5
+      },
+      "('Service Provider 63', 'Al Krm')": {
+        "Collections": 18,
+        "Avg_Gallons": 48.06,
+        "Avg_Turnaround": 47.33
+      },
+      "('Service Provider 63', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 52.92,
+        "Avg_Turnaround": 43.08
+      },
+      "('Service Provider 63', 'Al Quoz')": {
+        "Collections": 17,
+        "Avg_Gallons": 104.12,
+        "Avg_Turnaround": 60.41
+      },
+      "('Service Provider 64', 'Al Bd')": {
+        "Collections": 4,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 45.0
+      },
+      "('Service Provider 64', 'Al Brsh')": {
+        "Collections": 4,
+        "Avg_Gallons": 25.0,
+        "Avg_Turnaround": 32.5
+      },
+      "('Service Provider 64', 'Al Quoz')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 41.8
+      },
+      "('Service Provider 65', 'Al Quoz')": {
+        "Collections": 28,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 65.25
+      },
+      "('Service Provider 66', 'Abu Hl')": {
+        "Collections": 2,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 22.0
+      },
+      "('Service Provider 66', 'Al Quoz')": {
+        "Collections": 14,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 21.0
+      },
+      "('Service Provider 7', 'Al Brr')": {
+        "Collections": 3,
+        "Avg_Gallons": 123.33,
+        "Avg_Turnaround": 30.33
+      },
+      "('Service Provider 7', 'Al Brsh')": {
+        "Collections": 41,
+        "Avg_Gallons": 15.98,
+        "Avg_Turnaround": 45.05
+      },
+      "('Service Provider 7', 'Al Grhoud')": {
+        "Collections": 4,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 40.25
+      },
+      "('Service Provider 7', 'Al Khwneej')": {
+        "Collections": 12,
+        "Avg_Gallons": 17.5,
+        "Avg_Turnaround": 50.83
+      },
+      "('Service Provider 7', 'Al Krm')": {
+        "Collections": 35,
+        "Avg_Gallons": 45.0,
+        "Avg_Turnaround": 47.51
+      },
+      "('Service Provider 7', 'Al Mn')": {
+        "Collections": 26,
+        "Avg_Gallons": 20.0,
+        "Avg_Turnaround": 44.0
+      },
+      "('Service Provider 7', 'Al Qudr')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 35.4
+      },
+      "('Service Provider 7', 'Al jddf')": {
+        "Collections": 18,
+        "Avg_Gallons": 43.33,
+        "Avg_Turnaround": 51.11
+      },
+      "('Service Provider 8', 'Abu Hl')": {
+        "Collections": 5,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.6
+      },
+      "('Service Provider 8', 'Al Awr')": {
+        "Collections": 5,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 48.4
+      },
+      "('Service Provider 8', 'Al Bd')": {
+        "Collections": 9,
+        "Avg_Gallons": 20.56,
+        "Avg_Turnaround": 48.0
+      },
+      "('Service Provider 8', 'Al Brr')": {
+        "Collections": 9,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.89
+      },
+      "('Service Provider 8', 'Al Brsh')": {
+        "Collections": 156,
+        "Avg_Gallons": 29.13,
+        "Avg_Turnaround": 43.37
+      },
+      "('Service Provider 8', 'Al Furjn')": {
+        "Collections": 6,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 41.67
+      },
+      "('Service Provider 8', 'Al Grhoud')": {
+        "Collections": 35,
+        "Avg_Gallons": 45.0,
+        "Avg_Turnaround": 44.66
+      },
+      "('Service Provider 8', 'Al Khwneej')": {
+        "Collections": 68,
+        "Avg_Gallons": 33.68,
+        "Avg_Turnaround": 44.32
+      },
+      "('Service Provider 8', 'Al Krm')": {
+        "Collections": 99,
+        "Avg_Gallons": 59.49,
+        "Avg_Turnaround": 39.37
+      },
+      "('Service Provider 8', 'Al Lsl')": {
+        "Collections": 16,
+        "Avg_Gallons": 74.69,
+        "Avg_Turnaround": 55.25
+      },
+      "('Service Provider 8', 'Al Mmzr')": {
+        "Collections": 6,
+        "Avg_Gallons": 40.0,
+        "Avg_Turnaround": 46.67
+      },
+      "('Service Provider 8', 'Al Mnr')": {
+        "Collections": 11,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 45.64
+      },
+      "('Service Provider 8', 'Al Mzhr')": {
+        "Collections": 9,
+        "Avg_Gallons": 31.67,
+        "Avg_Turnaround": 38.78
+      },
+      "('Service Provider 8', 'Al Nhd')": {
+        "Collections": 65,
+        "Avg_Gallons": 61.23,
+        "Avg_Turnaround": 45.14
+      },
+      "('Service Provider 8', 'Al Quoz')": {
+        "Collections": 765,
+        "Avg_Gallons": 62.37,
+        "Avg_Turnaround": 44.92
+      },
+      "('Service Provider 8', 'Al jddf')": {
+        "Collections": 10,
+        "Avg_Gallons": 15.0,
+        "Avg_Turnaround": 42.3
+      },
+      "('Service Provider 9', 'Al Awr')": {
+        "Collections": 7,
+        "Avg_Gallons": 135.0,
+        "Avg_Turnaround": 37.43
+      },
+      "('Service Provider 9', 'Al Brsh')": {
+        "Collections": 145,
+        "Avg_Gallons": 66.28,
+        "Avg_Turnaround": 43.3
+      },
+      "('Service Provider 9', 'Al Grhoud')": {
+        "Collections": 251,
+        "Avg_Gallons": 334.27,
+        "Avg_Turnaround": 45.65
+      },
+      "('Service Provider 9', 'Al Jfly')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 39.5
+      },
+      "('Service Provider 9', 'Al Khbs')": {
+        "Collections": 7,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 50.0
+      },
+      "('Service Provider 9', 'Al Khwneej')": {
+        "Collections": 15,
+        "Avg_Gallons": 121.0,
+        "Avg_Turnaround": 46.53
+      },
+      "('Service Provider 9', 'Al Krm')": {
+        "Collections": 24,
+        "Avg_Gallons": 43.75,
+        "Avg_Turnaround": 46.04
+      },
+      "('Service Provider 9', 'Al Nhd')": {
+        "Collections": 12,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 39.33
+      },
+      "('Service Provider 9', 'Al Qudr')": {
+        "Collections": 117,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 45.31
+      },
+      "('Service Provider 9', 'Al Quoz')": {
+        "Collections": 408,
+        "Avg_Gallons": 78.48,
+        "Avg_Turnaround": 44.31
+      },
+      "('Service Provider 9', 'Al jddf')": {
+        "Collections": 6,
+        "Avg_Gallons": 100.0,
+        "Avg_Turnaround": 42.5
+      }
+    }
+  },
+  "insights": {
+    "key_findings": [
+      "Total of 29,945 waste collection services completed",
+      "Collected 1,671,702 gallons with average of 55.83 gallons per service",
+      "Operations span 23 areas across 7 zones",
+      "Network includes 66 service providers managing 167 vehicles",
+      "Serving 3,314 unique business entities"
+    ],
+    "operational_insights": [],
+    "geographic_insights": [],
+    "performance_insights": [],
+    "recommendations": []
+  }
+}

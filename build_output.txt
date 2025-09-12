@@ -1,0 +1,15 @@
+
+> pie-dash@1.0.0 build
+> vite build
+
+[36mvite v5.4.19 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 1055 modules transformed.
+[31mx[39m Build failed in 3.61s
+[31merror during build:
+[31mCould not resolve "./icons/chrome.js" from "node_modules/lucide-react/dist/esm/lucide-react.js"[31m
+file: [36mC:/Users/Book 3/Desktop/Pivot Pie Projects/Pie-Dash/node_modules/lucide-react/dist/esm/lucide-react.js[31m
+    at getRollupError (file:///C:/Users/Book%203/Desktop/Pivot%20Pie%20Projects/Pie-Dash/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/Book%203/Desktop/Pivot%20Pie%20Projects/Pie-Dash/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/Book%203/Desktop/Pivot%20Pie%20Projects/Pie-Dash/node_modules/rollup/dist/es/shared/node-entry.js:21490:24)
+    at file:///C:/Users/Book%203/Desktop/Pivot%20Pie%20Projects/Pie-Dash/node_modules/rollup/dist/es/shared/node-entry.js:21450:26[39m
