@@ -8,12 +8,20 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      buffer: 'buffer',
+      stream: 'stream-browserify',
+      assert: 'assert',
     },
+  },
+  define: {
+    global: 'globalThis',
+    'process.env': {},
   },
   build: {
     outDir: 'dist',
     sourcemap: false, // Disable source maps for production
     rollupOptions: {
+      external: [],
       output: {
         manualChunks: {
           // Separate vendor chunks for better caching
