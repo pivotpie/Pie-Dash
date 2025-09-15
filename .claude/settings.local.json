@@ -28,7 +28,8 @@
       "Bash(timeout 10 npm run dev)",
       "Bash(mkdir:*)",
       "Bash(/dev/null)",
-      "Bash(npm update:*)"
+      "Bash(npm update:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

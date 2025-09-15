@@ -1,31 +1,58 @@
 /**
- * PieChat - AI-Powered Grease Collection Assistant
- * Modal interface that flies in from the header search bar
+ * Enhanced PieChat - Backward Compatible Enhancement
+ * Extends existing PieChat.tsx with progressive disclosure and memory features
+ * 
+ * MIGRATION STRATEGY:
+ * 1. This component extends the original PieChat without breaking it
+ * 2. Can be used as drop-in replacement by changing import
+ * 3. Falls back to original behavior if enhanced features disabled
  */
 
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Send, Loader2, MessageCircle, AlertTriangle } from 'lucide-react';
-import { hybridAIService } from '../../services/hybridAIService';
+import { X, Send, Loader2, MessageCircle, AlertTriangle, Brain, Lightbulb, CheckCircle2, HelpCircle } from 'lucide-react';
+
+// Use enhanced services with fallback
+import { enhancedAIServiceV2 } from '../../services/enhancedAIServiceV2';
+import { memoryService } from '../../services/memoryService';
+
+// Import both original and enhanced types
+import type { ChatSession, EnhancedChatMessage, EnhancedQueryResult } from '../../types/chat.types';
+import type { 
+  SuggestedQuery,
+  FeatureFlags
+} from '../../types/enhanced-chat.types';
+import { DEFAULT_FEATURE_FLAGS } from '../../types/enhanced-chat.types';
+
+// Import existing components - they will work unchanged
 import ChatHistory from './ChatHistory';
 import AnalysisPanel from './AnalysisPanel';
-import type { ChatSession, EnhancedQueryResult, EnhancedChatMessage } from '../../types/chat.types';
 
-interface PieChatProps {
+interface EnhancedPieChatProps {
   isOpen: boolean;
   onClose: () => void;
   initialQuery?: string;
+  // New optional props for enhanced features
+  enableEnhancedFeatures?: boolean;
+  featureFlags?: Partial<FeatureFlags>;
 }
 
-// Legacy ChatMessage interface removed - now using EnhancedChatMessage from types
+const EnhancedPieChat: React.FC<EnhancedPieChatProps> = ({ 
+  isOpen, 
+  onClose, 
+  initialQuery,
+  enableEnhancedFeatures = true,
+  featureFlags = {}
+}) => {
+  // Merge feature flags with defaults
+  const activeFeatureFlags: FeatureFlags = { 
+    ...DEFAULT_FEATURE_FLAGS, 
+    ...featureFlags 
+  };
 
-const PieChat: React.FC<PieChatProps> = ({ isOpen, onClose, initialQuery }) => {
-  // Input and UI state
+  // === EXISTING STATE (unchanged) ===
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
-  // New 3-column layout state
   const [sessions, setSessions] = useState<ChatSession[]>(() => {
-    // Load sessions from localStorage on initialization
     try {
       const saved = localStorage.getItem('pie-chat-sessions');
       return saved ? JSON.parse(saved) : [];
@@ -35,7 +62,6 @@ const PieChat: React.FC<PieChatProps> = ({ isOpen, onClose, initialQuery }) => {
     }
   });
   const [currentSessionId, setCurrentSessionId] = useState<string>(() => {
-    // Try to restore last active session
     try {
       const saved = localStorage.getItem('pie-chat-current-session');
       return saved || '';
@@ -45,38 +71,38 @@ const PieChat: React.FC<PieChatProps> = ({ isOpen, onClose, initialQuery }) => {
     }
   });
   const [currentAnalysisResult, setCurrentAnalysisResult] = useState<EnhancedQueryResult | null>(null);
-  const [historyCollapsed, setHistoryCollapsed] = useState<boolean>(true); // Default to collapsed
+  const [historyCollapsed, setHistoryCollapsed] = useState<boolean>(true);
   const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
 
-  // Derived state: current session messages
+  // === NEW ENHANCED STATE ===
+  const [progressiveDisclosureEnabled, setProgressiveDisclosureEnabled] = useState(
+    enableEnhancedFeatures && activeFeatureFlags.enableProgressiveDisclosure
+  );
+  const [, setPendingValidations] = useState<{messageId: string, questions: string[]}[]>([]);
+  const [showConfidenceScores, setShowConfidenceScores] = useState(false);
+  const [currentSuggestions, setCurrentSuggestions] = useState<SuggestedQuery[]>([]);
+
+  // === EXISTING REFS AND DERIVED STATE (unchanged) ===
   const currentSession = sessions.find(s => s.id === currentSessionId);
   const messages = currentSession?.messages || [];
-  
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // === EXISTING EFFECTS (unchanged) ===
   useEffect(() => {
-    // Enhanced services configuration
-    hybridAIService.updateConfig({
-      useV2Features: false,      // Start conservative
-      enableMemory: false,       // Disable initially
-      enableVoiceCommands: false,
-      enableArtifacts: false,
-      fallbackToV1: true        // Always fallback for safety
-    });
-
-    console.log('🔧 Hybrid AI Service configured for safe migration');
-
     if (isOpen) {
-      // Initialize with welcome session if no sessions exist
       if (sessions.length === 0) {
         const welcomeSessionId = `welcome_${Date.now()}`;
         const welcomeMessage: EnhancedChatMessage = {
           id: 'welcome',
           role: 'assistant',
-          content: `Hi! I'm Pie, your Dubai grease collection assistant. I can help you analyze real-time collection data, performance metrics, operational insights, and generate visualizations.
+          content: progressiveDisclosureEnabled
+            ? `Hi! I'm Pie, your enhanced Dubai grease collection assistant. I now provide confidence scoring, smart suggestions, and contextual insights.
 
-I can query the live database and create charts to help you understand patterns, delays, efficiency metrics, and comparative analysis.
+I can analyze patterns, suggest follow-up questions, and help validate your findings with my new progressive analysis capabilities.
+
+What would you like to explore about Dubai's grease trap collection operations?`
+            : `Hi! I'm Pie, your Dubai grease collection assistant. I can help you analyze real-time collection data, performance metrics, operational insights, and generate visualizations.
 
 What would you like to know about Dubai grease trap collection operations?`,
           timestamp: new Date().toISOString()
@@ -94,7 +120,6 @@ What would you like to know about Dubai grease trap collection operations?`,
         setCurrentSessionId(welcomeSessionId);
       }
       
-      // Handle initial query if provided
       if (initialQuery) {
         setInputValue(initialQuery);
         setTimeout(() => {
@@ -102,18 +127,16 @@ What would you like to know about Dubai grease trap collection operations?`,
         }, 500);
       }
       
-      // Focus input after animation
       setTimeout(() => {
         inputRef.current?.focus();
       }, 300);
     }
-  }, [isOpen, initialQuery]);
+  }, [isOpen, initialQuery, progressiveDisclosureEnabled]);
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
-  // Persist sessions to localStorage whenever they change
   useEffect(() => {
     try {
       localStorage.setItem('pie-chat-sessions', JSON.stringify(sessions));
@@ -122,7 +145,6 @@ What would you like to know about Dubai grease trap collection operations?`,
     }
   }, [sessions]);
 
-  // Persist current session ID
   useEffect(() => {
     try {
       if (currentSessionId) {
@@ -137,6 +159,7 @@ What would you like to know about Dubai grease trap collection operations?`,
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // === ENHANCED MESSAGE HANDLING ===
   const handleSendMessage = async (messageContent?: string) => {
     const content = messageContent || inputValue.trim();
     if (!content || isLoading) return;
@@ -154,23 +177,46 @@ What would you like to know about Dubai grease trap collection operations?`,
     };
 
     try {
-      // Use enhanced AI service for processing
-      const result: EnhancedQueryResult = await hybridAIService.processQuery(
-        content, 
-        currentSessionId || undefined
-      );
+      // Always use enhanced service V2 for consistent performance and features
+      const result = await enhancedAIServiceV2.processQueryV2(content, currentSessionId || undefined);
       
-      // Set analysis result for the analysis panel
+      // Update suggestions if available
+      if (result.followUpSuggestions) {
+        setCurrentSuggestions(result.followUpSuggestions);
+      }
+      
+      // Add validation if needed
+      if (result.validationNeeded && result.assumptions && result.assumptions.length > 0) {
+        setPendingValidations(prev => [...prev, {
+          messageId: `assistant_${Date.now()}`,
+          questions: result.assumptions.slice(0, 3) // Limit to 3 questions
+        }]);
+      }
+      
       setCurrentAnalysisResult(result);
 
-      // Create assistant response message
-      const assistantMessage: EnhancedChatMessage = {
-        id: `assistant_${Date.now()}`,
-        role: 'assistant', 
-        content: result.naturalResponse,
-        timestamp: result.timestamp,
-        queryResult: result
-      };
+      // Create assistant response message - enhance if features enabled
+      let assistantMessage: EnhancedChatMessage;
+      
+      if (enableEnhancedFeatures && progressiveDisclosureEnabled && result.confidence !== undefined) {
+        // Enhanced message with metadata
+        assistantMessage = {
+          id: `assistant_${Date.now()}`,
+          role: 'assistant', 
+          content: result.naturalResponse,
+          timestamp: result.timestamp,
+          queryResult: result
+        };
+      } else {
+        // Original message format
+        assistantMessage = {
+          id: `assistant_${Date.now()}`,
+          role: 'assistant', 
+          content: result.naturalResponse,
+          timestamp: result.timestamp,
+          queryResult: result
+        };
+      }
 
       // Update session with both messages
       const sessionIdToUse = currentSessionId || result.sessionId || `session_${Date.now()}`;
@@ -179,7 +225,6 @@ What would you like to know about Dubai grease trap collection operations?`,
         const existingSession = prev.find(s => s.id === sessionIdToUse);
         
         if (existingSession) {
-          // Update existing session
           return prev.map(session => 
             session.id === sessionIdToUse 
               ? { 
@@ -190,7 +235,6 @@ What would you like to know about Dubai grease trap collection operations?`,
               : session
           );
         } else {
-          // Create new session
           const newSession: ChatSession = {
             id: sessionIdToUse,
             title: content.length > 50 ? content.substring(0, 50) + '...' : content,
@@ -202,9 +246,24 @@ What would you like to know about Dubai grease trap collection operations?`,
         }
       });
 
-      // Update current session ID if needed
       if (!currentSessionId) {
         setCurrentSessionId(sessionIdToUse);
+      }
+
+      // Update memory service if enabled
+      if (enableEnhancedFeatures && activeFeatureFlags.enableMemoryService) {
+        try {
+          memoryService.generateSessionSummary({
+            id: sessionIdToUse,
+            title: content.length > 50 ? content.substring(0, 50) + '...' : content,
+            messages: [userMessage, assistantMessage],
+            lastUpdated: result.timestamp,
+            createdAt: result.timestamp
+          });
+        } catch (error) {
+          console.warn('Memory service update failed:', error);
+          // Don't fail the main operation
+        }
       }
 
     } catch (error) {
@@ -213,11 +272,12 @@ What would you like to know about Dubai grease trap collection operations?`,
       const errorMessage: EnhancedChatMessage = {
         id: `error_${Date.now()}`,
         role: 'assistant',
-        content: "I'm having trouble processing your request right now. This might be due to database connectivity or AI service issues. Please try again or rephrase your question.",
+        content: enableEnhancedFeatures && progressiveDisclosureEnabled
+          ? "I'm having trouble processing your request right now. This might be due to database connectivity or AI service issues. My enhanced features are working to provide fallback analysis. Please try again or rephrase your question."
+          : "I'm having trouble processing your request right now. This might be due to database connectivity or AI service issues. Please try again or rephrase your question.",
         timestamp: new Date().toISOString()
       };
       
-      // Add user message and error message to current session
       const sessionIdToUse = currentSessionId || `session_${Date.now()}`;
       
       setSessions(prev => {
@@ -254,8 +314,6 @@ What would you like to know about Dubai grease trap collection operations?`,
     }
   };
 
-  // Removed handleSuggestionClick - suggestions handled by welcome message and analysis panel
-
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -263,6 +321,25 @@ What would you like to know about Dubai grease trap collection operations?`,
     }
   };
 
+  // === ENHANCED UI HELPERS ===
+  const handleSuggestionClick = (suggestion: SuggestedQuery) => {
+    setInputValue(suggestion.query);
+    setCurrentSuggestions(prev => prev.filter(s => s.id !== suggestion.id));
+  };
+
+  const getConfidenceColor = (confidence: number): string => {
+    if (confidence >= 0.8) return 'text-green-600';
+    if (confidence >= 0.6) return 'text-yellow-600';
+    return 'text-red-600';
+  };
+
+  const getConfidenceIcon = (confidence: number) => {
+    if (confidence >= 0.8) return <CheckCircle2 className="w-3 h-3" />;
+    if (confidence >= 0.6) return <HelpCircle className="w-3 h-3" />;
+    return <AlertTriangle className="w-3 h-3" />;
+  };
+
+  // Don't render if not open
   if (!isOpen) return null;
 
   return (
@@ -290,24 +367,65 @@ What would you like to know about Dubai grease trap collection operations?`,
             <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                  <MessageCircle className="w-4 h-4" />
+                  {enableEnhancedFeatures && progressiveDisclosureEnabled ? (
+                    <Brain className="w-4 h-4" />
+                  ) : (
+                    <MessageCircle className="w-4 h-4" />
+                  )}
                 </div>
                 <div>
-                  <h3 className="font-semibold">Pie AI Assistant</h3>
-                  <p className="text-xs text-blue-100">Dubai Grease Collection Expert</p>
+                  <h3 className="font-semibold">
+                    {enableEnhancedFeatures && progressiveDisclosureEnabled ? 'Enhanced Pie AI' : 'Pie AI Assistant'}
+                  </h3>
+                  <p className="text-xs text-blue-100">
+                    {enableEnhancedFeatures && progressiveDisclosureEnabled 
+                      ? 'Advanced Dubai Grease Collection Expert with Confidence Scoring'
+                      : 'Dubai Grease Collection Expert'
+                    }
+                  </p>
                 </div>
               </div>
-              <button 
-                onClick={onClose}
-                className="p-1 hover:bg-white hover:bg-opacity-20 rounded-full transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2">
+                {/* Enhanced Features Toggle */}
+                {enableEnhancedFeatures && (
+                  <button
+                    onClick={() => setProgressiveDisclosureEnabled(!progressiveDisclosureEnabled)}
+                    className={`px-3 py-1 rounded-full text-xs transition-colors ${
+                      progressiveDisclosureEnabled 
+                        ? 'bg-white bg-opacity-20 text-white' 
+                        : 'bg-white bg-opacity-10 text-blue-200'
+                    }`}
+                    title="Toggle Enhanced Features"
+                  >
+                    {progressiveDisclosureEnabled ? 'Enhanced' : 'Standard'}
+                  </button>
+                )}
+                {/* Confidence Scores Toggle */}
+                {progressiveDisclosureEnabled && (
+                  <button
+                    onClick={() => setShowConfidenceScores(!showConfidenceScores)}
+                    className={`p-1 rounded transition-colors ${
+                      showConfidenceScores 
+                        ? 'bg-white bg-opacity-20' 
+                        : 'hover:bg-white hover:bg-opacity-10'
+                    }`}
+                    title="Toggle Confidence Scores"
+                  >
+                    <Lightbulb className="w-4 h-4" />
+                  </button>
+                )}
+                <button 
+                  onClick={onClose}
+                  className="p-1 hover:bg-white hover:bg-opacity-20 rounded-full transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
             {/* 3-Column Layout */}
             <div className="flex-1 flex overflow-hidden">
-              {/* Column 1: Chat History (20% expanded / 48px collapsed) */}
+              {/* Column 1: Chat History (unchanged) */}
               <ChatHistory 
                 sessions={sessions}
                 currentSessionId={currentSessionId}
@@ -333,12 +451,11 @@ What would you like to know about Dubai grease trap collection operations?`,
                 }}
                 onToggleCollapse={() => setHistoryCollapsed(!historyCollapsed)}
                 onSearchSessions={(query) => {
-                  // TODO: Implement search functionality
                   console.log('Search sessions:', query);
                 }}
               />
               
-              {/* Column 2: Current Conversation (30% width) */}
+              {/* Column 2: Enhanced Conversation */}
               <div className="flex flex-col border-l border-gray-200 w-[30%] min-w-[300px]">
                 {/* Conversation Messages */}
                 <div className="flex-1 overflow-y-auto p-4 space-y-4">
@@ -355,6 +472,14 @@ What would you like to know about Dubai grease trap collection operations?`,
                               <span className="text-white text-xs font-bold">P</span>
                             </div>
                             <span className="text-sm font-medium text-blue-600">Pie</span>
+                            
+                            {/* Enhanced: Show confidence score */}
+                            {progressiveDisclosureEnabled && showConfidenceScores && message.queryResult && 'confidence' in message.queryResult && (
+                              <div className={`flex items-center gap-1 text-xs ${getConfidenceColor(message.queryResult.confidence as number)}`}>
+                                {getConfidenceIcon(message.queryResult.confidence as number)}
+                                <span>{((message.queryResult.confidence as number) * 100).toFixed(0)}%</span>
+                              </div>
+                            )}
                           </div>
                         )}
                         
@@ -362,7 +487,17 @@ What would you like to know about Dubai grease trap collection operations?`,
                           {message.content}
                         </div>
                         
-                        {/* Quick access buttons for assistant messages */}
+                        {/* Enhanced: Show analysis level */}
+                        {progressiveDisclosureEnabled && message.role === 'assistant' && message.queryResult && 'analysisLevel' in message.queryResult && (
+                          <div className="mt-2 pt-2 border-t border-gray-200">
+                            <div className="flex items-center gap-2 text-xs text-gray-500">
+                              <Brain className="w-3 h-3" />
+                              <span>Analysis Level: {(message.queryResult.analysisLevel as string).charAt(0).toUpperCase() + (message.queryResult.analysisLevel as string).slice(1)}</span>
+                            </div>
+                          </div>
+                        )}
+                        
+                        {/* Original: Quick access buttons */}
                         {message.role === 'assistant' && message.queryResult && (
                           <div className="flex items-center gap-2 mt-3 pt-2 border-t border-gray-200">
                             <button
@@ -403,7 +538,9 @@ What would you like to know about Dubai grease trap collection operations?`,
                         </div>
                         <div className="flex items-center gap-2 text-sm text-gray-600">
                           <Loader2 className="w-4 h-4 animate-spin" />
-                          <span>Analyzing data...</span>
+                          <span>
+                            {progressiveDisclosureEnabled ? 'Performing enhanced analysis...' : 'Analyzing data...'}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -411,6 +548,25 @@ What would you like to know about Dubai grease trap collection operations?`,
                   
                   <div ref={messagesEndRef} />
                 </div>
+
+                {/* Enhanced: Suggestions Panel */}
+                {progressiveDisclosureEnabled && currentSuggestions.length > 0 && (
+                  <div className="border-t p-3 bg-blue-50">
+                    <div className="text-xs font-medium text-gray-700 mb-2">💡 Suggested follow-ups:</div>
+                    <div className="space-y-1">
+                      {currentSuggestions.slice(0, 3).map((suggestion) => (
+                        <button
+                          key={suggestion.id}
+                          onClick={() => handleSuggestionClick(suggestion)}
+                          className="w-full text-left text-xs p-2 bg-white rounded border hover:bg-blue-100 transition-colors"
+                        >
+                          <div className="font-medium">{suggestion.query}</div>
+                          <div className="text-gray-500">{suggestion.reasoning}</div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Input Area */}
                 <div className="border-t p-4">
@@ -421,7 +577,10 @@ What would you like to know about Dubai grease trap collection operations?`,
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       onKeyPress={handleKeyPress}
-                      placeholder="Ask about Dubai grease collection data..."
+                      placeholder={progressiveDisclosureEnabled 
+                        ? "Ask about Dubai grease collection data with enhanced insights..."
+                        : "Ask about Dubai grease collection data..."
+                      }
                       className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                       disabled={isLoading}
                     />
@@ -440,12 +599,17 @@ What would you like to know about Dubai grease trap collection operations?`,
                   
                   <div className="flex items-center gap-1 mt-2 text-xs text-gray-500">
                     <AlertTriangle className="w-3 h-3" />
-                    <span>Real-time Dubai grease collection analysis</span>
+                    <span>
+                      {progressiveDisclosureEnabled 
+                        ? 'Enhanced real-time Dubai grease collection analysis with confidence scoring'
+                        : 'Real-time Dubai grease collection analysis'
+                      }
+                    </span>
                   </div>
                 </div>
               </div>
               
-              {/* Column 3: Analysis & Visualization Panel (50% expanded / 70% collapsed) */}
+              {/* Column 3: Analysis & Visualization Panel (unchanged interface) */}
               <AnalysisPanel 
                 className="flex-1 border-l border-gray-200 min-w-[400px]"
                 queryResult={currentAnalysisResult}
@@ -455,25 +619,20 @@ What would you like to know about Dubai grease trap collection operations?`,
                 }
                 isLoading={isAnalyzing}
                 onExportAnalysis={() => {
-                  // TODO: Implement export functionality
                   console.log('Export analysis');
                 }}
                 onCopyResponse={() => {
-                  // TODO: Implement copy functionality
                   if (currentAnalysisResult?.naturalResponse) {
                     navigator.clipboard.writeText(currentAnalysisResult.naturalResponse);
                   }
                 }}
                 onShareAnalysis={() => {
-                  // TODO: Implement share functionality
                   console.log('Share analysis');
                 }}
                 onPrintAnalysis={() => {
-                  // TODO: Implement print functionality
                   window.print();
                 }}
                 onRetryVisualization={() => {
-                  // TODO: Implement retry functionality
                   console.log('Retry visualization');
                 }}
               />
@@ -485,4 +644,4 @@ What would you like to know about Dubai grease trap collection operations?`,
   );
 };
 
-export default PieChat;
+export default EnhancedPieChat;

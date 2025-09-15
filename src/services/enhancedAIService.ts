@@ -1,6 +1,7 @@
 import { supabase } from './supabaseClient';
 import type { EnhancedQueryResult, EnhancedChatMessage } from '../types/chat.types';
 import type { VisualizationResponse, MultiVisualizationResponse } from '../types/visualization.types';
+import type { SuggestedQuery } from '../types/enhanced-chat.types';
 
 interface ApiConfig {
   baseUrl: string;
@@ -91,8 +92,8 @@ export class EnhancedAIService {
       baseUrl: 'https://api.ppq.ai',
       apiKey: import.meta.env.VITE_PPQ_API_KEY || '',
       model: 'gpt-5',
-      maxTokens: 24000,
-      temperature: 0.1
+      maxTokens: 12000,
+      temperature: 0.3
     };
 
     // Initialize session and cache storage
@@ -476,44 +477,69 @@ SQL QUERY:`;
       console.log('Generating comprehensive response with single AI call...');
       const aiStartTime = Date.now();
       
+      // Limit data size for faster processing
+      const limitedResults = results.length > 20 ? results.slice(0, 20) : results;
+
       const prompt = `Generate rich, explanatory analysis of Dubai waste collection data in ChatGPT/Claude artifact style.
 
-DATA: ${JSON.stringify(results, null, 2)}
+DATA: ${JSON.stringify(limitedResults, null, 2)}
 QUERY: ${question}
+TOTAL_RECORDS: ${results.length}
 
-Required JSON:
+Required JSON (be concise for speed):
 {
-  "briefResponse": "2-3 sentences highlighting key finding. End with 'View detailed analysis in the right panel for more insights.'",
-  "detailedResponse": "Rich markdown analysis with sections, emojis, tables, and explanatory flow. Use this structure:\n\n# 📊 Detailed Analysis: [Query Topic]\n\n## 🎯 Executive Summary\n[Key findings paragraph]\n\n## 📈 Key Metrics\n[Data table in markdown format]\n\n## 🔍 Deep Dive Analysis\n[Detailed explanation with insights]\n\n## 📋 Data Breakdown\n[Another data table or list if relevant]\n\n## 💡 Key Insights & Recommendations\n- Insight 1 with explanation\n- Insight 2 with reasoning\n- Insight 3 with context\n\n## 🎯 Conclusions\n[Final summary and actionable takeaways]\n\nUse emojis, markdown formatting, tables, and explanatory flow like a professional data analyst report.",
+  "briefResponse": "2-3 sentences with key findings. End with 'View analysis in right panel.'",
+  "detailedResponse": "# 📊 Analysis\n\n## Key Findings\n[Brief insights]\n\n## Data Summary\n[Simple table]\n\n## Recommendations\n- Key point 1\n- Key point 2",
   "visualization": {
     "chartType": "bar",
     "chartConfig": {
-      "data": [/* Use ALL data points */],
-      "layout": {
-        "title": "Chart title",
-        "xaxis": {"title": "X axis"},
-        "yaxis": {"title": "Y axis"}
-      }
+      "data": [/* Use top 10 data points only */],
+      "layout": {"title": "Chart Title"}
     },
-    "title": "Chart title",
-    "description": "Brief description"
+    "title": "Chart",
+    "description": "Chart desc"
   },
-  "shouldCreateMultiple": false,
-  "additionalCharts": [],
-  "insights": ["Key insight 1", "Key insight 2", "Key insight 3"]
+  "insights": ["Finding 1", "Finding 2", "Finding 3"]
 }
 
 CRITICAL: Make detailedResponse like a professional analyst report with rich formatting, tables, and explanatory flow.`;
 
-      // Add timeout for AI call to prevent long waits
+      // Add timeout for AI call to prevent long waits - 30 seconds max
       const aiCallPromise = this.callPPQChatCompletions(prompt);
-      const timeoutPromise = new Promise((_, reject) => 
-        setTimeout(() => reject(new Error('AI call timeout after 60 seconds')), 60000)
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('AI call timeout after 180 seconds')), 180000)
       );
       
-      const data = await Promise.race([aiCallPromise, timeoutPromise]);
-      const aiEndTime = Date.now();
-      console.log(`AI call completed in ${aiEndTime - aiStartTime}ms`);
+      let data;
+      try {
+        data = await Promise.race([aiCallPromise, timeoutPromise]);
+        const aiEndTime = Date.now();
+        console.log(`AI call completed in ${aiEndTime - aiStartTime}ms`);
+      } catch (error) {
+        console.log('Main AI call failed, trying simplified fallback...');
+        // Fallback with simplified prompt and reduced data
+        const simplifiedData = results.slice(0, 10); // Only first 10 results
+        const simplePrompt = `Analyze this Dubai waste collection data briefly:
+
+DATA: ${JSON.stringify(simplifiedData, null, 2)}
+QUERY: ${question}
+
+Return JSON:
+{
+  "briefResponse": "2-3 sentences with key findings. End with 'View analysis in right panel.'",
+  "detailedResponse": "# Analysis\n\n## Key Findings\n[Brief analysis]\n\n## Data Summary\n[Simple table or list]",
+  "visualization": {
+    "chartType": "bar",
+    "chartConfig": {"data": [], "layout": {"title": "Chart"}},
+    "title": "Chart",
+    "description": "Chart description"
+  },
+  "insights": ["Finding 1", "Finding 2"]
+}`;
+
+        data = await this.callPPQChatCompletions(simplePrompt);
+        console.log('Fallback AI call completed');
+      }
       
       let responseText = data.choices?.[0]?.message?.content || data.choices?.[0]?.text || "";
       
@@ -523,12 +549,13 @@ CRITICAL: Make detailedResponse like a professional analyst report with rich for
       try {
         const parsed = JSON.parse(responseText);
         
-        const visualization = parsed.visualization ? {
+        // Validate and fix visualization data
+        const visualization = parsed.visualization && this.validateVisualizationData(parsed.visualization, results) ? {
           chartType: parsed.visualization.chartType,
           chartConfig: parsed.visualization.chartConfig,
           title: parsed.visualization.title,
           description: parsed.visualization.description
-        } : null;
+        } : this.createFallbackVisualization(question, results);
 
         const multiVisualization = parsed.shouldCreateMultiple && parsed.additionalCharts ? {
           analysisType: 'multiple' as const,
@@ -699,106 +726,148 @@ RESPONSE REQUIREMENTS:
 
 
   private async generateVisualization(
-    question: string, 
-    results: any[]
-  ): Promise<VisualizationResponse | null> {
-    // First try to generate multi-visualization
-    const multiViz = await this.generateMultiVisualization(question, results);
-    if (multiViz && multiViz.analysisType === 'multiple') {
-      // Store multi-visualization separately and return primary for backward compatibility
-      return multiViz.primary;
-    }
-    
-    // Fallback to single visualization
-    // Skip visualization if no data or too little data
-    if (!results || results.length === 0) {
-      console.log('Skipping visualization: No data');
-      return null;
-    }
-    
-    // Skip if data structure is not suitable for visualization
-    if (results.length === 1 && Object.keys(results[0]).length < 2) {
-      console.log('Skipping visualization: Insufficient data structure');
-      return null;
-    }
-    
-    // Check if we have valid data for visualization
-    let firstResult = results[0];
-    
-    // Handle potential nested result structure
-    if (firstResult && typeof firstResult === 'object' && 'result' in firstResult) {
-      firstResult = firstResult.result;
-    }
-    
-    if (!firstResult || typeof firstResult !== 'object') {
-      console.log('Skipping visualization: Invalid data structure');
-      return null;
-    }
-    
-    const keys = Object.keys(firstResult);
-    const numericKeys = keys.filter(key => {
-      const value = firstResult[key];
-      // Skip null/undefined values
-      if (value == null) return false;
-      
-      // Check if the value is numeric (number or string that can be converted to number)
-      if (typeof value === 'number' && !isNaN(value) && isFinite(value)) {
-        return true;
-      }
-      if (typeof value === 'string') {
-        const numValue = parseFloat(value);
-        return !isNaN(numValue) && isFinite(numValue);
-      }
-      return false;
-    });
-    
-    console.log('Data analysis:', {
-      totalKeys: keys.length,
-      numericKeys: numericKeys.length,
-      sampleData: firstResult,
-      identifiedNumericKeys: numericKeys,
-      dataType: typeof firstResult,
-      hasResult: 'result' in (results[0] || {}),
-      rawFirstItem: results[0]
-    });
-    
-    if (numericKeys.length === 0) {
-      console.log('Skipping visualization: No numeric data available');
-      return null;
-    }
-
-    try {
-      const chartType = this.determineChartType(question, results);
-      const maxRetries = Number(import.meta.env.VITE_MAX_VISUALIZATION_RETRIES) || 3;
-      
-      for (let attempt = 1; attempt <= maxRetries; attempt++) {
-        try {
-          const plotlyConfig = await this.generatePlotlyConfig(question, results, chartType);
-          
-          if (plotlyConfig) {
-            return {
-              chartType: chartType,
-              chartConfig: plotlyConfig,
-              title: this.generateChartTitle(question, chartType),
-              description: `${chartType} chart showing ${results.length} data points`
-            };
-          }
-        } catch (error) {
-          console.warn(`Visualization generation attempt ${attempt} failed:`, error);
-          if (attempt === maxRetries) {
-            // Return fallback visualization on final attempt
-            return this.generateFallbackVisualization(question, results);
-          }
-        }
-      }
-      
-      return null;
-      
-    } catch (error) {
-      console.error('Visualization generation error:', error);
-      return this.generateFallbackVisualization(question, results);
-    }
+  question: string, 
+  results: any[]
+): Promise<VisualizationResponse | null> {
+  console.log('=== VISUALIZATION DEBUG START ===');
+  console.log('Question:', question);
+  console.log('Results length:', results.length);
+  console.log('First result sample:', results[0]);
+  console.log('Results type:', typeof results[0]);
+  
+  // Skip visualization if no data
+  if (!results || results.length === 0) {
+    console.log('SKIP: No data');
+    return null;
   }
+  
+  // Handle potential nested result structure
+  let firstResult = results[0];
+  console.log('Original first result:', firstResult);
+  
+  if (firstResult && typeof firstResult === 'object' && 'result' in firstResult) {
+    console.log('TRANSFORMATION: Detected nested result structure');
+    firstResult = firstResult.result;
+    results = results.map(item => item.result || item);
+    console.log('Transformed first result:', firstResult);
+  }
+  
+  if (!firstResult || typeof firstResult !== 'object') {
+    console.log('SKIP: Invalid data structure', { firstResult, type: typeof firstResult });
+    return null;
+  }
+  
+  const keys = Object.keys(firstResult);
+  console.log('Available keys:', keys);
+  
+  const numericKeys = keys.filter(key => {
+    const value = firstResult[key];
+    console.log(`Key "${key}": value=${value}, type=${typeof value}, isNumber=${typeof value === 'number'}, isNaN=${isNaN(value)}`);
+    
+    if (value == null) return false;
+    
+    if (typeof value === 'number' && !isNaN(value) && isFinite(value)) {
+      return true;
+    }
+    if (typeof value === 'string') {
+      const numValue = parseFloat(value);
+      const isValidNum = !isNaN(numValue) && isFinite(numValue);
+      console.log(`  String "${value}" -> ${numValue}, valid: ${isValidNum}`);
+      return isValidNum;
+    }
+    return false;
+  });
+  
+  console.log('Numeric keys found:', numericKeys);
+  
+  if (numericKeys.length === 0) {
+    console.log('SKIP: No numeric data available');
+    // FORCE CREATE A SIMPLE CHART ANYWAY
+    return this.createSimpleTableVisualization(question, results);
+  }
+
+  try {
+    const chartType = this.determineChartType(question, results);
+    console.log('Chart type determined:', chartType);
+    
+    const plotlyConfig = this.createFallbackPlotlyConfig(results, chartType);
+    console.log('Plotly config created:', plotlyConfig ? 'SUCCESS' : 'FAILED');
+    
+    if (plotlyConfig) {
+      console.log('Plotly config data length:', plotlyConfig.data?.length);
+      console.log('Plotly config sample:', JSON.stringify(plotlyConfig, null, 2).substring(0, 500));
+      
+      const result = {
+        chartType: chartType,
+        chartConfig: plotlyConfig,
+        title: this.generateChartTitle(question, chartType),
+        description: `${chartType} chart showing ${results.length} data points`
+      };
+      
+      console.log('=== VISUALIZATION SUCCESS ===');
+      return result;
+    } else {
+      console.log('FALLBACK: Creating simple visualization');
+      return this.createSimpleTableVisualization(question, results);
+    }
+    
+  } catch (error) {
+    console.error('VISUALIZATION ERROR:', error);
+    return this.createSimpleTableVisualization(question, results);
+  }
+}
+
+// Add this new method to always create something
+private createSimpleTableVisualization(question: string, results: any[]): VisualizationResponse {
+  console.log('Creating simple table visualization');
+  
+  if (!results || results.length === 0) {
+    return {
+      chartType: 'bar',
+      chartConfig: {
+        data: [{
+          type: 'bar',
+          x: ['No Data'],
+          y: [0],
+          marker: { color: '#EF4444' }
+        }],
+        layout: {
+          title: { text: 'No Data Available', font: { size: 16 } },
+          xaxis: { title: { text: 'Status' } },
+          yaxis: { title: { text: 'Count' } }
+        }
+      },
+      title: 'No Data Found',
+      description: 'No data available for visualization'
+    };
+  }
+
+  // Create a simple summary chart
+  const summaryData = [
+    { label: 'Total Records', value: results.length },
+    { label: 'Data Fields', value: Object.keys(results[0]).length }
+  ];
+
+  return {
+    chartType: 'bar',
+    chartConfig: {
+      data: [{
+        type: 'bar',
+        x: summaryData.map(d => d.label),
+        y: summaryData.map(d => d.value),
+        marker: { color: '#3B82F6' }
+      }],
+      layout: {
+        title: { text: 'Data Summary', font: { size: 16 } },
+        xaxis: { title: { text: 'Metric' } },
+        yaxis: { title: { text: 'Count' } },
+        margin: { t: 60, r: 30, b: 80, l: 60 }
+      }
+    },
+    title: 'Data Summary',
+    description: `Summary of ${results.length} records`
+  };
+}
 
   private async generateMultiVisualization(
     question: string, 
@@ -1246,7 +1315,8 @@ PLOTLY CONFIG:`;
 
 
   private isValidSessionId(sessionId: string): boolean {
-    return Boolean(sessionId) && sessionId.startsWith('session_') && sessionId.length > 10;
+    // More flexible validation - accept any non-empty string with minimum length
+    return Boolean(sessionId) && sessionId.length >= 8;
   }
 
   private clearExpiredCache(): void {
@@ -1569,7 +1639,426 @@ PLOTLY CONFIG:`;
   return cleanedQuery;
 }
 
+  private validateVisualizationData(visualization: any, results: any[]): boolean {
+    if (!visualization || !visualization.chartConfig || !visualization.chartConfig.data) {
+      return false;
+    }
+    
+    const data = visualization.chartConfig.data;
+    
+    // Check if data is an array and has content
+    if (!Array.isArray(data) || data.length === 0) {
+      return false;
+    }
+    
+    // Check if data has proper structure for the chart type
+    const firstItem = data[0];
+    if (!firstItem || typeof firstItem !== 'object') {
+      return false;
+    }
+    
+    // For charts, ensure we have at least x and y values
+    const hasValidKeys = Object.keys(firstItem).length >= 2;
+    return hasValidKeys;
+  }
 
+  private createFallbackVisualization(question: string, results: any[]): any {
+    if (!results || results.length === 0) {
+      return null;
+    }
+
+    // Create a simple table visualization for any data
+    const firstResult = results[0];
+    const keys = Object.keys(firstResult);
+    
+    if (keys.length === 0) {
+      return null;
+    }
+
+    // If we have numeric data, create a simple bar chart
+    const numericKeys = keys.filter(key => {
+      const value = firstResult[key];
+      return typeof value === 'number' && !isNaN(value);
+    });
+
+    if (numericKeys.length >= 1 && results.length > 1) {
+      // Create bar chart with first numeric field
+      const valueKey = numericKeys[0];
+      const labelKey = keys.find(key => key !== valueKey) || keys[0];
+      
+      const chartData = results.slice(0, 10).map((item, index) => ({
+        [labelKey]: item[labelKey] || `Item ${index + 1}`,
+        [valueKey]: Number(item[valueKey]) || 0
+      }));
+
+      return {
+        chartType: 'bar',
+        chartConfig: {
+          data: chartData,
+          layout: {
+            title: `${question} - Data Overview`,
+            xaxis: { title: labelKey },
+            yaxis: { title: valueKey }
+          }
+        },
+        title: `${question} - Data Overview`,
+        description: `Showing ${results.length} records from your query.`
+      };
+    }
+
+    // Fallback to summary statistics
+    const summaryData = [
+      { metric: 'Total Records', value: results.length },
+      { metric: 'Data Fields', value: keys.length }
+    ];
+
+    // Add numeric summaries if available
+    numericKeys.forEach(key => {
+      const values = results.map(r => Number(r[key])).filter(v => !isNaN(v));
+      if (values.length > 0) {
+        const sum = values.reduce((a, b) => a + b, 0);
+        const avg = sum / values.length;
+        summaryData.push(
+          { metric: `Total ${key}`, value: Math.round(sum * 100) / 100 },
+          { metric: `Average ${key}`, value: Math.round(avg * 100) / 100 }
+        );
+      }
+    });
+
+    return {
+      chartType: 'bar',
+      chartConfig: {
+        data: summaryData,
+        layout: {
+          title: `${question} - Summary`,
+          xaxis: { title: 'Metric' },
+          yaxis: { title: 'Value' }
+        }
+      },
+      title: `${question} - Data Summary`,
+      description: `Summary statistics for ${results.length} records.`
+    };
+  }
+
+  // Generate contextual deep-dive questions based on latest analysis
+  public generateDeepDiveQuestions(latestResult: EnhancedQueryResult, sessionHistory: EnhancedQueryResult[] = []): SuggestedQuery[] {
+    const questions: SuggestedQuery[] = [];
+
+    if (!latestResult || !latestResult.results || latestResult.results.length === 0) {
+      return this.getDefaultDeepDiveQuestions();
+    }
+
+    // Analyze the latest result to generate contextual questions
+    const { question, results, metadata } = latestResult;
+    const queryType = metadata?.queryType || 'general';
+
+    // Get data insights from results
+    const dataInsights = this.extractDataInsights(results);
+
+    // Generate questions based on query type and data patterns
+    switch (queryType) {
+      case 'geographic':
+        questions.push(...this.generateGeographicDeepDive(dataInsights, question));
+        break;
+      case 'provider':
+        questions.push(...this.generateProviderDeepDive(dataInsights, question));
+        break;
+      case 'volume':
+        questions.push(...this.generateVolumeDeepDive(dataInsights, question));
+        break;
+      case 'temporal':
+        questions.push(...this.generateTemporalDeepDive(dataInsights, question));
+        break;
+      default:
+        questions.push(...this.generateGeneralDeepDive(dataInsights, question));
+    }
+
+    // Add cross-analysis questions if we have session history
+    if (sessionHistory.length > 1) {
+      questions.push(...this.generateCrossAnalysisQuestions(latestResult, sessionHistory));
+    }
+
+    // Ensure we have exactly 3 questions, prioritize by confidence
+    return questions
+      .sort((a, b) => b.confidence - a.confidence)
+      .slice(0, 3)
+      .map((q, index) => ({ ...q, id: `deepdive_${Date.now()}_${index}` }));
+  }
+
+  private extractDataInsights(results: any[]): any {
+    if (!results || results.length === 0) return {};
+
+    const firstResult = results[0];
+    const keys = Object.keys(firstResult);
+
+    // Find numeric and string columns
+    const numericColumns = keys.filter(key => {
+      const value = firstResult[key];
+      return typeof value === 'number' || (typeof value === 'string' && !isNaN(parseFloat(value)));
+    });
+
+    const categoricalColumns = keys.filter(key => {
+      const value = firstResult[key];
+      return typeof value === 'string' && isNaN(parseFloat(value));
+    });
+
+    // Extract patterns
+    const hasEntityIds = keys.some(key => key.includes('entity') || key.includes('id'));
+    const hasLocations = keys.some(key => key.includes('area') || key.includes('zone') || key.includes('location'));
+    const hasVolumes = keys.some(key => key.includes('gallon') || key.includes('volume'));
+    const hasCollections = keys.some(key => key.includes('collection') || key.includes('count'));
+    const hasProviders = keys.some(key => key.includes('provider') || key.includes('service'));
+    const hasTemporalData = keys.some(key => key.includes('date') || key.includes('time') || key.includes('month'));
+
+    return {
+      resultCount: results.length,
+      numericColumns,
+      categoricalColumns,
+      hasEntityIds,
+      hasLocations,
+      hasVolumes,
+      hasCollections,
+      hasProviders,
+      hasTemporalData,
+      topEntities: results.slice(0, 3),
+      sampleData: firstResult
+    };
+  }
+
+  private generateGeographicDeepDive(insights: any, originalQuestion: string): SuggestedQuery[] {
+    const questions: SuggestedQuery[] = [];
+
+    if (insights.hasCollections) {
+      questions.push({
+        id: '',
+        query: "What are the collection efficiency patterns across different zones by time of day?",
+        type: 'drill_down',
+        confidence: 0.9,
+        reasoning: "Dive deeper into geographic performance with temporal patterns",
+        estimatedComplexity: 'guided'
+      });
+    }
+
+    if (insights.hasVolumes) {
+      questions.push({
+        id: '',
+        query: "Which specific locations within the top areas have the highest volume-to-collection ratios?",
+        type: 'drill_down',
+        confidence: 0.85,
+        reasoning: "Identify outlier locations for operational optimization",
+        estimatedComplexity: 'guided'
+      });
+    }
+
+    questions.push({
+      id: '',
+      query: "How does the geographic distribution compare with Dubai's business district density?",
+      type: 'explore_related',
+      confidence: 0.8,
+      reasoning: "Understand geographic patterns in business context",
+      estimatedComplexity: 'expert'
+    });
+
+    return questions;
+  }
+
+  private generateProviderDeepDive(insights: any, originalQuestion: string): SuggestedQuery[] {
+    return [
+      {
+        id: '',
+        query: "What is the service reliability score for each provider based on completion times?",
+        type: 'drill_down',
+        confidence: 0.9,
+        reasoning: "Analyze provider performance metrics for optimization",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "Which providers show the best volume-per-trip efficiency in high-density areas?",
+        type: 'explore_related',
+        confidence: 0.85,
+        reasoning: "Identify most efficient providers for route optimization",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "How do provider costs correlate with their service quality metrics?",
+        type: 'validate_assumption',
+        confidence: 0.8,
+        reasoning: "Validate cost-effectiveness assumptions about provider selection",
+        estimatedComplexity: 'expert'
+      }
+    ];
+  }
+
+  private generateVolumeDeepDive(insights: any, originalQuestion: string): SuggestedQuery[] {
+    return [
+      {
+        id: '',
+        query: "What are the volume anomalies and their root causes in the collection data?",
+        type: 'drill_down',
+        confidence: 0.9,
+        reasoning: "Identify and understand volume outliers for process improvement",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "How do container sizes correlate with actual collection volumes across different business types?",
+        type: 'explore_related',
+        confidence: 0.85,
+        reasoning: "Optimize container sizing based on business category patterns",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "What is the predicted volume growth pattern for the next quarter?",
+        type: 'follow_up',
+        confidence: 0.8,
+        reasoning: "Use current volume trends to forecast future capacity needs",
+        estimatedComplexity: 'expert'
+      }
+    ];
+  }
+
+  private generateTemporalDeepDive(insights: any, originalQuestion: string): SuggestedQuery[] {
+    return [
+      {
+        id: '',
+        query: "What are the seasonal patterns in collection frequency and volume?",
+        type: 'drill_down',
+        confidence: 0.9,
+        reasoning: "Identify seasonal trends for resource planning",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "How do collection delays correlate with specific days of the week or holidays?",
+        type: 'explore_related',
+        confidence: 0.85,
+        reasoning: "Understand temporal factors affecting service efficiency",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: '',
+        query: "What is the optimal collection schedule based on historical demand patterns?",
+        type: 'follow_up',
+        confidence: 0.8,
+        reasoning: "Use temporal analysis to optimize scheduling",
+        estimatedComplexity: 'expert'
+      }
+    ];
+  }
+
+  private generateGeneralDeepDive(insights: any, originalQuestion: string): SuggestedQuery[] {
+    const questions: SuggestedQuery[] = [];
+
+    if (insights.hasEntityIds) {
+      questions.push({
+        id: '',
+        query: "What are the operational patterns of the top-performing entities?",
+        type: 'drill_down',
+        confidence: 0.85,
+        reasoning: "Analyze success patterns from top entities",
+        estimatedComplexity: 'guided'
+      });
+    }
+
+    if (insights.hasCollections && insights.hasVolumes) {
+      questions.push({
+        id: '',
+        query: "How can we optimize route planning based on volume-to-distance ratios?",
+        type: 'explore_related',
+        confidence: 0.8,
+        reasoning: "Combine collection and volume data for route optimization",
+        estimatedComplexity: 'expert'
+      });
+    }
+
+    questions.push({
+      id: '',
+      query: "What are the key performance indicators we should monitor for continuous improvement?",
+      type: 'follow_up',
+      confidence: 0.9,
+      reasoning: "Identify actionable metrics from current analysis",
+      estimatedComplexity: 'surface'
+    });
+
+    return questions.slice(0, 3);
+  }
+
+  private generateCrossAnalysisQuestions(latestResult: EnhancedQueryResult, sessionHistory: EnhancedQueryResult[]): SuggestedQuery[] {
+    const questions: SuggestedQuery[] = [];
+
+    // Find different query types in history
+    const queryTypes = new Set(sessionHistory.map(r => r.metadata?.queryType).filter(Boolean));
+
+    if (queryTypes.has('geographic') && queryTypes.has('provider')) {
+      questions.push({
+        id: '',
+        query: "How do provider performance metrics vary across different geographic zones?",
+        type: 'explore_related',
+        confidence: 0.9,
+        reasoning: "Cross-analyze geographic and provider data from previous queries",
+        estimatedComplexity: 'expert'
+      });
+    }
+
+    if (queryTypes.has('volume') && queryTypes.has('temporal')) {
+      questions.push({
+        id: '',
+        query: "What volume trends emerge when we combine temporal patterns with current findings?",
+        type: 'validate_assumption',
+        confidence: 0.85,
+        reasoning: "Validate patterns by combining volume and temporal analysis",
+        estimatedComplexity: 'expert'
+      });
+    }
+
+    return questions;
+  }
+
+  private getDefaultDeepDiveQuestions(): SuggestedQuery[] {
+    return [
+      {
+        id: 'default_1',
+        query: "Show me the top 10 areas by collection frequency and their efficiency metrics",
+        type: 'explore_related',
+        confidence: 0.8,
+        reasoning: "Start with geographic overview for comprehensive analysis",
+        estimatedComplexity: 'surface'
+      },
+      {
+        id: 'default_2',
+        query: "Which service providers have the best volume-to-collection ratios?",
+        type: 'drill_down',
+        confidence: 0.85,
+        reasoning: "Analyze provider efficiency for operational insights",
+        estimatedComplexity: 'guided'
+      },
+      {
+        id: 'default_3',
+        query: "What are the monthly collection trends and seasonal patterns?",
+        type: 'follow_up',
+        confidence: 0.9,
+        reasoning: "Understand temporal patterns for strategic planning",
+        estimatedComplexity: 'guided'
+      }
+    ];
+  }
+
+  // Add missing methods that streamingAIService needs
+  public async generateSQLQuery(question: string): Promise<string> {
+    return this.generateSQL(question);
+  }
+
+  public async executeSQLQuery(sqlQuery: string): Promise<any[]> {
+    return this.executeQuery(sqlQuery);
+  }
+
+  public async generateBasicVisualization(question: string, results: any[]): Promise<any> {
+    // Use existing visualization generation logic
+    return this.generateVisualization(question, results);
+  }
 
 }
 

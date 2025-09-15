@@ -2,7 +2,8 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { TileCache } from './services/tileCache';
-import { AppLayout } from './components/layout/AppLayout';
+import { UltimateAppLayout } from './components/layout/UltimateAppLayout';
+import { enableFastEnhancedAnalysis } from './utils/toggleFeatures';
 import { ExecutiveOverview } from './components/dashboard/overview/ExecutiveOverview';
 import { GeographicDashboard } from './components/dashboard/detailed/GeographicDashboard';
 import { BusinessCategoryDashboard } from './components/dashboard/detailed/BusinessCategoryDashboard';
@@ -20,11 +21,14 @@ function App() {
   useEffect(() => {
     // Initialize tile caching for faster map performance
     TileCache.initialize().catch(console.warn);
+
+    // Enable fast mode by default for optimal performance
+    enableFastEnhancedAnalysis();
   }, []);
 
   return (
     <Router>
-      <AppLayout>
+      <UltimateAppLayout useEnhancedFeatures={true} useModernUI={true}>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<ExecutiveOverview />} />
@@ -40,7 +44,7 @@ function App() {
           <Route path="/ai" element={<QueryInterface />} />
           <Route path="/fleet" element={<FleetDashboard />} />
         </Routes>
-      </AppLayout>
+      </UltimateAppLayout>
     </Router>
   );
 }

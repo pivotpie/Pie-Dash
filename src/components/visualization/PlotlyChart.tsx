@@ -24,6 +24,68 @@ const PlotlyChart: React.FC<PlotlyChartProps> = ({
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showLegend, setShowLegend] = useState(true);
 
+  // Transform data if needed for incompatible formats
+  const transformedVisualization = React.useMemo(() => {
+    if (!visualization?.chartConfig) return visualization;
+
+    const { data, layout } = visualization.chartConfig;
+
+    // Check if data needs transformation (raw objects instead of Plotly format)
+    if (Array.isArray(data) && data.length > 0 && typeof data[0] === 'object') {
+      // Check if it's already in Plotly format (has type, x, y properties)
+      const isPlotlyFormat = data[0].hasOwnProperty('type') || data[0].hasOwnProperty('x') || data[0].hasOwnProperty('y');
+
+      if (!isPlotlyFormat) {
+        console.log('🔄 Transforming raw data to Plotly format');
+
+        // Transform raw data objects to Plotly format
+        const firstItem = data[0];
+        const keys = Object.keys(firstItem);
+
+        // Detect x and y fields from layout or infer from data
+        let xField = layout?.xField || keys[0];
+        let yField = layout?.yField || keys.find(k => typeof firstItem[k] === 'number') || keys[1];
+
+        // Create Plotly data structure
+        const plotlyData = [{
+          type: 'bar',
+          x: data.map(item => item[xField]),
+          y: data.map(item => Number(item[yField]) || 0),
+          text: data.map(item => `${item[yField]} ${yField === 'collections' ? 'collections' : yField === 'gallons_collected' || yField === 'total_gallons' ? 'gal' : ''}`),
+          textposition: 'outside',
+          hoverinfo: 'x+y+text',
+          marker: { color: '#1f77b4' }
+        }];
+
+        // Create proper layout
+        const plotlyLayout = {
+          title: layout?.title || visualization.title || 'Data Analysis',
+          xaxis: {
+            title: layout?.xAxisTitle || xField.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+            tickangle: -45
+          },
+          yaxis: {
+            title: layout?.yAxisTitle || yField.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+          },
+          showlegend: false,
+          responsive: true,
+          autosize: true,
+          margin: { t: 60, r: 30, b: 80, l: 60 }
+        };
+
+        return {
+          ...visualization,
+          chartConfig: {
+            data: plotlyData,
+            layout: plotlyLayout
+          }
+        };
+      }
+    }
+
+    return visualization;
+  }, [visualization]);
+
   const handleFullscreen = useCallback(() => {
     setIsFullscreen(!isFullscreen);
     if (onFullscreen) {
@@ -38,9 +100,9 @@ const PlotlyChart: React.FC<PlotlyChartProps> = ({
   }, [onExport]);
 
   const handleDownload = useCallback(() => {
-    if (visualization?.chartConfig) {
+    if (transformedVisualization?.chartConfig) {
       // Create a temporary link to download the chart data
-      const dataStr = JSON.stringify(visualization.chartConfig, null, 2);
+      const dataStr = JSON.stringify(transformedVisualization.chartConfig, null, 2);
       const dataBlob = new Blob([dataStr], { type: 'application/json' });
       const url = URL.createObjectURL(dataBlob);
       const link = document.createElement('a');
@@ -51,7 +113,7 @@ const PlotlyChart: React.FC<PlotlyChartProps> = ({
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
     }
-  }, [visualization]);
+  }, [transformedVisualization]);
   // Loading state
   if (loading) {
     return (
@@ -108,6 +170,17 @@ const PlotlyChart: React.FC<PlotlyChartProps> = ({
       </div>
     );
   }
+
+  // Debug chart data
+  console.log('🎨 PlotlyChart Debug:', {
+    hasVisualization: !!visualization,
+    hasChartConfig: !!visualization?.chartConfig,
+    hasData: !!visualization?.chartConfig?.data,
+    dataType: typeof visualization?.chartConfig?.data,
+    dataLength: Array.isArray(visualization?.chartConfig?.data) ? visualization?.chartConfig?.data.length : 'not array',
+    dataStructure: visualization?.chartConfig?.data?.[0],
+    fullChartConfig: visualization?.chartConfig
+  });
 
   // Render the actual chart
   return (
@@ -173,9 +246,9 @@ const PlotlyChart: React.FC<PlotlyChartProps> = ({
       {/* Plotly Chart */}
       <div className={isFullscreen ? 'fixed inset-0 z-50 bg-white' : 'relative'}>
         <Plot
-          data={visualization?.chartConfig?.data || []}
+          data={transformedVisualization?.chartConfig?.data || []}
           layout={{
-            ...visualization?.chartConfig?.layout,
+            ...transformedVisualization?.chartConfig?.layout,
             showlegend: showLegend,
             responsive: true,
             autosize: true,

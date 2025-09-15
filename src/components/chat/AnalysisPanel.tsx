@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import PlotlyChart from '../visualization/PlotlyChart';
+import EnhancedMarkdownRenderer from '../ui/EnhancedMarkdownRenderer';
 import { EnhancedQueryResult } from '../../types/chat.types';
 
 // Simple markdown to HTML converter for rich analysis display
@@ -255,13 +256,24 @@ const AnalysisPanel: React.FC<AnalysisPanelProps> = ({
           {(() => {
             // Get the current analysis to display
             const getDisplayAnalysis = () => {
+              // If no session history, use queryResult
               if (sessionHistory.length === 0) return queryResult;
-              
-              // If selectedAnalysisIndex is -1, show the latest (most recent)
+
+              // If queryResult is explicitly provided and different from the latest session, prioritize it
+              // This handles when user clicks "View Analysis" on a specific message
+              if (queryResult && sessionHistory.length > 0) {
+                const latestSession = sessionHistory[sessionHistory.length - 1];
+                // Compare by timestamp to see if it's a different analysis
+                if (queryResult.timestamp !== latestSession?.timestamp) {
+                  return queryResult;
+                }
+              }
+
+              // Default behavior: use selected index or latest from session
               if (selectedAnalysisIndex === -1) {
                 return sessionHistory[sessionHistory.length - 1] || queryResult;
               }
-              
+
               // Otherwise show the selected analysis
               return sessionHistory[selectedAnalysisIndex] || queryResult;
             };
@@ -346,14 +358,10 @@ const AnalysisPanel: React.FC<AnalysisPanelProps> = ({
 
                 {/* Rich Detailed Analysis Section */}
                 <div className="p-4 border-b border-gray-100">
-                  <div className="prose prose-sm max-w-none">
-                    <div 
-                      className="text-gray-700 leading-relaxed rich-analysis"
-                      dangerouslySetInnerHTML={{
-                        __html: renderMarkdownToHtml(currentAnalysis.detailedResponse || currentAnalysis.naturalResponse)
-                      }}
-                    />
-                  </div>
+                  <EnhancedMarkdownRenderer
+                    content={currentAnalysis.detailedResponse || currentAnalysis.naturalResponse}
+                    className="rich-analysis"
+                  />
                   
                   {/* Add some custom styling for rich content */}
                   <style jsx="true">{`
@@ -391,13 +399,24 @@ const AnalysisPanel: React.FC<AnalysisPanelProps> = ({
           {/* SQL Query Section */}
           {(() => {
             const getDisplayAnalysis = () => {
+              // If no session history, use queryResult
               if (sessionHistory.length === 0) return queryResult;
-              
-              // If selectedAnalysisIndex is -1, show the latest (most recent)
+
+              // If queryResult is explicitly provided and different from the latest session, prioritize it
+              // This handles when user clicks "View Analysis" on a specific message
+              if (queryResult && sessionHistory.length > 0) {
+                const latestSession = sessionHistory[sessionHistory.length - 1];
+                // Compare by timestamp to see if it's a different analysis
+                if (queryResult.timestamp !== latestSession?.timestamp) {
+                  return queryResult;
+                }
+              }
+
+              // Default behavior: use selected index or latest from session
               if (selectedAnalysisIndex === -1) {
                 return sessionHistory[sessionHistory.length - 1] || queryResult;
               }
-              
+
               // Otherwise show the selected analysis
               return sessionHistory[selectedAnalysisIndex] || queryResult;
             };
