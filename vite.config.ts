@@ -10,4 +10,35 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: false, // Disable source maps for production
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks for better caching
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          plotly: ['plotly.js', 'react-plotly.js'],
+          leaflet: ['leaflet', 'react-leaflet', 'leaflet.markercluster'],
+          ui: ['lucide-react', '@headlessui/react']
+        }
+      }
+    },
+    // Optimize for production
+    minify: 'esbuild',
+    target: 'es2020',
+    cssCodeSplit: true
+  },
+  server: {
+    port: 3000,
+    host: true
+  },
+  preview: {
+    port: 4173,
+    host: true
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', 'plotly.js']
+  }
 })
