@@ -6,6 +6,10 @@
   NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
 
+# Explicitly set framework to prevent auto-detection
+[template.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 # SPA routing for React Router
 [[redirects]]
   from = "/*"

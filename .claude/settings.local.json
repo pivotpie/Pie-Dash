@@ -30,7 +30,8 @@
       "Bash(/dev/null)",
       "Bash(npm update:*)",
       "Bash(git add:*)",
-      "Bash(timeout 10 npm run preview)"
+      "Bash(timeout 10 npm run preview)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
